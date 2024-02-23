@@ -1,15 +1,16 @@
-import { useState } from "react";
-
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import HomePage from "./pages/HomePage/HomePage";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <p>Hello From Craig</p>
-      </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+
+        <Route path="/pp" element={<PrivacyPolicy />} />
+      </Routes>
     </>
   );
 }
