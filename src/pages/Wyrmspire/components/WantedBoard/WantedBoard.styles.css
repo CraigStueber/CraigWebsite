@@ -1,0 +1,55 @@
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fefbf4;
+  margin: 0;
+  padding: 0;
+  color: #2d1b00;
+}
+
+h1 {
+  text-shadow: 1px 1px #e5c78a;
+  color: #5c3a00;
+  text-align: center;
+}
+
+.wanted-board-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wanted-post {
+  background-color: #fff9e6;
+  border: 2px solid #d6a44a;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.wanted-post:hover {
+  transform: translateY(-4px);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: #fff2cc;
+}
+
+.wanted-post h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4b2900;
+}
+
+.wanted-post p {
+  margin: 0.3rem 0;
+}
+
+.wanted-post .reward {
+  font-weight: bold;
+  color: #7a5200;
+}
+
+.wanted-post .type {
+  font-size: 0.75rem;
+  color: #6b4f28;
+}
