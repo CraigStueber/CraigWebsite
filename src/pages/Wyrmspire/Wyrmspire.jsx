@@ -1,13 +1,10 @@
-import AboutBraeforge from "./components/AboutBraeforge/AboutBraeforge";
-import WantedBoard from "./components/WantedBoard/WantedBoard";
+import WorldTabs from "./components/WorldTabs/WorldTabs";
 import "./Wyrmspire.styles.css";
 function Wyrmspire() {
   return (
     <div className="wyrmspire">
       <h1>The Doom of Wyrmspire</h1>
-      <AboutBraeforge />
-
-      <WantedBoard />
+      <WorldTabs />
     </div>
   );
 }
