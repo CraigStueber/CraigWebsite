@@ -1,4 +1,4 @@
-import Funeral from "../../../../assets/recap/session1/funeral.png";
+import Funeral from "../../../../assets/recap/session1/Funeral.png";
 import RoseYelling from "../../../../assets/recap/session1/RoseYelling.png";
 import TalkingPickAxe from "../../../../assets/recap/session1/TalkingPickAxe.png";
 import HemlockFall from "../../../../assets/recap/session1/HemlockFall.png";
