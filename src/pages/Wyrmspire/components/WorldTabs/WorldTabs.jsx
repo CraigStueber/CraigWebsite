@@ -3,6 +3,8 @@ import AboutBraeforge from "../AboutBraeforge/AboutBraeforge";
 import NPC from "../NPC/NPC";
 import PC from "../PC/PC";
 import WantedBoard from "../WantedBoard/WantedBoard";
+import LastTimeOn from "../LastTimeOn/LastTimeOn";
+import NotableFinds from "../NotableFinds/NotableFinds";
 import "./WorldTabs.styles.css";
 
 export default function WorldTabs() {
@@ -35,6 +37,18 @@ export default function WorldTabs() {
         >
           Wanted Board
         </button>
+        <button
+          className={activeTab === "lastTimeOn" ? "active" : ""}
+          onClick={() => setActiveTab("lastTimeOn")}
+        >
+          Last Time On
+        </button>
+        <button
+          className={activeTab === "notable" ? "active" : ""}
+          onClick={() => setActiveTab("notable")}
+        >
+          Notable Finds
+        </button>
       </div>
 
       <div className="world-tabs-content">
@@ -42,6 +56,8 @@ export default function WorldTabs() {
         {activeTab === "npcs" && <NPC />}
         {activeTab === "pcs" && <PC />}
         {activeTab === "wanted" && <WantedBoard />}
+        {activeTab === "lastTimeOn" && <LastTimeOn />}
+        {activeTab === "notable" && <NotableFinds />}
       </div>
     </div>
   );
