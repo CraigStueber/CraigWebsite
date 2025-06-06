@@ -7,9 +7,15 @@ function NotableFinds() {
       <h2>Notable Finds</h2>
       {notableFindsData.map((item, index) => (
         <div
-          className={`find-section ${
-            index % 2 === 0 ? "left-image" : "right-image"
-          }`}
+          className="find-section"
+          style={{
+            flexDirection:
+              window.innerWidth > 768
+                ? index % 2 === 0
+                  ? "row"
+                  : "row-reverse"
+                : "column",
+          }}
           key={index}
         >
           <img src={item.image} alt={item.title} className="find-image" />

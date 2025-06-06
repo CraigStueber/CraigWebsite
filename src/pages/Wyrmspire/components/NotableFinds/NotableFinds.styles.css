@@ -18,18 +18,6 @@
   flex-wrap: wrap;
 }
 
-.find-section.left-image .find-image {
-  order: 0;
-}
-
-.find-section.right-image .find-image {
-  order: 1;
-}
-
-.find-section.right-image .find-text {
-  order: 0;
-}
-
 .find-image {
   width: 45%;
   max-width: 400px;
