@@ -1,16 +1,41 @@
 import { useState } from "react";
 import "./LastTimeOn.styles.css";
-import recapData1 from "./recapDataSession1";
+import { recapData, recapDataSession2 } from "./recapDataSession1";
 import encounters1 from "./encounterSession1";
+import encounters2 from "./encounterSession2"; // new import
 
 function LastTimeOn() {
   const [activeTab, setActiveTab] = useState("recap");
+  const [activeSession, setActiveSession] = useState("session1");
 
-  const data = activeTab === "recap" ? recapData1 : encounters1;
+  const getData = () => {
+    if (activeTab === "recap") {
+      return activeSession === "session1" ? recapData : recapDataSession2;
+    } else {
+      return activeSession === "session1" ? encounters1 : encounters2;
+    }
+  };
+
+  const data = getData();
 
   return (
     <div className="last-time-on">
       <h2>Last Time On</h2>
+
+      <div className="button-group">
+        <button
+          className={activeSession === "session1" ? "active" : ""}
+          onClick={() => setActiveSession("session1")}
+        >
+          Session 1
+        </button>
+        <button
+          className={activeSession === "session2" ? "active" : ""}
+          onClick={() => setActiveSession("session2")}
+        >
+          Session 2
+        </button>
+      </div>
 
       <div className="button-group">
         <button

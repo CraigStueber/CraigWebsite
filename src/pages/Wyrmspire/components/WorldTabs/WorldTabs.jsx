@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AboutBraeforge from "../AboutBraeforge/AboutBraeforge";
 import NPC from "../NPC/NPC";
 import PC from "../PC/PC";
@@ -9,46 +9,67 @@ import "./WorldTabs.styles.css";
 
 export default function WorldTabs() {
   const [activeTab, setActiveTab] = useState("braeforge");
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 600);
+    if (window.innerWidth > 600) setMenuOpen(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const tabs = [
+    { id: "braeforge", label: "Braeforge" },
+    { id: "npcs", label: "NPCs" },
+    { id: "pcs", label: "PCs" },
+    { id: "wanted", label: "Wanted Board" },
+    { id: "lastTimeOn", label: "Last Time On" },
+    { id: "notable", label: "Notable Finds" },
+  ];
 
   return (
     <div className="world-tabs-container">
       <div className="world-tabs-nav">
-        <button
-          className={activeTab === "braeforge" ? "active" : ""}
-          onClick={() => setActiveTab("braeforge")}
-        >
-          Braeforge
-        </button>
-        <button
-          className={activeTab === "npcs" ? "active" : ""}
-          onClick={() => setActiveTab("npcs")}
-        >
-          NPCs
-        </button>
-        <button
-          className={activeTab === "pcs" ? "active" : ""}
-          onClick={() => setActiveTab("pcs")}
-        >
-          PCs
-        </button>
-        <button
-          className={activeTab === "wanted" ? "active" : ""}
-          onClick={() => setActiveTab("wanted")}
-        >
-          Wanted Board
-        </button>
-        <button
-          className={activeTab === "lastTimeOn" ? "active" : ""}
-          onClick={() => setActiveTab("lastTimeOn")}
-        >
-          Last Time On
-        </button>
-        <button
-          className={activeTab === "notable" ? "active" : ""}
-          onClick={() => setActiveTab("notable")}
-        >
-          Notable Finds
-        </button>
+        {isMobile ? (
+          <div className="mobile-nav-wrapper">
+            <button
+              className="hamburger"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              ☰ Menu
+            </button>
+            {menuOpen && (
+              <div className="mobile-dropdown">
+                {tabs.map((tab) => (
+                  <button
+                    key={tab.id}
+                    className={activeTab === tab.id ? "active" : ""}
+                    onClick={() => {
+                      setActiveTab(tab.id);
+                      setMenuOpen(false);
+                    }}
+                  >
+                    {tab.label}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        ) : (
+          tabs.map((tab) => (
+            <button
+              key={tab.id}
+              className={activeTab === tab.id ? "active" : ""}
+              onClick={() => setActiveTab(tab.id)}
+            >
+              {tab.label}
+            </button>
+          ))
+        )}
       </div>
 
       <div className="world-tabs-content">
