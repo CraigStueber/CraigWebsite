@@ -1,20 +1,23 @@
 import React, { useState, useEffect } from "react";
 import AboutBraeforge from "../AboutBraeforge/AboutBraeforge";
+import Locations from "../Locations/Locations";
 import NPC from "../NPC/NPC";
 import PC from "../PC/PC";
 import WantedBoard from "../WantedBoard/WantedBoard";
 import LastTimeOn from "../LastTimeOn/LastTimeOn";
 import NotableFinds from "../NotableFinds/NotableFinds";
+import TravelingMerchant from "../TravelingMerchant/TravelingMerchant";
 import "./WorldTabs.styles.css";
 
 export default function WorldTabs() {
-  const [activeTab, setActiveTab] = useState("braeforge");
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+  const [activeTab, setActiveTab] = useState("locations");
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 900);
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleResize = () => {
-    setIsMobile(window.innerWidth <= 600);
-    if (window.innerWidth > 600) setMenuOpen(false);
+    setIsMobile(window.innerWidth <= 900);
+    if (window.innerWidth > 900) setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -23,12 +26,13 @@ export default function WorldTabs() {
   }, []);
 
   const tabs = [
-    { id: "braeforge", label: "Braeforge" },
+    { id: "locations", label: "Locations" },
     { id: "npcs", label: "NPCs" },
     { id: "pcs", label: "PCs" },
     { id: "wanted", label: "Wanted Board" },
     { id: "lastTimeOn", label: "Last Time On" },
     { id: "notable", label: "Notable Finds" },
+    { id: "travelingMerchant", label: "Traveling Merchant" },
   ];
 
   return (
@@ -73,12 +77,13 @@ export default function WorldTabs() {
       </div>
 
       <div className="world-tabs-content">
-        {activeTab === "braeforge" && <AboutBraeforge />}
+        {activeTab === "locations" && <Locations />}
         {activeTab === "npcs" && <NPC />}
         {activeTab === "pcs" && <PC />}
         {activeTab === "wanted" && <WantedBoard />}
         {activeTab === "lastTimeOn" && <LastTimeOn />}
         {activeTab === "notable" && <NotableFinds />}
+        {activeTab === "travelingMerchant" && <TravelingMerchant />}
       </div>
     </div>
   );

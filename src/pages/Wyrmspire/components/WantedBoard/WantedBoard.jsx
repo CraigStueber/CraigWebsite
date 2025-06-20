@@ -3,52 +3,59 @@ import "./WantedBoard.styles.css";
 
 const wantedPosts = [
   {
-    title: "Search for Survivors – Tunnel 6",
-    body: "Miners found. One alive. Four dead. Rescue party nearly joined them. Do not enter without blessing or backup. — Korda Emberfield, Mayor",
-    reward: "50 gp for confirmed report, 150 gp if blessed by priest",
+    title: "Missing: Keldra and the Twins",
+    body: "Left to gather supplies before the mountain lit up green. Didn’t come back. Last seen near Tunnel 4. If found, tell Elric — heading to Duskmere. — Etched into wood, hung with twine.",
+    reward: "Whatever food Elric didn’t pack. Maybe a kiss, maybe a punch.",
     type: "Quest",
   },
   {
-    title: "Black Flames at Night",
-    body: "Fire came again. Still no smoke by dawn. Revna saw shapes in the trees. Don’t go alone. — Revna Blackspur, Watch Captain",
-    reward: "60 gp + upgraded hunting gear",
-    type: "Quest",
-  },
-  {
-    title: "Wailing from the Deep Forge",
-    body: "Whispers became screams. Anvils shaking. Pulling crew until this is dealt with. If you go down there, leave a will. — Taggin Coalwhistle, Shift Foreman",
-    reward: "150 gp + choice of tool from Forge stores",
-    type: "Quest",
-  },
-  {
-    title: "Darla STILL Missing — Now a Family Emergency",
-    body: "Cluckalina vanished six days ago. I heard her in the wind. Husband says it's the grief. Please. I’m begging now. — Gilda Marsh",
-    reward: "2 pies, 1 hug (awkward), and my eternal thanks",
-    type: "Flavor",
-  },
-  {
-    title: "Traveling Bard Seeks Company",
-    body: "Minstrelsy, mirth, and mead. Heading east soon. Need strong arms and soft ears. No cultists. — “Elvar the Almost Famous”",
-    reward: "Exposure, mostly",
-    type: "Flavor",
-  },
-  {
-    title: "Cursed Stone — FINAL OFFER",
-    body: "Still got the rock. Face’s angrier now. It blinked. I need it gone. Cheap. — Dregg (twitchier than before)",
-    reward: "1 cursed trinket. Possibly watching you already.",
-    type: "Flavor",
-  },
-  {
-    title: "Tunnel 13 — DO NOT OPEN",
-    body: "Red scrawl updated: “I heard it again. The hatch didn’t hold. Gods help us.” — Name now illegible",
-    reward: "None posted",
+    title: "The Breath Is Stirring",
+    body: `"I saw the stone bleed beneath the chapel. I smelled the ash in the snow.  
+One by one, the sparks are chosen — and one by one, they will burn.  
+Do not fear the flame. Fear the silence that comes after.  
+When the Second Ember arrives, only the hollow shall remain.”  
+— Brother Harven Duskwhistle`,
+    reward: "Salvation (interpret as you will)",
     type: "Rumor",
   },
   {
-    title: "Glowing Shapes Spotted Near the Old Obelisk",
-    body: "Stranger things walk the mines now. Green eyes. Warped bodies. Don’t touch them. Don’t *look* too long. — Anonymous",
-    reward: "None posted",
+    title: "Final Evacuation Notice",
+    body: "Braeforge is no longer under protection. All citizens urged to flee. Last wagons leave at dusk. No room for debate. — Revna Blackspur, Watch Captain",
+    reward: "A seat on the wagon. If it holds.",
+    type: "Quest",
+  },
+  {
+    title: "Call for Witnesses",
+    body: `"The mountain dreams again.  
+If you have seen green flame in the dark, heard whispers in stone, or felt the ground breathe beneath your feet — come to the square at dawn.  
+The Book of Ash remembers your name. It is time."  
+— Brother Harven Duskwhistle`,
+    reward: "A page in the book. A place in the fire.",
     type: "Rumor",
+  },
+
+  {
+    title: "Letter for Madame Rose",
+    body: `"Dearest Rose —  
+Hope the mountain air hasn’t dulled your wit. We’ve an open seat at the table here, and the wine flows better than ever. A few *old friends* are in town asking after you (subtle types, you know the kind).  
+Ten-Towns would love a visit — bring your charm, your smile, and that *special perfume*.  
+— L."`,
+    reward:
+      "Safe passage + formal invitation (scented parchment, faint hint of cinnamon and clove)",
+    type: "Flavor",
+  },
+
+  {
+    title: "Chicken Crisis: Cluckalina's Revenge",
+    body: "Cluckalina came back. Bigger. Meaner. Laid an egg that *hissed*. Took the shed. We live in fear. — Gilda Marsh (currently hiding)",
+    reward: "Pie, panic, and a handmade 'Chicken Slayer' sash",
+    type: "Flavor",
+  },
+  {
+    title: "To Whoever Finds This",
+    body: "We’ve gone west — me, the boys, and little Mora. Couldn’t wait anymore. If Harven returns… tell him I forgave him. — L.",
+    reward: "A child’s drawing of a smiling dwarf family, folded inside",
+    type: "Flavor",
   },
 ];
 

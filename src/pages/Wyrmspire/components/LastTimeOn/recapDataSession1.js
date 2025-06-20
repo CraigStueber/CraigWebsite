@@ -6,6 +6,24 @@ import IggyBug from "../../../../assets/recap/session1/IggyBug.png";
 import Exploding from "../../../../assets/recap/session1/Exploding.png";
 import Vision from "../../../../assets/recap/session1/Vision.png";
 import IggyDown from "../../../../assets/recap/session1/IggyDown.png";
+
+import Back from "../../../../assets/recap/session2/Back.png";
+import Cart from "../../../../assets/recap/session2/Cart.png";
+import Charmed from "../../../../assets/recap/session2/Charmed.png";
+import DeadDwarves from "../../../../assets/recap/session2/DeadDwarves.png";
+import Falling from "../../../../assets/recap/session2/Falling.png";
+import Ghost from "../../../../assets/recap/session2/Ghost.png";
+import GreenFire from "../../../../assets/recap/session2/GreenFire.png";
+import Gutts from "../../../../assets/recap/session2/Gutts.png";
+import Hidding from "../../../../assets/recap/session2/Hidding.png";
+import KhrunGate from "../../../../assets/recap/session2/KhrunGate.png";
+import Library from "../../../../assets/recap/session2/Library.png";
+import MushroomMonster from "../../../../assets/recap/session2/MushroomMonster.png";
+import OutPost from "../../../../assets/recap/session2/OutPost.png";
+import Table from "../../../../assets/recap/session2/Table.png";
+import Tunnel from "../../../../assets/recap/session2/Tunnel.png";
+import RoseDoor from "../../../../assets/recap/session2/RoseDoor.png";
+
 export const recapData = [
   {
     title: "1. A Funeral, A Favor, and a Flicker of Magic",
@@ -62,90 +80,96 @@ export const recapDataSession2 = [
     title: "Awakening in the Dead Cavern",
     description:
       "The party emerges from their vision to find themselves in a dry cavern, eerily silent and absent of monsters. Five dwarves lie dead in the middle of their work, untouched by the collapse that sealed off the tunnel behind the players. It's as if they simply stopped living mid-swing.",
-    image: "placeholder.jpg",
+    image: DeadDwarves,
   },
   {
     title: "The Fresh Tunnel",
     description:
       "Hemlock notices a new crack in the wall revealing a freshly dug tunnel and abandoned mining gear. It looks like the miners broke through and just called it a day — like hitting deploy at 4:30pm and logging off.",
-    image: "placeholder.jpg",
+    image: Tunnel,
   },
   {
     title: "Return with the Dead",
     description:
       "Dimitri constructs a sled for Sasha to pull, loading it with the five dwarf corpses. As the group heads back to Braeforge, the bodies begin to emit an unnaturally foul odor. Dimitri uses herbs, wrappings, and magic to mask the smell.",
-    image: "placeholder.jpg",
+    image: Cart,
   },
   {
     title: "Three Months Gone",
     description:
       "Braeforge is nearly deserted and boarded up. Korda and Revna greet the party with shock — it's been three months since they vanished. Korda is skeptical but relieved; Revna suspects the group has been involved with the mysterious green light.",
-    image: "placeholder.jpg",
+    image: Back,
+  },
+  {
+    title: "The Green Flame and the Missing Months",
+    description:
+      "Though the players believe they were only gone for a few hours, the truth is far stranger — they vanished for three full months. During their absence, a brilliant green flame descended from the sky, making the mountains glow as if ablaze. The terrifying sight led to the mines being shut and most of Braeforge's citizens fleeing, leaving behind only the very young, elderly, and poor. For the entire three months, the town's air shimmered with a green tint. The flame lifted the moment the party’s vision ended.",
+    image: GreenFire,
   },
   {
     title: "Rose's Secret Errand",
     description:
       "After Korda says questions can wait until morning, Rose quietly slips away from Revna, sneaking into her old inn to recover hidden gold and documents stashed away before their disappearance.",
-    image: "placeholder.jpg",
+    image: Hidding,
   },
   {
     title: "A Changed Town Council",
     description:
       "At a sparse town meeting, the group learns Brother Harven now leads the council. Half the townsfolk wear his ceremonial robes. Harven accuses the group of having 'wrong shadows,' though the players see no difference.",
-    image: "placeholder.jpg",
+    image: Table,
   },
   {
     title: "The Charm and the Clock",
     description:
       "Rose charms Brother Harven into dropping his accusations, but the party knows the spell won’t hold for long. They gather their gear and flee Braeforge, headed toward Khar Grunn.",
-    image: "placeholder.jpg",
+    image: Charmed,
   },
   {
     title: "Flight Machine Failure",
     description:
       "Before leaving, Dimitri tests a flying machine — which promptly crashes. He survives by casting Feather Fall mid-descent.",
-    image: "placeholder.jpg",
+    image: Falling,
   },
   {
     title: "Stonewatch Hollow Discovered",
     description:
       "On the road to Khar Grunn, the group finds an ancient outpost overgrown with vines: Stonewatch Hollow. Hemlock deciphers old runes revealing the outpost’s purpose — to guard a nearby Wyrmgate.",
-    image: "placeholder.jpg",
+    image: OutPost,
   },
   {
     title: "The Bronze Doors of Khar Grunn",
     description:
       "The party reaches Khar Grunn, its massive bronze doors 40 feet tall and covered in vines and fungus. One stands slightly ajar, inviting them into the forgotten archive.",
-    image: "placeholder.jpg",
+    image: KhrunGate,
   },
   {
     title: "The Mimic Behind the Fancy Door",
     description:
       "Inside the archive, a single clean tunnel leads to a pristine, tempting door. Rose opens it — triggering a Mimic ambush. The party reacts swiftly, taking it down.",
-    image: "placeholder.jpg",
+    image: RoseDoor,
   },
   {
     title: "Guts and Camouflage",
     description:
       "Dimitri harvests organs from the Mimic and covers himself and Ol’Iggy in its guts, hoping other Mimics will mistake them for one of their own.",
-    image: "placeholder.jpg",
+    image: Gutts,
   },
   {
     title: "Library of Ruins",
     description:
       "In a ruined library, the group finds a dead dwarf and notes referencing a puzzle involving five runes. After repairing one, the party solves the sequence with the pendant, unlocking a magical door.",
-    image: "placeholder.jpg",
+    image: Library,
   },
   {
     title: "The Mushroom That Wasn't",
     description:
       "As they enter the magical chamber, a giant mushroom monster manifests. After a fierce battle, it turns into a crumbling statue — as if it had been there for centuries. The party suspects they were in another dimension.",
-    image: "placeholder.jpg",
+    image: MushroomMonster,
   },
   {
     title: "The Wyrmgate and the King’s Warning",
     description:
       "Beyond the portal lies a shattered Wyrmgate. The ghost of King Dûmarin Stonebind reveals that looters stole the gems and blacksteel once used to bind Skaranthos — the Wyrm That Breathed All. If Skaranthos breaks free, the world will fall. He shares the locations of the other Wyrmgates:\n\n1. The Grove Gate – inside the oldest tree in the elven forest\n2. The Stone Gate – dwarven high citadel\n3. The Hollow Gate – dragon graveyard\n4. The Veiled Gate – atop the highest Wyrmspire peak.",
-    image: "placeholder.jpg",
+    image: Ghost,
   },
 ];
