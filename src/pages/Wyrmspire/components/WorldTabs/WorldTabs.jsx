@@ -7,6 +7,7 @@ import WantedBoard from "../WantedBoard/WantedBoard";
 import LastTimeOn from "../LastTimeOn/LastTimeOn";
 import NotableFinds from "../NotableFinds/NotableFinds";
 import TravelingMerchant from "../TravelingMerchant/TravelingMerchant";
+import CharacterCard from "../CharacterCard/CharacterCard";
 import "./WorldTabs.styles.css";
 
 export default function WorldTabs() {
@@ -33,6 +34,7 @@ export default function WorldTabs() {
     { id: "lastTimeOn", label: "Last Time On" },
     { id: "notable", label: "Notable Finds" },
     { id: "travelingMerchant", label: "Traveling Merchant" },
+    { id: "character", label: "My Character" },
   ];
 
   return (
@@ -84,6 +86,7 @@ export default function WorldTabs() {
         {activeTab === "lastTimeOn" && <LastTimeOn />}
         {activeTab === "notable" && <NotableFinds />}
         {activeTab === "travelingMerchant" && <TravelingMerchant />}
+        {activeTab === "character" && <CharacterCard />}
       </div>
     </div>
   );

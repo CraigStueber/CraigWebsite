@@ -1,0 +1,347 @@
+import { useEffect, useState } from "react";
+import supabase from "../../../../../../client.js";
+import "./Inventory.styles.css";
+import { useCharacter } from "../../../../../../context/CharacterContext.jsx";
+const ITEM_TYPES = {
+  equipment: "Equipment",
+  raw_goods: "Raw Goods",
+  magic_items: "Magic Items",
+  black_market_goods: "Black Market",
+};
+
+function Inventory({ merchantId }) {
+  const [inventory, setInventory] = useState({
+    equipment: [],
+    raw_goods: [],
+    magic_items: [],
+    black_market_goods: [],
+    quantityMap: {},
+  });
+  const { character, relationships } = useCharacter();
+  const [discountPercent, setDiscountPercent] = useState(0);
+  const [haggleMessage, setHaggleMessage] = useState("");
+  const [loading, setLoading] = useState(true);
+  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedType, setSelectedType] = useState(null);
+  const [finalPrice, setFinalPrice] = useState(null);
+
+  useEffect(() => {
+    const fetchInventory = async () => {
+      setLoading(true);
+
+      const { data: invRows, error } = await supabase
+        .from("merchant_inventory")
+        .select("*")
+        .eq("merchant_id", merchantId);
+      // Map item_id to quantity
+      const quantityMap = {};
+      invRows.forEach((row) => {
+        quantityMap[row.item_id] = row.quantity;
+      });
+
+      if (error) {
+        console.error("Error loading inventory:", error);
+        return;
+      }
+
+      const grouped = {
+        equipment: [],
+        raw_goods: [],
+        magic_items: [],
+        black_market_goods: [],
+      };
+
+      for (const type in grouped) {
+        const ids = invRows
+          .filter((row) => row.item_type === type)
+          .map((row) => row.item_id);
+
+        if (ids.length > 0) {
+          const { data: items, error: itemErr } = await supabase
+            .from(type)
+            .select("*")
+            .in("id", ids);
+
+          if (itemErr) {
+            console.error(`Error loading ${type}:`, itemErr);
+          } else {
+            grouped[type] = items;
+          }
+        }
+      }
+
+      setInventory({
+        ...grouped,
+        quantityMap,
+      });
+      setLoading(false);
+    };
+
+    fetchInventory();
+  }, [merchantId]);
+
+  const handleItemClick = (item, type) => {
+    setSelectedItem(item);
+    setSelectedType(type);
+  };
+
+  const closeModal = () => {
+    setSelectedItem(null);
+    setSelectedType(null);
+    setFinalPrice(null); // Reset the haggled discount
+    setDiscountPercent(0); // Optional: reset dropdown
+    setHaggleMessage(""); // Optional: clear any prior message
+  };
+  const handleBuyNow = async () => {
+    const item = selectedItem;
+    const itemType = selectedType;
+    const itemQuantity = inventory.quantityMap[item.id] ?? 0;
+    const priceToPay = finalPrice ?? selectedItem.cost;
+
+    if (!character || !item || itemQuantity <= 0) return;
+
+    if (character.gold < item.cost) {
+      alert("Not enough gold!");
+      return;
+    }
+
+    // 1. Deduct gold from character
+    const { error: charErr } = await supabase
+      .from("Characters")
+      .update({ gold: character.gold - priceToPay })
+
+      .eq("id", character.id);
+
+    if (charErr) return alert("Failed to update character gold.");
+
+    // 2. Fetch and update merchant
+    const { data: merchantData, error: merchErr } = await supabase
+      .from("Merchant")
+      .select("*")
+      .eq("id", merchantId)
+      .single();
+
+    if (merchErr || !merchantData) return alert("Failed to find merchant.");
+
+    const { error: updateMerchErr } = await supabase
+      .from("Merchant")
+      .update({ gold: merchantData.gold + priceToPay })
+
+      .eq("id", merchantId);
+
+    if (updateMerchErr) return alert("Failed to update merchant gold.");
+
+    // 3. Update merchant_inventory
+    const { data: invRow } = await supabase
+      .from("merchant_inventory")
+      .select("*")
+      .eq("merchant_id", merchantId)
+      .eq("item_type", itemType)
+      .eq("item_id", item.id)
+      .single();
+
+    if (invRow?.quantity === 1) {
+      await supabase.from("merchant_inventory").delete().eq("id", invRow.id);
+    } else {
+      await supabase
+        .from("merchant_inventory")
+        .update({ quantity: invRow.quantity - 1 })
+        .eq("id", invRow.id);
+    }
+
+    // 4. Add to or update character_inventory
+    const { data: existingEntry } = await supabase
+      .from("character_inventory")
+      .select("*")
+      .eq("character_id", character.id)
+      .eq("item_type", itemType)
+      .eq("item_id", item.id)
+      .single();
+
+    if (existingEntry) {
+      await supabase
+        .from("character_inventory")
+        .update({ quantity: existingEntry.quantity + 1 })
+        .eq("id", existingEntry.id);
+    } else {
+      await supabase.from("character_inventory").insert({
+        character_id: character.id,
+        item_type: itemType,
+        item_id: item.id,
+        quantity: 1,
+        attuned: false,
+        equipped: false,
+      });
+    }
+
+    alert("Purchase complete!");
+    setSelectedItem(null);
+    // Optionally: refresh inventory data
+  };
+  const handleHaggle = async () => {
+    const item = selectedItem;
+    const itemType = selectedType;
+    if (!character || !item || discountPercent === 0) return;
+
+    // Check if already haggled
+    const { data: previous, error: haggleError } = await supabase
+      .from("haggle_attempts")
+      .select("*")
+      .eq("character_id", character.id)
+      .eq("merchant_id", merchantId)
+      .eq("item_type", itemType)
+      .eq("item_id", item.id)
+      .single();
+
+    if (previous) {
+      setHaggleMessage("You've already tried haggling for this item.");
+      return;
+    }
+
+    // Determine required roll
+    let requiredRoll =
+      discountPercent === 10 ? 10 : discountPercent === 20 ? 15 : 20;
+
+    const relationship = relationships.find(
+      (r) => r.merchant_id === merchantId
+    );
+    const relScore = relationship?.score ?? 5;
+
+    if (relScore <= 3) requiredRoll += 5;
+    else if (relScore === 8) requiredRoll -= 2;
+    else if (relScore === 9) requiredRoll -= 4;
+    else if (relScore === 10) requiredRoll -= 6;
+
+    const d20 = Math.floor(Math.random() * 20) + 1;
+    const totalRoll = d20 + (character.char || 0); // CHA mod if available
+
+    // Log haggle attempt
+    await supabase.from("haggle_attempts").insert({
+      character_id: character.id,
+      merchant_id: merchantId,
+      item_type: itemType,
+      item_id: item.id,
+      discount_requested: discountPercent,
+      roll_result: d20, // <-- Fix here
+      success: totalRoll >= requiredRoll,
+    });
+
+    if (totalRoll >= requiredRoll) {
+      const discountAmount = Math.floor((item.cost * discountPercent) / 100);
+      const discountedCost = item.cost - discountAmount;
+      console.log(discountedCost);
+
+      // Update the cost in the selected item
+      setFinalPrice(discountedCost);
+
+      setHaggleMessage(
+        `Success! Rolled ${d20} + ${
+          character.char ?? 0
+        } = ${totalRoll}. New price: ${discountedCost} gp.`
+      );
+    } else {
+      setHaggleMessage(
+        `Failed! Rolled ${d20} + ${
+          character.char ?? 0
+        } = ${totalRoll}. No discount.`
+      );
+    }
+  };
+
+  if (loading) return <div>Loading merchant inventory...</div>;
+
+  return (
+    <div className="merchant-inventory">
+      {Object.entries(inventory).map(
+        ([key, items]) =>
+          items.length > 0 && (
+            <div key={key} className="inventory-section">
+              <h3>{ITEM_TYPES[key]}</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Cost</th>
+                    <th>Weight</th>
+                    <th>Quantity</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {items.map((item) => (
+                    <tr
+                      key={item.id}
+                      onClick={() => handleItemClick(item, key)}
+                    >
+                      <td>{item.name}</td>
+                      <td>{item.cost ?? "—"} gp</td>
+                      <td>{item.weight}</td>
+                      <td>{inventory.quantityMap[item.id] ?? 1}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )
+      )}
+
+      {selectedItem && (
+        <div className="item-modal-overlay" onClick={closeModal}>
+          <div className="item-modal" onClick={(e) => e.stopPropagation()}>
+            <h3>{selectedItem.name}</h3>
+            <p>
+              <strong>Type:</strong> {ITEM_TYPES[selectedType]}
+            </p>
+            <p>
+              <p>
+                <strong>Cost:</strong> {finalPrice ?? selectedItem.cost ?? "—"}{" "}
+                gp
+              </p>
+            </p>
+            <p>
+              <strong>Weight:</strong> {selectedItem.weight}
+            </p>
+            <p>
+              <strong>Rarity:</strong> {selectedItem.rarity}
+            </p>
+            {selectedItem.attunement !== undefined && (
+              <p>
+                <strong>Attunement:</strong>{" "}
+                {selectedItem.attunement ? "Yes" : "No"}
+              </p>
+            )}
+            {selectedItem.legal !== undefined && (
+              <p>
+                <strong>Illegal:</strong> {selectedItem.legal ? "Yes" : "No"}
+              </p>
+            )}
+            <p>
+              <strong>Description:</strong>
+            </p>
+            <p>{selectedItem.description || "No description available."}</p>
+            <button onClick={closeModal}>Close</button>
+            <div className="haggle-section">
+              <p>
+                <strong>Try to Haggle:</strong>
+              </p>
+              <select
+                value={discountPercent}
+                onChange={(e) => setDiscountPercent(parseInt(e.target.value))}
+              >
+                <option value={0}>No Discount</option>
+                <option value={10}>10% Off</option>
+                <option value={20}>20% Off</option>
+                <option value={30}>30% Off</option>
+              </select>
+              <button onClick={handleHaggle}>Haggle</button>
+              {haggleMessage && <p>{haggleMessage}</p>}
+            </div>
+
+            <button onClick={handleBuyNow}>Buy Now</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default Inventory;

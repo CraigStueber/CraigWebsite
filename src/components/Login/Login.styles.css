@@ -1,0 +1,41 @@
+.login {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff9e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.login input[type="email"],
+.login input[type="password"],
+.login input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.password-wrapper {
+  text-align: left;
+}
+
+.password-wrapper label {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+.login button {
+  padding: 0.75rem 1.25rem;
+  background: #5c3a00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
