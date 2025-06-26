@@ -6,7 +6,7 @@ import { useCharacter } from "../../../../../../context/CharacterContext.jsx";
 function MerchantCard({ merchantId }) {
   const [merchant, setMerchant] = useState(null);
   const { character, relationships, loading } = useCharacter();
-
+  console.log(relationships);
   useEffect(() => {
     const fetchMerchant = async () => {
       const { data, error } = await supabase
