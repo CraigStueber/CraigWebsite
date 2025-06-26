@@ -63,6 +63,9 @@ function Login() {
           {loading ? "Logging in..." : "Log In"}
         </button>
       </form>
+      <p>Want to log in as a guest?</p>
+      <p>Email guest@guest.com</p>
+      <p>Password: password</p>
       {message && <p>{message}</p>}
     </div>
   );
