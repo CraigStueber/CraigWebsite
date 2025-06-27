@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import supabase from "../../../../client";
 import { useCharacter } from "../../../../context/CharacterContext";
-
+import TalkToMerchantModal from "./components/TalkToMerchant/TalkToMerchantModal";
 import MerchantCard from "./components/MerchantCard/MerchantCard";
 import Inventory from "./components/Inventory/Inventory";
 import "./TravelingMerchant.styles.css";
@@ -10,6 +10,8 @@ import "./TravelingMerchant.styles.css";
 function TravelingMerchant() {
   const [user, setUser] = useState(null);
   const [showBuyHelp, setShowBuyHelp] = useState(false);
+  const [showSellHelp, setShowSellHelp] = useState(false);
+  const [showTalk, setShowTalk] = useState(false);
 
   const { character, relationships, loading } = useCharacter();
   const navigate = useNavigate();
@@ -49,10 +51,20 @@ function TravelingMerchant() {
         <h2>Traveling Merchant</h2>
 
         <div className="merchant-actions">
-          <button className="merchant-action-button">Talk to Merchant</button>
-          <button className="merchant-action-button">
+          <button
+            onClick={() => setShowTalk(true)}
+            className="merchant-action-button"
+          >
+            Talk to Merchant
+          </button>
+
+          <button
+            onClick={() => setShowSellHelp(true)}
+            className="merchant-action-button"
+          >
             Sell Stuff to Merchant
           </button>
+
           <button
             onClick={() => setShowBuyHelp(true)}
             className="merchant-action-button"
@@ -80,6 +92,32 @@ function TravelingMerchant() {
             <button onClick={() => setShowBuyHelp(false)}>Close</button>
           </div>
         </div>
+      )}
+      {showSellHelp && (
+        <div
+          className="merchant-popup-overlay"
+          onClick={() => setShowSellHelp(false)}
+        >
+          <div className="merchant-popup" onClick={(e) => e.stopPropagation()}>
+            <h3>How to Sell</h3>
+            <p>
+              Go to your character and simply click on an item — I’m sure your{" "}
+              <strong>Intelligence</strong> is high enough to figure out the
+              rest.
+              <br />
+              <br />
+              If not... well, there’s nothing I can do for you.
+            </p>
+            <button onClick={() => setShowSellHelp(false)}>Close</button>
+          </div>
+        </div>
+      )}
+      {showTalk && (
+        <TalkToMerchantModal
+          merchantId={1}
+          merchantName="Gruk"
+          onClose={() => setShowTalk(false)}
+        />
       )}
     </div>
   );

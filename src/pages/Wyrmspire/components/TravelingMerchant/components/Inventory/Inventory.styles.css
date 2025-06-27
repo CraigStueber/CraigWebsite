@@ -39,13 +39,15 @@ td {
 }
 
 .item-modal {
-  background: #fff9e6;
+  background: #fffef4;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   max-width: 500px;
   width: 90%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  text-align: left;
+  max-height: 90vh; /* 💡 Limit height */
+  overflow-y: auto; /* 💡 Enable vertical scroll */
+  position: relative;
 }
 
 .item-modal h3 {
@@ -83,4 +85,12 @@ td {
 .haggle-section button {
   margin-top: 0.5rem;
   display: block;
+}
+.confirm-close-warning {
+  background: #fff3cd;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #f5c06e;
+  border-radius: 8px;
+  color: #7a5200;
 }

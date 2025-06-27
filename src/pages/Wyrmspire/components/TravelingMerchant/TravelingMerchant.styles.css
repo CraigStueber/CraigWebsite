@@ -101,17 +101,20 @@
   outline-offset: 2px;
 }
 @media (max-width: 900px) {
+  .traveling-merchant {
+    padding: 0;
+  }
+
   .merchant-layout {
     flex-direction: column;
-    align-items: center;
   }
 
   .merchant-card {
-    width: 100%;
-    max-width: 320px;
+    width: 90vw;
+    margin: 10px auto;
   }
 
   .merchant-inventory {
-    width: 100%;
+    width: auto;
   }
 }

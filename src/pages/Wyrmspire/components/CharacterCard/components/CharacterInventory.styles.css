@@ -28,3 +28,38 @@
   border: 1px solid #ddd;
   text-align: left;
 }
+@media (max-width: 900px) {
+  .character-inventory {
+    padding: 0.5rem;
+  }
+
+  .character-inventory table {
+    width: 100%;
+    table-layout: fixed; /* Force equal-width columns */
+    font-size: 0.85rem;
+  }
+
+  .character-inventory th,
+  .character-inventory td {
+    padding: 0.3rem;
+    word-wrap: break-word;
+    white-space: normal;
+  }
+
+  .character-inventory th:nth-child(1),
+  .character-inventory td:nth-child(1) {
+    width: 40%; /* Name */
+  }
+
+  .character-inventory th:nth-child(2),
+  .character-inventory td:nth-child(2),
+  .character-inventory th:nth-child(3),
+  .character-inventory td:nth-child(3),
+  .character-inventory th:nth-child(4),
+  .character-inventory td:nth-child(4),
+  .character-inventory th:nth-child(5),
+  .character-inventory td:nth-child(5) {
+    width: 15%;
+    text-align: center;
+  }
+}

@@ -24,6 +24,7 @@ function Inventory({ merchantId }) {
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedType, setSelectedType] = useState(null);
   const [finalPrice, setFinalPrice] = useState(null);
+  const [confirmClose, setConfirmClose] = useState(false);
 
   useEffect(() => {
     const fetchInventory = async () => {
@@ -84,14 +85,24 @@ function Inventory({ merchantId }) {
     setSelectedItem(item);
     setSelectedType(type);
   };
-
   const closeModal = () => {
+    if (finalPrice) {
+      setConfirmClose(true); // Show the confirmation warning
+    } else {
+      // Safe to close immediately
+      resetModal();
+    }
+  };
+
+  const resetModal = () => {
     setSelectedItem(null);
     setSelectedType(null);
-    setFinalPrice(null); // Reset the haggled discount
-    setDiscountPercent(0); // Optional: reset dropdown
-    setHaggleMessage(""); // Optional: clear any prior message
+    setFinalPrice(null);
+    setDiscountPercent(0);
+    setHaggleMessage("");
+    setConfirmClose(false);
   };
+
   const handleBuyNow = async () => {
     const item = selectedItem;
     const itemType = selectedType;
@@ -237,7 +248,7 @@ function Inventory({ merchantId }) {
       setHaggleMessage(
         `Success! Rolled ${d20} + ${
           character.char ?? 0
-        } = ${totalRoll}. New price: ${discountedCost} gp.`
+        } Your Bonus = ${totalRoll} Total Roll. New price: ${discountedCost} gp.`
       );
     } else {
       setHaggleMessage(
@@ -321,7 +332,9 @@ function Inventory({ merchantId }) {
             <button onClick={closeModal}>Close</button>
             <div className="haggle-section">
               <p>
-                <strong>Try to Haggle:</strong>
+                <strong>Try to Haggle: </strong>
+                10% = DC10, 20% = DC15, 30% = DC20<br></br> You got one shot to
+                haggle per item.
               </p>
               <select
                 value={discountPercent}
@@ -337,6 +350,30 @@ function Inventory({ merchantId }) {
             </div>
 
             <button onClick={handleBuyNow}>Buy Now</button>
+            {confirmClose && (
+              <div className="confirm-close-warning">
+                <p>
+                  ⚠️ You’ve successfully haggled! If you leave now, the
+                  discounted price will be lost and you’ll have to pay full
+                  price later. Are you sure?
+                </p>
+                <div className="merchant-actions">
+                  <button
+                    className="merchant-action-button"
+                    onClick={() => setConfirmClose(false)}
+                  >
+                    Go Back
+                  </button>
+                  <button
+                    className="merchant-action-button"
+                    onClick={resetModal}
+                    style={{ backgroundColor: "#a00" }}
+                  >
+                    Yeah, I’m sure. Forget it.
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       )}
