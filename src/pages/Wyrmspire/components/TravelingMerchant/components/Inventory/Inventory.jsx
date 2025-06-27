@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import supabase from "../../../../../../client.js";
 import "./Inventory.styles.css";
 import { useCharacter } from "../../../../../../context/CharacterContext.jsx";
+import GIF from "../../../../../../assets/d20-roll-color.gif";
 const ITEM_TYPES = {
   equipment: "Equipment",
   raw_goods: "Raw Goods",
@@ -25,6 +26,7 @@ function Inventory({ merchantId }) {
   const [selectedType, setSelectedType] = useState(null);
   const [finalPrice, setFinalPrice] = useState(null);
   const [confirmClose, setConfirmClose] = useState(false);
+  const [haggleLoading, setHaggleLoading] = useState(false);
 
   useEffect(() => {
     const fetchInventory = async () => {
@@ -194,8 +196,8 @@ function Inventory({ merchantId }) {
     const itemType = selectedType;
     if (!character || !item || discountPercent === 0) return;
 
-    // Check if already haggled
-    const { data: previous, error: haggleError } = await supabase
+    // Already tried haggling check
+    const { data: previous } = await supabase
       .from("haggle_attempts")
       .select("*")
       .eq("character_id", character.id)
@@ -209,54 +211,56 @@ function Inventory({ merchantId }) {
       return;
     }
 
-    // Determine required roll
-    let requiredRoll =
-      discountPercent === 10 ? 10 : discountPercent === 20 ? 15 : 20;
+    setHaggleLoading(true);
+    setHaggleMessage(""); // Clear old result
 
-    const relationship = relationships.find(
-      (r) => r.merchant_id === merchantId
-    );
-    const relScore = relationship?.score ?? 5;
+    setTimeout(async () => {
+      // Roll logic
+      let requiredRoll =
+        discountPercent === 10 ? 10 : discountPercent === 20 ? 15 : 20;
 
-    if (relScore <= 3) requiredRoll += 5;
-    else if (relScore === 8) requiredRoll -= 2;
-    else if (relScore === 9) requiredRoll -= 4;
-    else if (relScore === 10) requiredRoll -= 6;
-
-    const d20 = Math.floor(Math.random() * 20) + 1;
-    const totalRoll = d20 + (character.char || 0); // CHA mod if available
-
-    // Log haggle attempt
-    await supabase.from("haggle_attempts").insert({
-      character_id: character.id,
-      merchant_id: merchantId,
-      item_type: itemType,
-      item_id: item.id,
-      discount_requested: discountPercent,
-      roll_result: d20, // <-- Fix here
-      success: totalRoll >= requiredRoll,
-    });
-
-    if (totalRoll >= requiredRoll) {
-      const discountAmount = Math.floor((item.cost * discountPercent) / 100);
-      const discountedCost = item.cost - discountAmount;
-      console.log(discountedCost);
-
-      // Update the cost in the selected item
-      setFinalPrice(discountedCost);
-
-      setHaggleMessage(
-        `Success! Rolled ${d20} + ${
-          character.char ?? 0
-        } Your Bonus = ${totalRoll} Total Roll. New price: ${discountedCost} gp.`
+      const relationship = relationships.find(
+        (r) => r.merchant_id === merchantId
       );
-    } else {
-      setHaggleMessage(
-        `Failed! Rolled ${d20} + ${
-          character.char ?? 0
-        } = ${totalRoll}. No discount.`
-      );
-    }
+      const relScore = relationship?.score ?? 5;
+
+      if (relScore <= 3) requiredRoll += 5;
+      else if (relScore === 8) requiredRoll -= 2;
+      else if (relScore === 9) requiredRoll -= 4;
+      else if (relScore === 10) requiredRoll -= 6;
+
+      const d20 = Math.floor(Math.random() * 20) + 1;
+      const totalRoll = d20 + (character.char || 0);
+
+      await supabase.from("haggle_attempts").insert({
+        character_id: character.id,
+        merchant_id: merchantId,
+        item_type: itemType,
+        item_id: item.id,
+        discount_requested: discountPercent,
+        roll_result: d20,
+        success: totalRoll >= requiredRoll,
+      });
+
+      if (totalRoll >= requiredRoll) {
+        const discountAmount = Math.floor((item.cost * discountPercent) / 100);
+        const discountedCost = item.cost - discountAmount;
+        setFinalPrice(discountedCost);
+        setHaggleMessage(
+          `Success! Rolled ${d20} + ${
+            character.char ?? 0
+          } Your Bonus = ${totalRoll} Total Roll. New price: ${discountedCost} gp.`
+        );
+      } else {
+        setHaggleMessage(
+          `Failed! Rolled ${d20} + ${
+            character.char ?? 0
+          } Your Bonus = ${totalRoll} Total Roll. No discount.`
+        );
+      }
+
+      setHaggleLoading(false);
+    }, 2000);
   };
 
   if (loading) return <div>Loading merchant inventory...</div>;
@@ -346,7 +350,18 @@ function Inventory({ merchantId }) {
                 <option value={30}>30% Off</option>
               </select>
               <button onClick={handleHaggle}>Haggle</button>
-              {haggleMessage && <p>{haggleMessage}</p>}
+              {haggleLoading ? (
+                <div className="haggle-roll-animation">
+                  <img
+                    src={GIF}
+                    alt="Rolling d20..."
+                    style={{ width: "64px" }}
+                  />
+                  <p>Rolling the dice...</p>
+                </div>
+              ) : (
+                haggleMessage && <p>{haggleMessage}</p>
+              )}
             </div>
 
             <button onClick={handleBuyNow}>Buy Now</button>
