@@ -52,64 +52,33 @@ export const CharacterProvider = ({ children }) => {
     fetchCharacterAndRelationships();
   }, []);
 
-  useEffect(() => {
+  const refreshRelationship = async (merchantId) => {
     if (!character) return;
 
-    const charChannel = supabase
-      .channel(`realtime-character-${character.id}`)
-      .on(
-        "postgres_changes",
-        {
-          event: "UPDATE",
-          schema: "public",
-          table: "Characters",
-          filter: `id=eq.${character.id}`,
-        },
-        (payload) => {
-          console.log("🧠 Character updated:", payload.new);
-          setCharacter(payload.new);
-        }
-      )
-      .subscribe();
+    const { data, error } = await supabase
+      .from("MerchRelationship")
+      .select("*")
+      .eq("PC", character.id)
+      .eq("Merch", merchantId)
+      .single();
 
-    return () => {
-      supabase.removeChannel(charChannel);
-    };
-  }, [character]);
+    if (error) {
+      console.error("Failed to refresh relationship:", error);
+      return;
+    }
 
-  useEffect(() => {
-    if (!character) return;
-
-    const channel = supabase
-      .channel(`realtime-relationships-${character.id}`)
-      .on(
-        "postgres_changes",
-        {
-          event: "*",
-          schema: "public",
-          table: "MerchRelationship",
-          filter: `PC=eq.${character.id}`,
-        },
-        (payload) => {
-          const updated = payload.new;
-
-          setRelationships((prev) => {
-            const exists = prev.find((r) => r.id === updated.id);
-            return exists
-              ? prev.map((r) => (r.id === updated.id ? updated : r))
-              : [...prev, updated];
-          });
-        }
-      )
-      .subscribe();
-
-    return () => {
-      supabase.removeChannel(channel);
-    };
-  }, [character]);
+    setRelationships((prev) => {
+      const exists = prev.find((r) => r.id === data.id);
+      return exists
+        ? prev.map((r) => (r.id === data.id ? data : r))
+        : [...prev, data];
+    });
+  };
 
   return (
-    <CharacterContext.Provider value={{ character, relationships, loading }}>
+    <CharacterContext.Provider
+      value={{ character, relationships, loading, refreshRelationship }}
+    >
       {children}
     </CharacterContext.Provider>
   );

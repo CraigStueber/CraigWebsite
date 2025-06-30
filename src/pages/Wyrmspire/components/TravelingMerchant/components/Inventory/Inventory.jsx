@@ -54,10 +54,19 @@ function Inventory({ merchantId }) {
         black_market_goods: [],
       };
 
+      const relationship = relationships.find(
+        (r) => r.merchant_id === merchantId
+      );
+      const relScore = relationship?.score ?? 0;
+
       for (const type in grouped) {
-        const ids = invRows
-          .filter((row) => row.item_type === type)
-          .map((row) => row.item_id);
+        // Filter inventory rows BEFORE selecting IDs
+        const filteredRows = invRows.filter((row) => {
+          if (type === "black_market_goods" && relScore < 8) return false;
+          return row.item_type === type;
+        });
+
+        const ids = filteredRows.map((row) => row.item_id);
 
         if (ids.length > 0) {
           const { data: items, error: itemErr } = await supabase
@@ -81,7 +90,7 @@ function Inventory({ merchantId }) {
     };
 
     fetchInventory();
-  }, [merchantId]);
+  }, [merchantId, relationships]);
 
   const handleItemClick = (item, type) => {
     setSelectedItem(item);
@@ -189,6 +198,25 @@ function Inventory({ merchantId }) {
 
     alert("Purchase complete!");
     setSelectedItem(null);
+    // Update local inventory
+    setInventory((prev) => {
+      const updated = {
+        ...prev,
+        quantityMap: { ...prev.quantityMap }, // ← important
+      };
+
+      const currentQty = updated.quantityMap[item.id] ?? 1;
+
+      if (currentQty > 1) {
+        updated.quantityMap[item.id] = currentQty - 1;
+      } else {
+        delete updated.quantityMap[item.id];
+        updated[itemType] = updated[itemType].filter((i) => i.id !== item.id);
+      }
+
+      return updated;
+    });
+
     // Optionally: refresh inventory data
   };
   const handleHaggle = async () => {

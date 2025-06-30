@@ -65,10 +65,39 @@ function CharacterInventory() {
     }
 
     // 2. Proceed with transaction
-    const { error: inventoryErr } = await supabase
+    const { data: invRow, error: fetchInvErr } = await supabase
       .from("character_inventory")
-      .delete()
-      .match({ character_id: character.id, item_id: selectedItem.id });
+      .select("id, quantity")
+      .eq("character_id", character.id)
+      .eq("item_id", selectedItem.id)
+      .maybeSingle();
+
+    if (fetchInvErr || !invRow) {
+      console.error("Failed to fetch inventory row:", fetchInvErr);
+      return;
+    }
+
+    if (invRow.quantity > 1) {
+      const { error: updateQtyErr } = await supabase
+        .from("character_inventory")
+        .update({ quantity: invRow.quantity - 1 })
+        .eq("id", invRow.id);
+
+      if (updateQtyErr) {
+        console.error("Failed to decrement inventory quantity:", updateQtyErr);
+        return;
+      }
+    } else {
+      const { error: deleteErr } = await supabase
+        .from("character_inventory")
+        .delete()
+        .eq("id", invRow.id);
+
+      if (deleteErr) {
+        console.error("Failed to delete inventory row:", deleteErr);
+        return;
+      }
+    }
 
     const { error: charUpdateErr } = await supabase
       .from("Characters")
@@ -80,9 +109,8 @@ function CharacterInventory() {
       .update({ gold: merchantGold - sellPrice })
       .eq("id", selectedMerchantId);
 
-    if (inventoryErr || charUpdateErr || merchUpdateErr) {
+    if (charUpdateErr || merchUpdateErr) {
       console.error("Sell operation failed", {
-        inventoryErr,
         charUpdateErr,
         merchUpdateErr,
       });
@@ -90,7 +118,7 @@ function CharacterInventory() {
     }
 
     // 3. Optional relationship bump
-    if (Math.random() < 0.25) {
+    if (Math.random() < 0.99) {
       const { data: existingRel, error: relErr } = await supabase
         .from("MerchRelationship")
         .select("id, Score")
@@ -170,19 +198,31 @@ function CharacterInventory() {
       }
     }
 
-    // 5. Clean up
-    setShowSellModal(false);
-    setSelectedItem(null);
-    setSelectedMerchantId("");
+    // 5. UI Feedback and Cleanup
+    alert(`${selectedItem.name} sold for ${sellPrice} gold!`);
 
-    // Optional: update UI immediately
     setInventory((prev) => {
       const newInv = { ...prev };
       for (let group of Object.keys(newInv)) {
-        newInv[group] = newInv[group].filter((i) => i.id !== selectedItem.id);
+        newInv[group] = newInv[group]
+          .map((i) => {
+            if (i.id === selectedItem.id) {
+              if (i.quantity > 1) {
+                return { ...i, quantity: i.quantity - 1 };
+              }
+              return null;
+            }
+            return i;
+          })
+          .filter(Boolean);
       }
       return newInv;
     });
+
+    // Now close modal and clear selection
+    setShowSellModal(false);
+    setSelectedItem(null);
+    setSelectedMerchantId("");
   };
 
   const handleItemClick = (item) => {

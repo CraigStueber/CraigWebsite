@@ -4,7 +4,7 @@ import { useCharacter } from "../../../../../../context/CharacterContext.jsx";
 import "./TalkToMerchantModal.styles.css";
 
 function TalkToMerchantModal({ merchantId, merchantName, onClose }) {
-  const { character } = useCharacter();
+  const { character, refreshRelationship } = useCharacter();
   const [dialogue, setDialogue] = useState(null);
   const [choiceMade, setChoiceMade] = useState(null);
   const [followup, setFollowup] = useState("");
@@ -26,6 +26,7 @@ function TalkToMerchantModal({ merchantId, merchantName, onClose }) {
         .from("merchant_dialogue")
         .select("*")
         .eq("merchant_id", merchantId)
+        .in("character_id", [null, character.id])
         .not("id", "in", `(${seenIds.join(",")})`)
         .order("sort_order");
 
@@ -74,6 +75,7 @@ function TalkToMerchantModal({ merchantId, merchantName, onClose }) {
           Score: Math.max(1, 5 + delta),
         });
       }
+      await refreshRelationship(merchantId);
     }
   };
 

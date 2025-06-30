@@ -5,8 +5,9 @@ import { useCharacter } from "../../../../../../context/CharacterContext.jsx";
 
 function MerchantCard({ merchantId }) {
   const [merchant, setMerchant] = useState(null);
-  const { character, relationships, loading } = useCharacter();
-  console.log(relationships);
+  const { character, relationships, loading, refreshRelationship } =
+    useCharacter();
+
   useEffect(() => {
     const fetchMerchant = async () => {
       const { data, error } = await supabase
@@ -23,6 +24,11 @@ function MerchantCard({ merchantId }) {
     };
 
     fetchMerchant();
+  }, [merchantId]);
+  useEffect(() => {
+    if (merchantId) {
+      refreshRelationship(merchantId);
+    }
   }, [merchantId]);
 
   if (!merchant || loading)
@@ -42,7 +48,7 @@ function MerchantCard({ merchantId }) {
   }
 
   const imageUrl = `https://ytxcnpaihzholuyjyhqp.supabase.co/storage/v1/object/public/npc/${merchant.img}${imageVariant}.png`;
-  console.log(relationship);
+
   return (
     <div className="merchant-card">
       <img src={imageUrl} alt={merchant.name} className="merchant-img" />
