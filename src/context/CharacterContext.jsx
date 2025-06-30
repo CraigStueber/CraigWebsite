@@ -8,48 +8,50 @@ export const CharacterProvider = ({ children }) => {
   const [relationships, setRelationships] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchCharacterAndRelationships = async () => {
-      setLoading(true);
-      const {
-        data: { session },
-      } = await supabase.auth.getSession();
-      const user = session?.user;
+  const refreshCharacter = async () => {
+    setLoading(true);
+    const {
+      data: { session },
+    } = await supabase.auth.getSession();
+    const user = session?.user;
 
-      if (!user) {
-        setLoading(false);
-        return;
-      }
-
-      const { data: characterData, error } = await supabase
-        .from("Characters")
-        .select("*")
-        .eq("userId", user.id)
-        .single();
-
-      if (error) {
-        console.error("Error fetching character:", error);
-        setLoading(false);
-        return;
-      }
-
-      setCharacter(characterData);
-
-      const { data: relationshipData, error: relError } = await supabase
-        .from("MerchRelationship")
-        .select("*")
-        .eq("PC", characterData.id);
-
-      if (relError) {
-        console.error("Error fetching relationships:", relError);
-      } else {
-        setRelationships(relationshipData);
-      }
-
+    if (!user) {
+      setCharacter(null);
       setLoading(false);
-    };
+      return;
+    }
 
-    fetchCharacterAndRelationships();
+    const { data: characterData, error } = await supabase
+      .from("Characters")
+      .select("*")
+      .eq("userId", user.id)
+      .single();
+
+    if (error) {
+      console.error("Error fetching character:", error);
+      setCharacter(null);
+      setLoading(false);
+      return;
+    }
+
+    setCharacter(characterData);
+
+    const { data: relationshipData, error: relError } = await supabase
+      .from("MerchRelationship")
+      .select("*")
+      .eq("PC", characterData.id);
+
+    if (relError) {
+      console.error("Error fetching relationships:", relError);
+    } else {
+      setRelationships(relationshipData);
+    }
+
+    setLoading(false);
+  };
+
+  useEffect(() => {
+    refreshCharacter();
   }, []);
 
   const refreshRelationship = async (merchantId) => {
@@ -77,7 +79,13 @@ export const CharacterProvider = ({ children }) => {
 
   return (
     <CharacterContext.Provider
-      value={{ character, relationships, loading, refreshRelationship }}
+      value={{
+        character,
+        relationships,
+        loading,
+        refreshCharacter,
+        refreshRelationship,
+      }}
     >
       {children}
     </CharacterContext.Provider>

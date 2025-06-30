@@ -14,6 +14,12 @@ function TravelingMerchant() {
   const [showTalk, setShowTalk] = useState(false);
 
   const { character, relationships, loading } = useCharacter();
+
+  const { refreshCharacter } = useCharacter();
+  useEffect(() => {
+    refreshCharacter();
+  }, []);
+
   const navigate = useNavigate();
 
   useEffect(() => {

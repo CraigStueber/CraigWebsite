@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { useCharacter } from "../../../../context/CharacterContext";
 import { useNavigate } from "react-router-dom";
 import CharacterInventory from "./components/CharacterInventory";
 import "./CharacterCard.styles.css";
 function CharacterCard() {
   const { character, loading } = useCharacter();
+  const { refreshCharacter } = useCharacter();
+  useEffect(() => {
+    refreshCharacter();
+  }, []);
   const navigate = useNavigate();
   if (loading)
     return <div className="character-card">Loading character...</div>;
