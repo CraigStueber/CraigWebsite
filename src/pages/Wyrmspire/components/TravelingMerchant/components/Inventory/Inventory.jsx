@@ -336,9 +336,13 @@ function Inventory({ merchantId }) {
             </p>
             <p>
               <p>
-                <strong>Cost:</strong> {finalPrice ?? selectedItem.cost ?? "—"}{" "}
-                gp
+                <strong>Cost:</strong> {selectedItem.cost} gp
               </p>
+              {finalPrice !== null && finalPrice !== selectedItem.cost && (
+                <p>
+                  <strong>New Discounted Price:</strong> {finalPrice} gp
+                </p>
+              )}
             </p>
             <p>
               <strong>Weight:</strong> {selectedItem.weight}
