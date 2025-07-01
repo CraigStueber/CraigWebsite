@@ -95,7 +95,13 @@ function Inventory({ merchantId }) {
   const handleItemClick = (item, type) => {
     setSelectedItem(item);
     setSelectedType(type);
+    setFinalPrice(null); // ← Reset haggled price
+    setDiscountPercent(0); // ← Reset dropdown
+    setHaggleMessage(""); // ← Clear result message
+    setHaggleLoading(false); // ← Reset rolling state
+    setConfirmClose(false); // ← Reset confirmation dialog
   };
+
   const closeModal = () => {
     if (finalPrice) {
       setConfirmClose(true); // Show the confirmation warning
