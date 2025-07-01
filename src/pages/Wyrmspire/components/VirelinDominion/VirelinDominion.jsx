@@ -51,7 +51,7 @@ export default function VirelinDominion() {
       <p>
         The elves are said to follow a single, eternal figure — a{" "}
         <strong>spirit of the hunt</strong> known as <em>Caer’Thalor</em>, the
-        Stagborn. Each spring, Caer’Thalor awakens beneath the Great Tree,
+        Stagborn. Each spring, Caer’Thalor* awakens beneath the Great Tree,
         reborn in flesh and fury. He leads the Wild Hunts, guides the flow of
         the seasons, and dies with the first frost — returning to the earth
         until the cycle begins anew.
@@ -75,6 +75,10 @@ export default function VirelinDominion() {
         do not forgive intrusion. They are not evil — only <em>uninterested</em>
         . In their eyes, the world outside the forest is burning, and it is not
         their fire to put out.
+      </p>
+
+      <p>
+        <small>*Yes Caer'Thalor is a complete rip off of Orion</small>
       </p>
     </div>
   );
