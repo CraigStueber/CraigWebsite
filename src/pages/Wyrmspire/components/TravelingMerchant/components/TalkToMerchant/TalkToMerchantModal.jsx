@@ -14,6 +14,7 @@ function TalkToMerchantModal({ merchantId, merchantName, onClose }) {
   useEffect(() => {
     const fetchDialogue = async () => {
       setLoading(true);
+
       const { data: seen } = await supabase
         .from("merchant_dialogue_history")
         .select("dialogue_id")
@@ -22,15 +23,19 @@ function TalkToMerchantModal({ merchantId, merchantName, onClose }) {
 
       const seenIds = seen?.map((r) => r.dialogue_id) ?? [];
 
-      const { data: available } = await supabase
+      const { data: allDialogues } = await supabase
         .from("merchant_dialogue")
         .select("*")
         .eq("merchant_id", merchantId)
-        .in("character_id", [null, character.id])
-        .not("id", "in", `(${seenIds.join(",")})`)
         .order("sort_order");
 
-      setDialogue(available?.[0] ?? null);
+      const filtered = allDialogues?.filter(
+        (d) =>
+          (d.character_id === null || d.character_id === character.id) &&
+          !seenIds.includes(d.id)
+      );
+
+      setDialogue(filtered?.[0] ?? null);
       setLoading(false);
     };
 
