@@ -8,9 +8,12 @@
   line-height: 1.7;
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(34, 56, 34, 0.2);
-  border-left: 6px solid #94a37f;
 }
-
+@media (max-width: 600px) {
+  .virelin-container {
+    padding: 5px;
+  }
+}
 .virelin-title {
   font-size: 3rem;
   text-align: center;
