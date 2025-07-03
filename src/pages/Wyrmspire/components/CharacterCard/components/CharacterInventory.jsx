@@ -358,8 +358,10 @@ function CharacterInventory() {
       {showSellModal && selectedItem && (
         <div className="merchant-popup-overlay">
           <div className="merchant-popup">
-            <h3>Sell {selectedItem.name}</h3>
+            <h3>{selectedItem.name}</h3>
+            <p>Description: {selectedItem.description}</p>
             <p>Base Price: {selectedItem.price}</p>
+            <h3>Sell Item</h3>
             <p>
               Sell Price:{" "}
               {selectedMerchantId
