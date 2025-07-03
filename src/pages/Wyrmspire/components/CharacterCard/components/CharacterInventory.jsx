@@ -11,7 +11,7 @@ const ITEM_TYPES = {
 };
 
 function CharacterInventory() {
-  const { character, loading } = useCharacter();
+  const { character, loading, refreshCharacter } = useCharacter();
   const [inventory, setInventory] = useState({});
   const [invLoading, setInvLoading] = useState(true);
   const [selectedItem, setSelectedItem] = useState(null);
@@ -220,6 +220,7 @@ function CharacterInventory() {
     });
 
     // Now close modal and clear selection
+    refreshCharacter();
     setShowSellModal(false);
     setSelectedItem(null);
     setSelectedMerchantId("");
