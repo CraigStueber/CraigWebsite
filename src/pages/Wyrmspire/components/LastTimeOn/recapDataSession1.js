@@ -202,7 +202,7 @@ export const recapDataSession3 = [
   {
     title: "A Seat at the Table",
     description:
-      "Hemlock clashed with the customs of the Arlani household, refusing food and discussing dark affairs at the dinner table.",
+      "Hemlock clashed with the customs of the Ivankov household, refusing food and discussing dark affairs at the dinner table.",
     image: Soup,
   },
   {
