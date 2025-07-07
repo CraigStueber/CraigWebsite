@@ -35,6 +35,12 @@ export function spinReel(betAmount = 10) {
       win = 2 * betAmount;
       message = `${a}${b}${c} - Triple match! You won double!`;
     }
+  } else if (a === b || b === c || a === c) {
+    win = 0;
+    message = `${a}${b}${c} - Partial match, you broke even.`;
+  } else {
+    win = -1 * betAmount;
+    message = `${a}${b}${c} - No match. You lost your bet.`;
   }
 
   return { reels, message, win };
