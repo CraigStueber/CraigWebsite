@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
 import Wyrmspire from "./pages/Wyrmspire/Wyrmspire";
 import Login from "./components/Login/Login";
+import LongrockCasino from "./pages/LongrockCasino/LongrockCasino";
 import { CharacterProvider } from "./context/CharacterContext";
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/wyrmspire" element={<Wyrmspire />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/longrock-casino" element={<LongrockCasino />} />
+          {/* Privacy Policy Route */}
           <Route path="/pp" element={<PrivacyPolicy />} />
         </Routes>
       </CharacterProvider>
