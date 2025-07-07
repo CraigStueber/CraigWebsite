@@ -13,9 +13,9 @@ const notableFindsData = [
     image: Pendant,
   },
   {
-    title: "Broken Rune Stone",
+    title: "5 Rune Stones",
     description:
-      "A jagged stone fragment etched with a glowing rune. The magic is fractured but still hums faintly with power. It might be one part of a larger seal, or a clue to an ancient dwarven pact.",
+      "Five small square stone tablets etched with ancient runes. The Broken Ruin was fixed by Ol'Iggy.",
     image: BrokenRuin,
   },
   {
