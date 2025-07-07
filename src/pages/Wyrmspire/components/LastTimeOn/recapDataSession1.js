@@ -24,6 +24,18 @@ import Table from "../../../../assets/recap/session2/Table.png";
 import Tunnel from "../../../../assets/recap/session2/Tunnel.png";
 import RoseDoor from "../../../../assets/recap/session2/RoseDoor.png";
 
+import Cult from "../../../../assets/recap/session3/Cult.png";
+import Elves from "../../../../assets/recap/session3/Elves.png";
+import Cedric from "../../../../assets/recap/session3/Cedric.png";
+import vampireSpawn from "../../../../assets/recap/session3/vampireSpawn.png";
+import Caster from "../../../../assets/recap/session3/Caster.png";
+import Morgrave from "../../../../assets/recap/session3/Morgrave.png";
+import Greating from "../../../../assets/recap/session3/Greating.png";
+import Soup from "../../../../assets/recap/session3/Soup.png";
+import SmashFix from "../../../../assets/recap/session3/SmashFix.png";
+import Letter from "../../../../assets/recap/session3/Letter.png";
+import FlyingMachine from "../../../../assets/recap/session3/FlyingMachine.png";
+import Longrock from "../../../../assets/longrock.png";
 export const recapData = [
   {
     title: "1. A Funeral, A Favor, and a Flicker of Magic",
@@ -171,5 +183,80 @@ export const recapDataSession2 = [
     description:
       "Beyond the portal lies a shattered Wyrmgate. The ghost of King Dûmarin Stonebind reveals that looters stole the gems and blacksteel once used to bind Skaranthos — the Wyrm That Breathed All. If Skaranthos breaks free, the world will fall. He shares the locations of the other Wyrmgates:\n\n1. The Grove Gate – inside the oldest tree in the elven forest\n2. The Stone Gate – dwarven high citadel\n3. The Hollow Gate – dragon graveyard\n4. The Veiled Gate – atop the highest Wyrmspire peak.",
     image: Ghost,
+  },
+];
+
+export const recapDataSession3 = [
+  {
+    title: "Eastward Bound",
+    description:
+      "The party departed the shattered halls of Khrun Grunn, journeying to Longrock. Ol’Iggy traded healing spells for supplies in roadside villages.",
+    image: Longrock,
+  },
+  {
+    title: "Hearth of the Arlani",
+    description:
+      "In Longrock, Dimitri led the party to his family’s estate. His mother welcomed him home with open arms—unaware of the storm at her doorstep.",
+    image: Greating,
+  },
+  {
+    title: "A Seat at the Table",
+    description:
+      "Hemlock clashed with the customs of the Arlani household, refusing food and discussing dark affairs at the dinner table.",
+    image: Soup,
+  },
+  {
+    title: "The Father’s Warning",
+    description:
+      "Dimitri’s father revealed that a group called the Feather was asking questions. Despite Hemlock’s interruptions, the party received a Trade Permit into the Virelin Dominion. But Dimitri's father wants Dimitri to fix this issue with the Feather first.",
+    image: Letter,
+  },
+  {
+    title: "The Tinkerer Returns",
+    description:
+      "Professor Morgrave explained he was summoned to complete the flying machine—and to aid in finding Dimitri. Professor had lost much of his sanity when he was performing rituals to find Dimitri during the 3 months he was away. A message soon arrived: someone was calling for Dimitri in the city square.",
+    image: Morgrave,
+  },
+  {
+    title: "The Feather’s Edge",
+    description:
+      "The party went to the city square to meet this person, Caster. Caster takes the party to the Feather Outpost to speak in private. He confessed they were only hired to build the machine—and to do so, they’d need sap from a Parth Tree at Sir Cedric’s estate.",
+    image: Caster,
+  },
+  {
+    title: "Cedric’s Hospitality",
+    description:
+      "Sir Cedric, eerily unchanged, welcomed the group. The party had a nice early lunch with Cedric.",
+    image: Cedric,
+  },
+  {
+    title: "Hungry Vampire Spawn",
+    description:
+      "Cedric's servants soon attacked—young vampires hungry for blood. The party survived. Cedric let the party go, as he saw they would not be an easy meal.",
+    image: vampireSpawn,
+  },
+  {
+    title: "Shattered Glass & Good Intentions",
+    description:
+      "Hemlock shattered Cedric’s windows on the way out. Ol’Iggy quietly repaired them—but the commotion did not go unnoticed. The Guards that came to check on Cedric were the easy meal he was looking for.",
+    image: SmashFix,
+  },
+  {
+    title: "Through Night, We Build",
+    description:
+      "Dimitri and Professor Morgrave labored overnight to complete the aircraft. At dawn, the mysterious buyer arrived—and they took to the skies.",
+    image: Cult,
+  },
+  {
+    title: "The Forest Rejects",
+    description:
+      "The machine took flight… briefly flying over Virelin. The Virelin forest awoke in fury and dragged them from the sky. All went black.",
+    image: FlyingMachine,
+  },
+  {
+    title: "Elven Chains",
+    description:
+      "The party awoke bound beneath the forest canopy. Silent elven warriors stood above them, their faces unreadable, weapons ready.",
+    image: Elves,
   },
 ];
