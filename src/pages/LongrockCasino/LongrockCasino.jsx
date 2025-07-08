@@ -1,32 +1,83 @@
 import { useState, useEffect } from "react";
 import "./LongrockCasino.styles.css";
 import { spinReel } from "./spinLogic";
-import { useCharacter } from "../../context/CharacterContext"; // adjust path
+import { useCharacter } from "../../context/CharacterContext";
 import supabase from "../../client";
 import { useNavigate } from "react-router-dom";
+
 const SYMBOLS = ["🍀", "🔥", "🐉", "💀", "⚔️", "🧿"];
 
+// Store interval reference outside component
+let spinInterval = null;
+
 export default function LongrockCasino() {
-  const [reels, setReels] = useState(["❓", "❓", "❓"]);
+  const [displayReels, setDisplayReels] = useState(["❓", "❓", "❓"]);
   const [message, setMessage] = useState("");
   const [isSpinning, setIsSpinning] = useState(false);
-  const [betAmount, setBetAmount] = useState(1); // default
+  const [betAmount, setBetAmount] = useState(1);
+
   const { character, loading, refreshCharacter } = useCharacter();
   const navigate = useNavigate();
 
   useEffect(() => {
-    let spinInterval;
     if (isSpinning) {
       spinInterval = setInterval(() => {
-        setReels([
+        setDisplayReels([
           SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)],
           SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)],
           SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)],
         ]);
       }, 100);
     }
-    return () => clearInterval(spinInterval);
+    return () => {
+      if (spinInterval) clearInterval(spinInterval);
+    };
   }, [isSpinning]);
+
+  const handleSpin = async () => {
+    if (betAmount > character.gold) {
+      setMessage("You don't have enough gold to make that bet.");
+      return;
+    }
+
+    if (isSpinning) return;
+
+    setMessage("");
+    setIsSpinning(true);
+
+    setTimeout(async () => {
+      if (spinInterval) clearInterval(spinInterval); // stop animation
+
+      const result = spinReel(betAmount);
+      setDisplayReels(result.reels); // show final symbols
+      setMessage(result.message);
+
+      const newGold = character.gold + result.win;
+
+      const { error } = await supabase
+        .from("Characters")
+        .update({ gold: newGold })
+        .eq("id", character.id);
+
+      if (!error) {
+        await refreshCharacter();
+      } else {
+        console.error("Failed to update gold:", error);
+        setMessage("An error occurred while updating your gold.");
+      }
+
+      await supabase.from("CasinoPlays").insert({
+        character_id: character.id,
+        bet: betAmount,
+        results: result.reels.join(""),
+        win_amount: result.win,
+        jackpot: result.reels.every((s) => s === "🧿"),
+      });
+
+      setIsSpinning(false);
+    }, 1000);
+  };
+
   if (!character && !loading) {
     return (
       <div className="casino-page">
@@ -38,48 +89,6 @@ export default function LongrockCasino() {
       </div>
     );
   }
-  const handleSpin = async () => {
-    if (betAmount > character.gold) {
-      setMessage("You don't have enough gold to make that bet.");
-      return;
-    }
-
-    if (isSpinning) return;
-    setMessage("");
-    setIsSpinning(true);
-
-    setTimeout(async () => {
-      const result = spinReel(betAmount);
-      setReels(result.reels);
-      setMessage(result.message);
-
-      // New gold total
-      const newGold = character.gold + result.win;
-
-      // Update gold in Supabase
-      const { error } = await supabase
-        .from("Characters")
-        .update({ gold: newGold })
-        .eq("id", character.id);
-
-      if (error) {
-        console.error("Failed to update gold:", error);
-        setMessage("An error occurred while updating your gold.");
-      } else {
-        // Refresh character context so gold updates visually
-        await refreshCharacter();
-      }
-      await supabase.from("CasinoPlays").insert({
-        character_id: character.id,
-        bet: betAmount,
-        results: result.reels.join(""),
-        win_amount: result.win,
-        jackpot: result.reels.every((s) => s === "🧿"), // optional logic to flag jackpots
-      });
-
-      setIsSpinning(false);
-    }, 1200);
-  };
 
   return (
     <div className="casino-page">
@@ -101,6 +110,7 @@ export default function LongrockCasino() {
         />
         gold
       </label>
+
       {character && (
         <p className="casino-gold">
           Current Gold: <strong className="goldStrong">{character.gold}</strong>
@@ -108,7 +118,7 @@ export default function LongrockCasino() {
       )}
 
       <div className="reel-box">
-        {reels.map((r, i) => (
+        {displayReels.map((r, i) => (
           <span key={i} className="reel">
             {r}
           </span>
@@ -124,6 +134,7 @@ export default function LongrockCasino() {
       </button>
 
       <div className="result-message">{message}</div>
+
       <div className="payout-table">
         <h3>🎁 Payout Rules</h3>
         <ul>
