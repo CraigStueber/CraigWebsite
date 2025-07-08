@@ -15,7 +15,7 @@ export default function LongrockCasino() {
   const [message, setMessage] = useState("");
   const [isSpinning, setIsSpinning] = useState(false);
   const [betAmount, setBetAmount] = useState(1);
-
+  const [resultType, setResultType] = useState("");
   const { character, loading, refreshCharacter } = useCharacter();
   const navigate = useNavigate();
 
@@ -35,6 +35,7 @@ export default function LongrockCasino() {
   }, [isSpinning]);
 
   const handleSpin = async () => {
+    setResultType("");
     if (betAmount > character.gold) {
       setMessage("You don't have enough gold to make that bet.");
       return;
@@ -49,6 +50,15 @@ export default function LongrockCasino() {
       if (spinInterval) clearInterval(spinInterval); // stop animation
 
       const result = spinReel(betAmount);
+      if (result.reels.every((s) => s === "🧿")) {
+        setResultType("jackpot");
+      } else if (result.win > 0) {
+        setResultType("win");
+      } else if (result.win < 0) {
+        setResultType("loss");
+      } else {
+        setResultType(""); // partial match or no animation
+      }
       setDisplayReels(result.reels); // show final symbols
       setMessage(result.message);
 
@@ -117,7 +127,7 @@ export default function LongrockCasino() {
         </p>
       )}
 
-      <div className="reel-box">
+      <div className={`reel-box ${resultType}`}>
         {displayReels.map((r, i) => (
           <span key={i} className="reel">
             {r}
@@ -133,7 +143,7 @@ export default function LongrockCasino() {
         {isSpinning ? "Spinning..." : `Pull the Lever (${betAmount}g)`}
       </button>
 
-      <div className="result-message">{message}</div>
+      <div className={`result-message ${resultType}`}>{message}</div>
 
       <div className="payout-table">
         <h3>🎁 Payout Rules</h3>
