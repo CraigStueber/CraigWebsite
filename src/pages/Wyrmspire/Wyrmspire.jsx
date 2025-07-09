@@ -14,6 +14,12 @@ function Wyrmspire() {
         >
           🎲 Longrock Casino
         </button>
+        <button
+          className="casino-button"
+          onClick={() => navigate("/arm-wrestling-game")}
+        >
+          Arm Wrestling Challenge
+        </button>
         <h1 className="wyrmspire-title">The Doom of Wyrmspire</h1>
       </div>
       <WorldTabs />
