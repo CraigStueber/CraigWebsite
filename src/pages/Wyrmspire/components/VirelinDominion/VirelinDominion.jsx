@@ -1,6 +1,7 @@
 import React from "react";
 import "./VirelinDominion.styles.css";
 import GreenRoad from "../../../../assets/greenRoad.png";
+import Root from "../../../../assets/Root.png";
 export default function VirelinDominion() {
   return (
     <div className="virelin-container">
@@ -76,7 +77,16 @@ export default function VirelinDominion() {
         . In their eyes, the world outside the forest is burning, and it is not
         their fire to put out.
       </p>
-
+      <h2 className="virelin-subtitle">The Root</h2>
+      <p>
+        The Root lies at the heart of the elvish kingdom — a dead zone where the
+        forest has withered into twisted husks and bone-dry soil. Once sacred
+        ground, it now festers with rot and silence. No birds sing. No leaves
+        grow. Trees lie toppled like fallen sentinels, their roots clawing at
+        the sky. The elves call it a scar upon the Cycle — a place where life
+        was not simply taken, but unwoven.
+      </p>
+      <img src={Root} alt="The Root" className="root" />
       <p>
         <small>*Yes Caer'Thalor is a complete rip off of Orion</small>
       </p>

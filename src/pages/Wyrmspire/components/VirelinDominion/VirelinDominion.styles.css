@@ -9,6 +9,9 @@
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(34, 56, 34, 0.2);
 }
+.root {
+  max-width: 100%;
+}
 @media (max-width: 600px) {
   .virelin-container {
     padding: 5px;
