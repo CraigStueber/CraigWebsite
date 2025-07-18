@@ -12,7 +12,7 @@ import encounters3 from "./encounterSession3"; // new import
 import encounters4 from "./encounterSession4"; // new import
 function LastTimeOn() {
   const [activeTab, setActiveTab] = useState("recap");
-  const [activeSession, setActiveSession] = useState("session3");
+  const [activeSession, setActiveSession] = useState("session4");
 
   const getData = () => {
     if (activeTab === "recap") {
