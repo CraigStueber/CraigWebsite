@@ -3,6 +3,9 @@ import Harven from "../../../../assets/Harven.png";
 import Korda from "../../../../assets/Korda.png";
 import Revna from "../../../../assets/Revan.png";
 import Taggin from "../../../../assets/Taggin.png";
+import Cedric from "../../../../assets/recap/session3/Cedric.png";
+import Morgrave from "../../../../assets/recap/session3/Morgrave.png";
+import Ghost from "../../../../assets/recap/session2/Ghost.png";
 import "./NPC.styles.css";
 
 const braeforgeNPCs = [
@@ -46,6 +49,45 @@ Some call him a madman. Others… are starting to listen.
 
 Whispers say he predicted the first fissure. Others claim his book glows faintly in the dark, written in languages only the mountain remembers.`,
     img: Harven,
+  },
+  {
+    name: "King Dûmarin Stonebind",
+    quote: "I was memory’s last witness. Now… you are.",
+    bio: `Over ten thousand years ago, King Dûmarin Stonebind ruled the dwarven citadel of Barakzhar — a master of forge, faith, and the arcane bond between stone and spirit. Known as the last Forgemind, he helped forge the ancient Pact between dwarves, elves, and dragons to contain the Wyrm That Breathed All.
+
+He died sealing the Wyrmgate beneath Khar Grunn, binding his soul to the Cycle and sacrificing his life to preserve the world.
+
+Now he lingers as a ghost — not fully conscious, but tethered to memory and purpose. He appears only when the ancient pendant pulses near the shattered gate, speaking in fragments of prophecy and pain. His eyes do not burn with anger or sorrow, but with the weight of remembrance.
+
+Bound to the Wyrmgates, he cannot rest until the Pact is reforged… or utterly broken.`,
+    img: Ghost,
+  },
+
+  {
+    name: "Sir Cedric DuVayne",
+    quote:
+      "Please, come in. You must be exhausted. Stay for dinner — I insist.",
+    bio: `Sir Cedric DuVayne is a relic of another age — a nobleman preserved by etiquette, power, and something far colder than time. He has not aged in over a century, though his charm remains disarmingly intact. Clad in impeccable velvet and lace, he moves with unhurried grace and speaks as though every sentence were a toast.
+
+His manor on the edge of Braeforge is breathtaking: roses bloom out of season, fountains run red with Parth Tree sap, and his servants do not blink. Visitors often remark that the halls seem to *breathe* — and that mirrors refuse to show him clearly.
+
+No one recalls inviting him to Braeforge. And yet, he’s always been here.
+
+Most avoid his estate after dark. The wise never accept a second glass of wine.`,
+    img: Cedric,
+  },
+  {
+    name: "Professor Morgrave",
+    quote:
+      "Time bends like copper wire. I bent it! Bent it *toward* Dimitri! Or… away from him? Wait—where is my spoon?!",
+    bio: `Once one of the realm’s brightest minds, Professor Morgrave was a scholar of arcane physics, dimensional theory, and poor impulse control. He mentored Dimitri in their university days, often pushing boundaries no other mage dared approach.
+
+Everything changed after Dimitri vanished. Obsessed with finding him, Morgrave performed a forbidden ritual designed to twist time itself toward a lost soul. It worked. But it shattered his mind like glass under pressure.
+
+Now he wanders Longrock, muttering equations to squirrels, building machines that hum when no one watches, and carrying an empty birdcage named “Professor Two.” His brilliance flickers through the madness — but for how long?
+
+He insists he can still *see* Dimitri’s time-thread. He just needs a little more twine. And maybe some soup.`,
+    img: Morgrave,
   },
 ];
 

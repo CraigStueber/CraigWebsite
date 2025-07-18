@@ -36,6 +36,14 @@ import SmashFix from "../../../../assets/recap/session3/SmashFix.png";
 import Letter from "../../../../assets/recap/session3/Letter.png";
 import FlyingMachine from "../../../../assets/recap/session3/FlyingMachine.png";
 import Longrock from "../../../../assets/longrock.png";
+
+import BodyBurning from "../../../../assets/recap/session4/BodyBurning.png";
+import Rodeo from "../../../../assets/recap/session4/Rodeo.png";
+import DimitriTalk from "../../../../assets/recap/session4/DimitriTalk.png";
+import DruidRitual from "../../../../assets/recap/session4/DruidRitual.png";
+import IggyTalking from "../../../../assets/recap/session4/IggyTalking.png";
+import Requests from "../../../../assets/recap/session4/Requests.png";
+import SashaCrown from "../../../../assets/recap/session4/SashaCrown.png";
 export const recapData = [
   {
     title: "1. A Funeral, A Favor, and a Flicker of Magic",
@@ -258,5 +266,50 @@ export const recapDataSession3 = [
     description:
       "The party awoke bound beneath the forest canopy. Silent elven warriors stood above them, their faces unreadable, weapons ready.",
     image: Elves,
+  },
+];
+
+export const recapDataSession4 = [
+  {
+    title: "Talk Too Much, Get Thorned",
+    description:
+      "The party woke up wrapped in clingy, magical vines. Any movement or sound made them tighten. Dimitri, ever the talker, kept sharing his findings with the group—even as the vines grew thorns and poisoned him for it. He kept talking anyway. Determination or madness? You decide.",
+    image: DimitriTalk,
+  },
+  {
+    title: "Nature’s HR Department",
+    description:
+      "Once the party stopped thrashing, *she* appeared—draped in moss and bark, more spirit than woman. The druid sat cross-legged in the dirt, drawing symbols into the moss. As she finished, tiny bugs erupted from the ground and flew straight up the party’s noses. Gross? Yes. Effective? Also yes. Suddenly, they could understand her... sort of.\n\nShe didn’t use words. Her speech came through the soft chime of enchanted bells stitched into her robes, the rhythms of birdsong, and the graceful tension in her posture. The bells were her words, the birds her grammar, and her stance carried the meaning. She wasn’t just speaking—she was composing. And she was reading them just as much as they were reading her. She asked the party a couple questions.",
+    image: DruidRitual,
+  },
+  {
+    title: "Elvish Lessons with Professor Ol'Iggy",
+    description:
+      "After proving their intentions to the druid, the party was brought before the Council—five silent figures wearing carved wooden masks: Fox, Bear, Serpent, Moth, and Hawk. They spoke in a fragmented, ancient form of Elvish that sounded like someone trying to remember a lullaby from centuries ago.\n\nLuckily, Ol’Iggy’s weird mumbling hobby finally paid off. He was the only one who could understand them, and through a series of hilariously awkward exchanges, he became the party’s translator. There were pauses. There were questionable word choices. There may have been interpretive grunting. But in the end, he got the job done. Professor Ol’Iggy, linguist extraordinaire.",
+    image: IggyTalking,
+  },
+  {
+    title: "Terms, Translation, and a Dagger for Rose",
+    description:
+      "With Ol’Iggy still playing interpreter, the party learned their task: descend into the Root and repair the broken WyrmGate infecting the forest. Dimitri, ever the negotiator, teamed up with Ol’Iggy to make one thing crystal clear—they expected to walk out of this job alive. Meanwhile, Rose had her priorities straight: if they were risking their necks, she wanted something shiny. The council obliged, bestowing her with a sleek green dagger that shimmered like fresh spring leaves. Deal struck. Stakes set. Into the Root they’d go.",
+    image: Requests,
+  },
+  {
+    title: "Into the Root (and Out with Style)",
+    description:
+      "Once the party stepped into the Root, the forest handed back their gear and made the rules crystal clear: don’t come back until the job’s done. Ol’Iggy was entrusted with a communication stone and a moss-smudged map—making him the team’s official contact with the outside world. Meanwhile, one curious elf tried to trade Dimitri for his beloved robot dog, Sasha. The answer was a firm no. Instead, Sasha left the forest looking fabulous in a leafy green vest and what *was* a flower crown… until Rose swiped it without hesitation. Classic.",
+    image: SashaCrown,
+  },
+  {
+    title: "Zombie Shrooms and Sleepless Nights",
+    description:
+      "That night, camped on the forest's edge, the group was rudely visited by three very moldy, very dead-looking humans. They dropped fast, but not before stinking up the place. Hemlock burned the bodies and then stared into the smoke all night, contemplating every life decision that led him here.",
+    image: BodyBurning,
+  },
+  {
+    title: "The Elkening",
+    description:
+      "The party reached the cave, camped again, and awoke to a boss battle: a massive elk corrupted by mushrooms and madness. Dimitri went full cowboy and leapt on its back for a heroic five seconds before being airborne again. The team scrambled to open the gate as he held the beast off. Then the party gave up on the gate and focused on the threat at hand, killing the Huge Elk. Victory claimed.",
+    image: Rodeo,
   },
 ];
