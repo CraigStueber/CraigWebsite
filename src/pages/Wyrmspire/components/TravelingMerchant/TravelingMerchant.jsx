@@ -14,6 +14,21 @@ function TravelingMerchant() {
   const [showTalk, setShowTalk] = useState(false);
 
   const { character, relationships, loading } = useCharacter();
+  const [merchants, setMerchants] = useState([]);
+  const [selectedMerchantId, setSelectedMerchantId] = useState(1); // default to Gruk
+
+  useEffect(() => {
+    const fetchMerchants = async () => {
+      const { data, error } = await supabase.from("Merchant").select("*");
+      if (error) {
+        console.error("Error fetching merchants:", error);
+      } else {
+        setMerchants(data);
+      }
+    };
+
+    fetchMerchants();
+  }, []);
 
   const { refreshCharacter } = useCharacter();
   useEffect(() => {
@@ -80,8 +95,25 @@ function TravelingMerchant() {
         </div>
       </div>
       <div className="merchant-layout">
-        <MerchantCard merchantId={1} />
-        <Inventory merchantId={1} />
+        <div>
+          <MerchantCard merchantId={selectedMerchantId} />
+          <div className="merchant-selector">
+            <label htmlFor="merchant-select">Choose Merchant: </label>
+            <select
+              id="merchant-select"
+              value={selectedMerchantId}
+              onChange={(e) => setSelectedMerchantId(Number(e.target.value))}
+            >
+              {merchants.map((merchant) => (
+                <option key={merchant.id} value={merchant.id}>
+                  {merchant.name}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        <Inventory merchantId={selectedMerchantId} />
       </div>
       {showBuyHelp && (
         <div
@@ -120,8 +152,11 @@ function TravelingMerchant() {
       )}
       {showTalk && (
         <TalkToMerchantModal
-          merchantId={1}
-          merchantName="Gruk"
+          merchantId={selectedMerchantId}
+          merchantName={
+            merchants.find((m) => m.id === selectedMerchantId)?.name ||
+            "Merchant"
+          }
           onClose={() => setShowTalk(false)}
         />
       )}

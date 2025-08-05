@@ -118,3 +118,35 @@
     width: auto;
   }
 }
+.merchant-selector {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: #5a3e1b;
+}
+
+.merchant-selector label {
+  font-size: 1rem;
+}
+
+.merchant-selector select {
+  background-color: #fff8e1;
+  border: 2px solid #a97c3d;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 1rem;
+  color: #5a3e1b;
+  font-weight: 500;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s ease;
+}
+
+.merchant-selector select:focus {
+  outline: none;
+  border-color: #d4af66;
+  box-shadow: 0 0 0 2px #ffe8b0;
+  background-color: #fff6dc;
+}
