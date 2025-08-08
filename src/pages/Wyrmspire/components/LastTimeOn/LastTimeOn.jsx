@@ -14,7 +14,7 @@ import encounters4 from "./encounterSession4"; // new import
 import encounters5 from "./ecncounterSession5";
 function LastTimeOn() {
   const [activeTab, setActiveTab] = useState("recap");
-  const [activeSession, setActiveSession] = useState("session4");
+  const [activeSession, setActiveSession] = useState("session5");
 
   const getData = () => {
     if (activeTab === "recap") {
