@@ -44,6 +44,17 @@ import DruidRitual from "../../../../assets/recap/session4/DruidRitual.png";
 import IggyTalking from "../../../../assets/recap/session4/IggyTalking.png";
 import Requests from "../../../../assets/recap/session4/Requests.png";
 import SashaCrown from "../../../../assets/recap/session4/SashaCrown.png";
+
+import CultArrival from "../../../../assets/recap/session5/CultArrival.png";
+import DungeonEntrance from "../../../../assets/recap/session5/DungeonEntrance.png";
+import GearDoor from "../../../../assets/recap/session5/GearDoor.png";
+import GatePoem from "../../../../assets/recap/session5/GatePoem.png";
+import HemlockResting from "../../../../assets/recap/session5/HemlockResting.png";
+import ChapelLoot from "../../../../assets/recap/session5/ChapelLoot.png";
+import GhostChapel from "../../../../assets/recap/session5/GhostChapel.png";
+import UndeadCommander from "../../../../assets/recap/session5/UndeadCommander.png";
+import VharaxitharVision from "../../../../assets/recap/session5/VharaxitharVision.png";
+
 export const recapData = [
   {
     title: "1. A Funeral, A Favor, and a Flicker of Magic",
@@ -311,5 +322,61 @@ export const recapDataSession4 = [
     description:
       "The party reached the cave, camped again, and awoke to a boss battle: a massive elk corrupted by mushrooms and madness. Dimitri went full cowboy and leapt on its back for a heroic five seconds before being airborne again. The team scrambled to open the gate as he held the beast off. Then the party gave up on the gate and focused on the threat at hand, killing the Huge Elk. Victory claimed.",
     image: Rodeo,
+  },
+];
+export const recapDataSession5 = [
+  {
+    title: "The Greenlight Riddle and the Elk’s Last Laugh",
+    description:
+      "After far too much thinking and not enough standing, the group discovered the door puzzle was solved simply by all four of them being near it. With a groan and a glow, it opened. Before stepping through, Dimitri casually decapitated the corrupted elk—because why not? Etched into the glowing green stone above them, a haunting poem described the fall of the five WyrmGates, foreshadowing what's to come.",
+    image: GatePoem,
+  },
+  {
+    title: "Lightning, Lies, and the One Who Remembers",
+    description:
+      "As the ancient gate creaked open, the skies darkened and a bolt of lightning slammed into the earth nearby — heralding the arrival of a high-ranking cultist and his acolytes. Calm, cryptic, and unsettlingly polite, the cultist claimed he had been searching for someone — and the Great One had finally shown him it was *them*. He spoke of lost immortality, stolen by the so-called 'new gods,' and declared this world a lie crafted to soften the strong. The party… mostly ignored him. Few questions, no punches. In response, the cultist froze them in time with eerie ease and stepped through the open gate, leaving only silence and a growing sense of dread.",
+    image: CultArrival,
+  },
+  {
+    title: "Hemlock Rests, the World Does Not Wait",
+    description:
+      "After the cultist vanished and time resumed, the group found themselves shaken but unharmed — and Hemlock, in true Hemlock fashion, declared it nap o’clock. While he settled in for a short rest... then a long one... the rest of the party decided they'd seen enough of his napping form and ventured ahead without him. Who needs a warlock when you’ve got Sasha?",
+    image: HemlockResting,
+  },
+  {
+    title: "The Hall of Faded Glory",
+    description:
+      "While Hemlock snoozed, Ol’Iggy, Rose, and Dimitri pressed forward into the dungeon’s first hall — a long, earthen tunnel, impossibly held together by ancient magic. Despite being dug through dirt, the walls shimmered with subtle enchantment, making the space feel strangely serene. At its end lay a grand chamber, once resplendent but now choked by the weight of centuries. Dust blanketed shattered tiles, and the echoes of old grandeur whispered from the cracks. Three ominous doors awaited them.",
+    image: DungeonEntrance,
+  },
+  {
+    title: "Ghost Choir and Holy Violence",
+    description:
+      "Choosing the door on the right, Rose quickly picked the lock - somehow not triggering the trap! Afterwards - the trio stepped into a long-forgotten chapel. Though the pews were broken and the walls crumbled, there was still a sacred beauty to the place — especially the ghostly choir of three spirits singing a hauntingly beautiful hymn at the altar. Six skeletons sat in eerie silence, as if attending service. Ol’Iggy, never one for subtlety, charged in with Spirit Guardians blazing. Rose and Dimitri backed him up from afar, quickly taking out the singers before they could summon a specter. The fight could’ve been much worse — but divine aggression and good aim saved the day.",
+    image: GhostChapel,
+  },
+  {
+    title: "Loot, Lockdown, and a Note for Hemlock",
+    description:
+      "With the ghostly choir silenced and skeletons smashed, the trio wasted no time looting the ruined chapel. The haul? Substantial. Ancient relics, long-buried trinkets, and three shiny new magical items — one for each of them. To celebrate, they welded the chapel door shut and set up camp inside, safe and smug. Before settling in, they scribbled a note on the door for Hemlock.",
+    image: ChapelLoot,
+  },
+  {
+    title: "Hemlock Returns, Gears Give Way",
+    description:
+      "After his beauty rest, Hemlock finally reunited with the crew — just in time for a bit of light lock-breaking. The group turned their attention to the door on the left, which was sealed by three complex gear-locks. After some debate (and zero patience for puzzles), Dimitri stepped up with his trusty magic wrench and dismantled each mechanism with a satisfying THWACK as he threw his wrench at the gears one by one. The door creaked open, ready to reveal what lay beyond.",
+    image: GearDoor,
+  },
+  {
+    title: "Hold the Line, Undead Edition",
+    description:
+      "As they stepped into the newly unlocked chamber, a ghostly voice rang out — 'HOLD THE LINE!' Combat erupted. Four skeletal soldiers and a commanding undead woman sprang to unlife, forcing the party into action. Two specters flanked them from the rear in round two, but the group quickly adapted. With arrows, spells, and grit, they tore through the skeletons and dropped the undead commander. As her body crumbled, the specters faded into nothingness — their purpose undone.",
+    image: UndeadCommander,
+  },
+  {
+    title: "The Voice Beneath: Vharaxithar's Vision",
+    description:
+      "As the Blighted Captain fell, green fire licked through the cracks in the stone, dimming the light and pulling the party into a shared vision — not a memory, but something older. They stood at the edge of an endless chasm beneath a black, star-pulsing sky. Obsidian pillars loomed around them, carved in runes long forgotten. From the depths came a voice — not heard, but felt — the god-dragon Vharaxithar. He spoke of stolen purpose, false gods, and a world built as a cage. The party saw themselves remade: cracked stone skin, ember eyes, weapons burning green. A spinning gate appeared, offering a future without hunger, without war... without gods. Vharaxithar’s final words echoed with promise and threat: 'You are the key. You opened the gate once. You can seal it. Or join me. And never kneel again.'",
+    image: VharaxitharVision,
   },
 ];

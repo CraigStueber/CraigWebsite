@@ -6,9 +6,25 @@ import Taggin from "../../../../assets/Taggin.png";
 import Cedric from "../../../../assets/recap/session3/Cedric.png";
 import Morgrave from "../../../../assets/recap/session3/Morgrave.png";
 import Ghost from "../../../../assets/recap/session2/Ghost.png";
+import CultArrival from "../../../../assets/recap/session5/CultArrival.png";
+import Cult from "../../../../assets/recap/session3/Cult.png";
 import "./NPC.styles.css";
 
 const braeforgeNPCs = [
+  {
+    name: "The Doctrine of the Second Ember",
+    quote:
+      "The flame is not your enemy. It is the mirror. Step into it, and see what the gods tried to burn away.",
+    bio: "The Doctrine of the Second Ember is a zealous cult devoted to restoring a forgotten truth they believe was stolen by the so-called New Gods. To its followers, this world is a lie — a soft, comfortable prison meant to erase the differences between races, dull the spirit, and suppress the soul’s true potential. They teach that the Great One, a primordial force of fire and order, once granted eternal life and clarity of purpose to mortals. In contrast, the New Gods gave freedom and comfort — and in doing so, severed the bloodlines, cultures, and ancient powers that made each race unique. The cult views unity as a curse disguised as peace. To them, magic has become reckless, souls have been leashed, and the world has grown quiet in all the wrong ways. They await the Second Ember — a divine reckoning that will burn away the illusion and return mortals to their true, primal forms.",
+    img: Cult,
+  },
+  {
+    name: "The Harbinger of the Second Ember",
+    quote:
+      "The new gods gave you comfort. The Great One gives you truth. Which is more sacred?",
+    bio: "The Harbinger of the Second Ember is a high-ranking cult leader cloaked in charred red robes and surrounded by an aura of calm authority. His voice carries with it the weight of prophecy, not rage — he speaks like a teacher revealing forgotten truths, not a villain seeking chaos. Though his exact origins are unknown, cultists whisper that he once walked as a mortal until the Great One revealed the memory of what came before. Since then, he has traveled across broken lands gathering those who feel erased or disillusioned. The Harbinger believes death is not an end but a threshold — and he offers all who listen a chance to reclaim their original shape, free of divine lies. Even in battle, he shows restraint, choosing words over weapons when possible, and sparing those who seem unsure. In his eyes, the players are not enemies — they are lost souls on the verge of remembering who they truly are.",
+    img: CultArrival,
+  },
   {
     name: "Revna Blackspur",
     quote: "Steel, silence, and keep your back to stone.",
