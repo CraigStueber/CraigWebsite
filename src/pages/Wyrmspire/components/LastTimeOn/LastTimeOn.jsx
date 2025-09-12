@@ -82,7 +82,7 @@ function LastTimeOn() {
         </button>
       </div>
 
-      <div className="button-group">
+      <div className="button-group tabs">
         <button
           className={activeTab === "recap" ? "active" : ""}
           onClick={() => setActiveTab("recap")}

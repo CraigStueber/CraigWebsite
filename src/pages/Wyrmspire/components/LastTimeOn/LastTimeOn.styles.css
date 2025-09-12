@@ -107,6 +107,7 @@
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap; /* allow wrapping */
 }
 
 .button-group button {
@@ -119,10 +120,33 @@
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.2s ease;
+  flex: 1 1 auto; /* flexible sizing */
 }
 
-.button-group button.active {
-  background-color: #4b2900;
-  color: #fff9e6;
-  border-color: #4b2900;
+@media (max-width: 900px) {
+  .button-group {
+    justify-content: center;
+  }
+
+  .button-group button {
+    flex: 1 1 calc(33.333% - 1rem); /* 3 buttons per row with gap */
+    max-width: calc(33.333% - 1rem);
+  }
+}
+/* Default stays as is */
+.button-group.tabs {
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* On smaller screens (<= 900px) */
+@media (max-width: 900px) {
+  .button-group.tabs {
+    gap: 0; /* remove extra gap */
+  }
+
+  .button-group.tabs button {
+    flex: 1 1 50%; /* each button takes half */
+    max-width: 50%;
+  }
 }
