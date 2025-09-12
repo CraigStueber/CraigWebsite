@@ -1,0 +1,45 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  border: 3px solid #012222;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  color: rgb(2, 2, 80);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.modal-title {
+  color: rgb(1, 1, 66);
+}
+.modal-author {
+  color: rgb(1, 1, 66);
+}
+.clickable-row {
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  border: 2px solid #030122;
+}
+.table-header {
+  background-color: #030122;
+  color: white;
+  border: 2px solid #030122;
+}
+/* Hide description column on small screens */
+@media (max-width: 900px) {
+  .description-cell {
+    display: none;
+  }
+}

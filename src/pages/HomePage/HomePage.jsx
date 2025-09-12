@@ -7,6 +7,7 @@ function HomePage() {
       <h1 className="homepage-title">
         Thanks for Visiting — Will Build My Portfolio Site One Day
       </h1>
+
       <h2 className="homepage-subtitle">Are you here for Doom of Wyrmspire?</h2>
       <p className="homepage-text">
         If so, please click the button below and go look at what is going on in
@@ -14,6 +15,13 @@ function HomePage() {
       </p>
       <a href="/wyrmspire" className="homepage-link">
         Go to Wyrmspire
+      </a>
+      <h2 className="homepage-subtitle">Megan's List</h2>
+      <p className="homepage-text">
+        If you are here for Megan's List, please click the button below to go to
+      </p>
+      <a href="/meganslist" className="homepage-link">
+        Go to Megan's List
       </a>
     </div>
   );

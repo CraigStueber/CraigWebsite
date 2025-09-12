@@ -55,6 +55,15 @@ import GhostChapel from "../../../../assets/recap/session5/GhostChapel.png";
 import UndeadCommander from "../../../../assets/recap/session5/UndeadCommander.png";
 import VharaxitharVision from "../../../../assets/recap/session5/VharaxitharVision.png";
 
+import BetterThan from "../../../../assets/recap/session6/BetterThan.png";
+import Charge1 from "../../../../assets/recap/session6/Charge1.png";
+import DogPile from "../../../../assets/recap/session6/DogPile.png";
+import Grammy from "../../../../assets/recap/session6/Grammy.png";
+import CannonBall from "../../../../assets/recap/session6/CannonBall.png";
+import HemlockBA from "../../../../assets/recap/session6/HemlockBA.png";
+import Pull from "../../../../assets/recap/session6/Pull.png";
+import HemlockStuffy from "../../../../assets/recap/session6/HemlockStuffy.png";
+
 export const recapData = [
   {
     title: "1. A Funeral, A Favor, and a Flicker of Magic",
@@ -378,5 +387,55 @@ export const recapDataSession5 = [
     description:
       "As the Blighted Captain fell, green fire licked through the cracks in the stone, dimming the light and pulling the party into a shared vision — not a memory, but something older. They stood at the edge of an endless chasm beneath a black, star-pulsing sky. Obsidian pillars loomed around them, carved in runes long forgotten. From the depths came a voice — not heard, but felt — the god-dragon Vharaxithar. He spoke of stolen purpose, false gods, and a world built as a cage. The party saw themselves remade: cracked stone skin, ember eyes, weapons burning green. A spinning gate appeared, offering a future without hunger, without war... without gods. Vharaxithar’s final words echoed with promise and threat: 'You are the key. You opened the gate once. You can seal it. Or join me. And never kneel again.'",
     image: VharaxitharVision,
+  },
+];
+export const recapDataSession6 = [
+  {
+    title: "Pull, Not Push",
+    description:
+      "The party gathered at the imposing double doors, choosing the main entrance as their path forward. With Rose mysteriously absent (unless combat suddenly broke out), Dimitri took the lead, carefully inspecting the left door for traps. Finding none, he gave it a confident push. Nothing happened. Then Ol’ Iggy, with all the subtlety of a brick to the face, strolled up to the right door and—thinking outside the box—pulled. The door swung open… and immediately rewarded him with a fire trap to the chest. Flames roared, beard sizzled, and Ol’Iggy found himself smelling suspiciously like crispy bacon.Meanwhile, Dimitri stood off to the side, perfectly safe, doubled over in laughter and reminding the dwarf: 'you smell like bacon now.' Lesson learned: when in doubt, pull first, check for traps later.",
+    image: Pull,
+  },
+  {
+    title: "Cannon Ball!!!",
+    description:
+      "The party stepped into a strange hallway—smooth, round dirt walls glowing with an eerie magical light, though no source could be found. At the far end, tangled roots formed a wall etched with a circular symbol. As Ol’ Iggy approached, the carving flared to life, and with a hum of energy, a portal swirled open in its center. One by one, the party cautiously stepped through the portal. Everyone made it across safely—until Ol’ Iggy’s turn. Instead of walking through like a normal adventurer, he backed up, took a running start, and hurled himself in with a full-on cannonball. Unfortunately, Rose and Hemlock were standing at the landing on the other side—a narrow stairway. Ol’ Iggy’s dramatic entrance turned into a three-person bowling strike, sending all three tumbling down the steps in a mess of limbs and curses. The final pileup ended with Ol’ Iggy sprawled proudly on top of the heap like a champion. Lesson learned: portals are not pools, but try telling that to a dwarf.",
+    image: CannonBall,
+  },
+  {
+    title: "When We Are Needed",
+    description:
+      "Stepping through the portal, the party found themselves on a white dirt path where vibrant flowers turned to watch their every move; beyond lay a patch of low grass, thick woods, and strange, wondrous creatures—giant butterflies, deer with mothlike antennae, and silver-furred rabbits glinting in the light. A calm, resonant voice filled the air: the Elven Counselor, reminding them that “the portal does not take you where you want to be, but where you are needed to be,” and warning that 'the only violence that exists in this place is what you bring with you. Here, there is no violence.'",
+    image: DogPile,
+  },
+  {
+    title: "Hemlock the Stuffy",
+    description:
+      "As the party followed the white dirt path, they came across a strange sight: wilted flowers and lifeless animals scattered along the way. Dimitri knelt to replant the flowers while Ol’Iggy muttered prayers over the fallen beasts. Suddenly, from the trees stormed a towering Treeman and a raging Owlbear. The Owlbear charged directly at Hemlock, who had been standing idly by, and in a brutal assault dropped him to zero hit points. Thinking fast, Dimitri conjured a giant stuffed toy likeness of Hemlock and, in an act of bizarre brilliance, offered it to the Owlbear in exchange. Incredibly, the beast accepted the trade, sparing Hemlock’s life in favor of his new plushy prize.",
+    image: HemlockStuffy,
+  },
+  {
+    title: "And the Grammy Goes To…",
+    description:
+      "As Hemlock was being mauled, Rose quickly realized that the wooden guardians only attacked those who ignored the fallen animals and plants. Thinking fast, she dropped to her knees and began dramatically weeping over the dead creatures. With a flawless nat 20 performance, her act was so convincing that even the Treeman believed her grief. While Dimitri dutifully replanted the flowers and Ol’Iggy solemnly buried the animals, Rose kept up her theatrical display—carefully avoiding any real work. Once the labor was complete and the guardians were appeased, Ol’Iggy revived a battered Hemlock, leaving Rose with both clean hands and an award-worthy performance.",
+    image: Grammy,
+  },
+  {
+    title: "Make a Choice",
+    description:
+      "Farther down the road, the party confronted the cult leader, who laid out his ultimatum: join the cult, awaken the dragon god, and help remake the world—or stand against him and fight to close the gates. He revealed the only way to seal the gates was to kill Ol’Iggy, the last living descendant of the dwarf king who closed them the first time. Without missing a beat, Ol’Iggy turned to Dimitri and struck a grim bargain: if Dimitri helped close the gates, he would be the one allowed to kill him. Dimitri lit up at the offer—almost a little too excited—but then, with perfect comic timing, turned back to the cult leader and asked, “Do you have a better deal?” The cult leader, clearly confused, countered with promises of godlike power. The party, unimpressed, told him to shove it, proving once again that only a true friend will let you kill them.",
+    image: BetterThan,
+  },
+  {
+    title: "Elephants Hit Hard!!",
+    description:
+      "No sooner had the party made their choice than a booming voice rang out: “I knew you would make the right choice!” From the trees thundered a towering Elephant warrior, twenty feet tall and wielding a massive stone sword, who immediately clashed with the cult leader in a ground-shaking duel. But while the party watched this titanic battle, they noticed the real danger—the cultists behind the leader working to dismantle the Wyrmgate. Without hesitation, the team drew their weapons and charged. In a flash of arcane energy, three spectral guardians appeared to defend the cultists, and the battlefield erupted into chaos.",
+    image: Charge1,
+  },
+  {
+    title: "Hemlock Eldritch Blasted EVERYONE",
+    description:
+      "The fight kicked off at a dead sprint, the party racing the clock to stop the cultists from tearing down the Wyrmgate. Ol’Iggy roared into the fray, slamming into the largest guardian, while Dimitri danced between the other two, casually putting a bolt right through one cultist. Then came Hemlock’s big moment—his first eldritch blast of the battle. With all the dramatic flair of a hero about to save the day… he blasted Rose directly in the back. The look on her face said it all. Quickly trying to recover, Hemlock fired again—this time actually at the enemy—sending one cultist flying into the Fey and dropping the second like a sack of potatoes. By the end, the cultists were toast, the guardians were faltering, and the cult leader took one look at the towering Elephant warrior plus this chaos-loving crew and decided retreat was the better part of villainy. As for Hemlock, well… the party will never let him forget that his first “big hit” of the fight was friendly fire.",
+    image: HemlockBA,
   },
 ];

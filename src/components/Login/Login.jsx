@@ -1,23 +1,39 @@
 // src/components/Login/Login.jsx
-import { useState } from "react";
+import { useState, useEffect, useMemo } from "react";
 import supabase from "../../client";
-import { useNavigate } from "react-router-dom";
-import "./Login.styles.css"; // Ensure you have a CSS file for styling
-function Login() {
+import { useNavigate, useLocation } from "react-router-dom";
+import { useSession } from "../../context/SessionContext";
+import "./Login.styles.css";
+
+function Login({ redirectTo = "/wyrmspire" }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
+  const { userId, setUserId, loading: sessionLoading } = useSession();
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Prefer redirect target from navigation state, then prop, then default
+  const finalRedirect = useMemo(() => {
+    return location.state?.redirectTo || redirectTo || "/wyrmspire";
+  }, [location.state, redirectTo]);
+
+  // If already logged in, redirect automatically (wait for session to finish loading)
+  useEffect(() => {
+    if (!sessionLoading && userId) {
+      navigate(finalRedirect, { replace: true });
+    }
+  }, [sessionLoading, userId, finalRedirect, navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
     setLoading(true);
     setMessage("");
 
-    const { error } = await supabase.auth.signInWithPassword({
+    const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
@@ -25,7 +41,9 @@ function Login() {
     if (error) {
       setMessage("Login failed: " + error.message);
     } else {
-      navigate("/wyrmspire"); // 👈 Redirect to Traveling Merchant
+      const uid = data.user?.id ?? data.session?.user?.id ?? null;
+      setUserId(uid);
+      navigate(finalRedirect, { replace: true });
     }
 
     setLoading(false);
@@ -33,7 +51,7 @@ function Login() {
 
   return (
     <div className="login">
-      <h2>Log In to View the Merchant</h2>
+      <h2>You must be logged in to view this content</h2>
       <form onSubmit={handleLogin}>
         <input
           type="email"
