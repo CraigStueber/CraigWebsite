@@ -3,6 +3,7 @@ import { fetchBooksByUser } from "../../../api/fetchBooks";
 import { useSession } from "../../../../../context/SessionContext";
 import "../styles.css";
 import supabase from "../../../../../client";
+import AddNewBook from "./AddNewBook";
 function BookTable() {
   const { userId } = useSession();
   const [books, setBooks] = useState([]);
@@ -10,6 +11,9 @@ function BookTable() {
   const [error, setError] = useState(null);
   const [selectedBook, setSelectedBook] = useState(null);
   const [updating, setUpdating] = useState(false);
+  const [showAddModal, setShowAddModal] = useState(false);
+  // New filter state
+  const [ownedFilter, setOwnedFilter] = useState("All");
 
   useEffect(() => {
     if (!userId) return;
@@ -39,7 +43,6 @@ function BookTable() {
 
       if (error) throw error;
 
-      // update both the table + modal state
       setBooks((prev) =>
         prev.map((b) => (b.id === book.id ? { ...b, owned: !b.owned } : b))
       );
@@ -57,8 +60,29 @@ function BookTable() {
   if (loading) return <div>Loading books...</div>;
   if (error) return <div>Error: {error}</div>;
 
+  // Apply filter
+  let filteredBooks = books;
+  if (ownedFilter === "Owned") {
+    filteredBooks = books.filter((b) => b.owned);
+  } else if (ownedFilter === "Not Owned") {
+    filteredBooks = books.filter((b) => !b.owned);
+  }
+
   return (
     <>
+      {/* Filter controls */}
+      <div className="filter-bar">
+        <label htmlFor="ownedFilter">Filter by Owned:</label>
+        <select
+          id="ownedFilter"
+          value={ownedFilter}
+          onChange={(e) => setOwnedFilter(e.target.value)}
+        >
+          <option value="All">All</option>
+          <option value="Owned">Owned</option>
+          <option value="Not Owned">Not Owned</option>
+        </select>
+      </div>
       <table>
         <thead>
           <tr className="table-header">
@@ -69,7 +93,7 @@ function BookTable() {
           </tr>
         </thead>
         <tbody>
-          {books.map((b) => (
+          {filteredBooks.map((b) => (
             <tr
               key={b.id}
               onClick={() => setSelectedBook(b)}
@@ -83,7 +107,12 @@ function BookTable() {
           ))}
         </tbody>
       </table>
-
+      {/* Add Book Button */}
+      <div style={{ marginTop: "1rem", textAlign: "center" }}>
+        <button className="header-btn" onClick={() => setShowAddModal(true)}>
+          Add Book
+        </button>
+      </div>
       {selectedBook && (
         <div className="modal-backdrop" onClick={() => setSelectedBook(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -98,18 +127,27 @@ function BookTable() {
               {selectedBook.owned ? "Yes" : "No"}
             </p>
 
-            {!selectedBook.owned && (
-              <button
-                onClick={() => toggleOwned(selectedBook)}
-                disabled={updating}
-              >
-                {updating ? "Updating..." : "Mark as Owned"}
-              </button>
-            )}
-
-            <button onClick={() => setSelectedBook(null)}>Close</button>
+            <div className="modal-footer space-between">
+              {!selectedBook.owned && (
+                <button
+                  onClick={() => toggleOwned(selectedBook)}
+                  disabled={updating}
+                >
+                  {updating ? "Updating..." : "Mark as Owned"}
+                </button>
+              )}
+              <button onClick={() => setSelectedBook(null)}>Close</button>
+            </div>
           </div>
         </div>
+      )}
+      {/* Add New Book Modal */}
+      {showAddModal && (
+        <AddNewBook
+          userId={userId}
+          onClose={() => setShowAddModal(false)}
+          onAdded={(book) => setBooks((prev) => [book, ...prev])}
+        />
       )}
     </>
   );

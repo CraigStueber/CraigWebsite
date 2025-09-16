@@ -7,11 +7,12 @@ function Megan() {
   const [activeTab, setActiveTab] = useState("books");
 
   return (
-    <div className="globalContainer">
+    <div>
       <Header activeTab={activeTab} setActiveTab={setActiveTab} />
-
-      {activeTab === "books" && <BookTable />}
-      {activeTab === "wine" && <WineTable />}
+      <div className="globalContainer">
+        {activeTab === "books" && <BookTable />}
+        {activeTab === "wine" && <WineTable />}
+      </div>
     </div>
   );
 }

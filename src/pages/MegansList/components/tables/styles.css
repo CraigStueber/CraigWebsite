@@ -70,3 +70,130 @@
   background: #0077cc;
   color: white;
 }
+.add-wine-modal {
+  width: 95%;
+  height: 95%;
+  overflow-y: auto;
+}
+
+.wine-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.wine-form input,
+.wine-form textarea {
+  margin: 0 auto 0;
+  padding: 0.5rem;
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 95%;
+}
+
+.wine-form textarea {
+  min-height: 80px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.form-actions button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-actions button[type="button"] {
+  background: #ccc;
+  color: #222;
+}
+
+.form-actions button[type="submit"] {
+  background: #0077cc;
+  color: #fff;
+}
+/* Rows like Region+Year, Type+Rating */
+.modal-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.modal-title.centered {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+/* Footer with centered Close button */
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.close-btn {
+  background: #0077cc;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.close-btn:hover {
+  background: #005fa3;
+}
+/* Modal footer with space between buttons */
+.modal-footer.space-between {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+/* Style modal buttons uniformly */
+.modal-footer button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Mark as Owned button */
+.modal-footer button:first-child {
+  background: #0077cc;
+  color: #fff;
+}
+
+.modal-footer button:first-child:hover {
+  background: #005fa3;
+}
+
+/* Close button */
+.modal-footer button:last-child {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+.modal-footer button:last-child:hover {
+  background: #cc0000;
+}
+.wine-form select {
+  margin: 0 auto 0;
+  padding: 0.5rem;
+  border: 2px solid #0077cc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 95%;
+  background: #fff;
+  color: rgb(2, 2, 80);
+}

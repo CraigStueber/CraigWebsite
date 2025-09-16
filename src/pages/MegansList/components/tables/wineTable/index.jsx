@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import { fetchWinesByUser } from "../../../api/fetchWines";
 import { useSession } from "../../../../../context/SessionContext";
 import "../styles.css";
-
+import AddNewWine from "./AddNewWine";
 function WineTable() {
   const { userId } = useSession();
   const [wines, setWines] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedWine, setSelectedWine] = useState(null);
-
+  const [showAddModal, setShowAddModal] = useState(false);
   // Filters
   const [regionFilter, setRegionFilter] = useState("All");
   const [ratingFilter, setRatingFilter] = useState("All");
@@ -108,7 +108,7 @@ function WineTable() {
         <thead>
           <tr className="table-header">
             <th>Name</th>
-            <th>Winery</th>
+            <th className="description-cell">Winery</th>
             <th className="description-cell">Region</th>
             <th className="description-cell">Year</th>
             <th>Type</th>
@@ -124,7 +124,7 @@ function WineTable() {
               className="clickable-row"
             >
               <td>{w.name}</td>
-              <td>{w.winery}</td>
+              <td className="description-cell">{w.winery}</td>
               <td className="description-cell">{w.region || "—"}</td>
               <td className="description-cell">{w.year || "—"}</td>
               <td>{w.type || "—"}</td>
@@ -134,36 +134,70 @@ function WineTable() {
           ))}
         </tbody>
       </table>
+      {/* Add Wine Button */}
+      <div style={{ marginTop: "1rem", textAlign: "center" }}>
+        <button className="header-btn" onClick={() => setShowAddModal(true)}>
+          Add Wine
+        </button>
+      </div>
 
       {selectedWine && (
         <div className="modal-backdrop" onClick={() => setSelectedWine(null)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <h2 className="modal-title">{selectedWine.name}</h2>
+          <div
+            className="modal-content wine-detail"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h2 className="modal-title centered">{selectedWine.name}</h2>
+
             <p>
               <strong className="modal-author">Winery:</strong>{" "}
               {selectedWine.winery}
             </p>
+
+            <div className="modal-row">
+              <p>
+                <strong className="modal-author">Region:</strong>{" "}
+                {selectedWine.region || "—"}
+              </p>
+              <p>
+                <strong className="modal-author">Year:</strong>{" "}
+                {selectedWine.year || "—"}
+              </p>
+            </div>
+
+            <div className="modal-row">
+              <p>
+                <strong className="modal-author">Type:</strong>{" "}
+                {selectedWine.type || "—"}
+              </p>
+              <p>
+                <strong className="modal-author">Rating:</strong>{" "}
+                {selectedWine.rating || "—"}
+              </p>
+            </div>
             <p>
-              <strong className="modal-author">Region:</strong>{" "}
-              {selectedWine.region || "—"}
-            </p>
-            <p>
-              <strong className="modal-author">Year:</strong>{" "}
-              {selectedWine.year || "—"}
-            </p>
-            <p>
-              <strong className="modal-author">Type:</strong>{" "}
-              {selectedWine.type || "—"}
-            </p>
-            <p>
-              <strong className="modal-author">Rating:</strong>{" "}
-              {selectedWine.rating || "—"}
+              <strong className="modal-author">Description:</strong>
             </p>
             <p>{selectedWine.description}</p>
 
-            <button onClick={() => setSelectedWine(null)}>Close</button>
+            <div className="modal-footer">
+              <button
+                className="close-btn"
+                onClick={() => setSelectedWine(null)}
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
+      )}
+
+      {showAddModal && (
+        <AddNewWine
+          userId={userId}
+          onClose={() => setShowAddModal(false)}
+          onAdded={(wine) => setWines((prev) => [wine, ...prev])}
+        />
       )}
     </>
   );
