@@ -109,8 +109,8 @@ function WineTable() {
           <tr className="table-header">
             <th>Name</th>
             <th>Winery</th>
-            <th>Region</th>
-            <th>Year</th>
+            <th className="description-cell">Region</th>
+            <th className="description-cell">Year</th>
             <th>Type</th>
             <th>Rating</th>
             <th className="description-cell">Description</th>
@@ -125,8 +125,8 @@ function WineTable() {
             >
               <td>{w.name}</td>
               <td>{w.winery}</td>
-              <td>{w.region || "—"}</td>
-              <td>{w.year || "—"}</td>
+              <td className="description-cell">{w.region || "—"}</td>
+              <td className="description-cell">{w.year || "—"}</td>
               <td>{w.type || "—"}</td>
               <td>{w.rating || "—"}</td>
               <td className="description-cell">{w.description}</td>
