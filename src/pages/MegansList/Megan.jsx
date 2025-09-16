@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BookTable from "./components/tables/bookTable/BookTable";
 import WineTable from "./components/tables/wineTable";
-import Header from "./components/Header/Header";
+import Header from "./components/header/Header";
 import "./Megan.styles.css";
 function Megan() {
   const [activeTab, setActiveTab] = useState("books");
