@@ -1,0 +1,107 @@
+[
+  {
+    "company": "Berkshire Hathaway Energy",
+    "subHeader": "Leading front-end development for Dekaflow 2, a next-gen energy management platform.",
+    "role": "Senior React Developer",
+    "location": "Glen Allen, VA",
+    "dates": "2025 – Present",
+    "highlights": [
+      "Architect reusable React + TypeScript components with Material UI & Next.js for scalable performance.",
+      "Drive accessibility and WCAG compliance across the platform.",
+      "Mentor junior engineers in front-end patterns, Jotai state management, and performance best practices.",
+      "Collaborate across Agile squads (design, QA, backend) to deliver high-impact features."
+    ]
+  },
+  {
+    "company": "DanceCard",
+    "subHeader": "Co-founded and led development of a social dance app connecting dancers worldwide.",
+    "role": "Head React Native Developer & Co-Founder",
+    "location": "Richmond, VA",
+    "dates": "2024 – Present",
+    "highlights": [
+      "Designed and shipped on iOS & Android with real-time chat, event scheduling, and location-aware features.",
+      "Built a React web companion app and Supabase backend.",
+      "Navigated App Store / Google Play policies, ensuring smooth deployments.",
+      "Championed inclusive design, ensuring accessibility was never an afterthought."
+    ]
+  },
+  {
+    "company": "Sauer Brands",
+    "subHeader": "Built and maintained multiple brand websites, partnering closely with the marketing team to deliver scalable, accessible platforms.",
+    "role": "Senior Front End Developer",
+    "location": "Richmond, VA",
+    "dates": "2021 – 2025",
+    "highlights": [
+      "Built Hot Tomato Summer, a live voting platform reaching 30K+ users in 2 weeks.",
+      "Created marketing dashboards and admin tools empowering non-technical teams to manage content in real time.",
+      "Deployed the Kernel Season’s Giveaway platform with user dashboards and QR code integration.",
+      "Cut costs by $250K annually by replacing third-party tools with in-house AI solutions.",
+      "Led ADA compliance audits and implemented screen reader–friendly markup and keyboard navigation."
+    ]
+  },  {
+    "company": "Soar 365",
+    "subHeader": "Short-term contract focused on modernizing the site’s accessibility and user experience. Part-Time.",
+    "role": "Front-End Engineer",
+    "location": "Richmond, VA",
+    "dates": "Aug 2021 – Dec 2021",
+    "highlights": [
+      "Audited and remediated ADA accessibility issues across the organization’s main website.",
+      "Migrated the site to Wix, giving the marketing team a manageable platform after contract end.",
+      "Improved UI/UX, simplifying navigation and content structure for broader accessibility.",
+      "Trained the marketing team to manage the site independently after transition."
+    ]
+  },
+  {
+    "company": "Talos IoT",
+    "subHeader": "Developed IoT mobile solutions that translated complex HVAC diagnostics into simple, user-friendly experiences.",
+    "role": "React Developer",
+    "location": "Glen Allen, VA",
+    "dates": "2021",
+    "highlights": [
+      "Developed a cross-platform React Native app displaying real-time IoT data.",
+      "Built a visual check engine light system for HVAC systems, enabling proactive maintenance.",
+      "Partnered with backend & design teams to deliver responsive, intuitive UI.",
+      "Prioritized performance and accessibility across both Android and iOS."
+    ]
+  },
+   {
+    "company": "PresenceLearning",
+    "subHeader": "Part-time frontend development role focused on improving web presence and streamlining marketing workflows.",
+    "role": "Front-End Web Developer",
+    "location": "Remote",
+    "dates": "Oct 2020 – Mar 2021",
+    "highlights": [
+      "Planned and implemented updated web technologies to improve operational efficiency.",
+      "Mitigated risks and ensured continuity by identifying and addressing potential workflow issues.",
+      "Improved mobile and tablet UX using Bootstrap’s responsive grid system.",
+      "Streamlined marketing by consolidating 10+ disparate email templates into a unified master template."
+    ]
+  },
+  {
+    "company": "Kurb Media",
+    "subHeader": "Built web experiences ranging from social media platforms to VR interfaces, flexing between React, Liquid, PHP, and more.",
+    "role": "Front-End Developer",
+    "location": "Remote",
+    "dates": "July 2019 – Oct 2020",
+    "highlights": [
+      "Delivered rapid-turnaround front-end solutions from social media platforms to VR interfaces for military applications.",
+      "Adapted quickly to new codebases, shifting technologies weekly (React, Liquid, PHP, HTML/CSS).",
+      "Partnered with clients to deliver responsive, user-focused web experiences under tight deadlines."
+    ]
+  },{
+  "company": "Self-Employed (Freelance)",
+  "subHeader": "Designed and developed responsive websites and applications for a diverse client base, from authors to real estate professionals and non-profits.",
+  "role": "Front-End Developer (Freelance)",
+  "location": "Richmond, VA",
+  "dates": "Dec 2017 – Jan 2021",
+  "highlights": [
+    "Delivered custom websites and applications leveraging HTML5, CSS3, JavaScript, React.js, and WordPress.",
+    "Created user-friendly, responsive designs tailored to each client’s brand and business goals.",
+    "Built interactive web apps such as property listing tools for real estate clients to improve engagement.",
+    "Partnered with non-profits to create impactful sites that communicated their mission and maximized donor engagement.",
+    "Maintained long-term client relationships, providing updates and feature enhancements as needs evolved.",
+    "Ensured cross-platform compatibility and performance optimization across all projects."
+  ]
+}
+
+]

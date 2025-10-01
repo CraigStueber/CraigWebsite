@@ -1,0 +1,124 @@
+.about-section {
+  background: var(--color-bg);
+  padding: 50px 2rem;
+  margin: 3rem auto 3rem;
+  max-width: 900px;
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+}
+.about-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.about-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.beyond-code {
+  background: #2f2038; /* light grey background */
+  color: #fbe3d7;
+  border-left: 5px solid var(--color-primary); /* purple accent */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.beyond-code-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.beyond-code-title {
+  margin-top: 0;
+  color: var(--color-primary);
+}
+
+.beyond-code-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.beyond-code-list li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #fbe3d7;
+}
+
+.beyond-code-list strong {
+  color: var(--color-primary);
+}
+/* Two-column layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.about-main {
+  line-height: 1.6;
+  color: var(--color-text);
+}
+/* Sidecards */
+.about-sidecards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.about-card {
+  background: #bdbebe;
+  border-radius: 8px;
+  padding: 10px 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.about-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-card li {
+  margin-bottom: 0.75rem;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-sidecards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .about-card {
+    flex: 1;
+    min-width: 250px;
+  }
+}

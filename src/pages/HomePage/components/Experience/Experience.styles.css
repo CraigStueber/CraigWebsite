@@ -1,0 +1,146 @@
+.experience-section {
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.experience-heading-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.experience-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary-dark);
+  font-family: "Poppins", sans-serif;
+}
+
+.experience-intro {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.experience-card {
+  display: flex;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  align-items: center;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Column (default styles applied to both) */
+.experience-left {
+  flex: 1;
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-role {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.experience-company {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-family: "Inter", sans-serif;
+}
+
+.experience-meta {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.experience-subheader {
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.4;
+  opacity: 0.95;
+  font-family: "Inter", sans-serif;
+}
+
+/* Alternate background colors */
+.experience-card:nth-child(odd) .experience-left {
+  background: var(--color-primary-dark); /* purple */
+  color: #fff;
+}
+
+.experience-card:nth-child(even) .experience-left {
+  background: #fc7b54; /* coral */
+  color: var(--color-primary-dark);
+}
+
+/* Right Column */
+.experience-right {
+  flex: 2;
+  display: flex;
+  align-items: center; /* vertically center the list */
+}
+
+.experience-right ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.experience-right li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+  color: #333;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+/* Bullet colors match the card accent */
+.experience-card:nth-child(odd) .experience-right li::before {
+  content: "▹";
+  color: var(--color-primary-dark); /* purple */
+  font-weight: bold;
+  position: absolute;
+  left: -1.25rem;
+}
+
+.experience-card:nth-child(even) .experience-right li::before {
+  content: "▹";
+  color: #fc7b54; /* coral */
+  font-weight: bold;
+  position: absolute;
+  left: -1.25rem;
+}
+
+/* Responsive stack */
+@media (max-width: 900px) {
+  .experience-card {
+    flex-direction: column; /* stack instead of side-by-side */
+    align-items: stretch; /* let each column take full width */
+  }
+
+  .experience-left {
+    margin-bottom: 1.5rem; /* add space between left block and bullets */
+  }
+
+  .experience-right {
+    align-items: flex-start; /* reset bullet alignment for readability */
+  }
+}
