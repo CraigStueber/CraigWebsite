@@ -1,0 +1,149 @@
+.projects-section {
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects-heading-container {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary-dark);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Project Card */
+.project-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  flex: 1;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-content {
+  flex: 2;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-dark);
+}
+
+.project-description {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.project-impact {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.project-highlights {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+}
+
+.project-highlights li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-badge {
+  background: var(--color-primary-dark);
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+/* Alternate Layouts */
+.project-card.left-image .project-image {
+  order: 0;
+}
+.project-card.left-image .project-content {
+  order: 1;
+}
+
+.project-card.right-image .project-image {
+  order: 1;
+}
+.project-card.right-image .project-content {
+  order: 0;
+}
+.see-more-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.see-more-btn {
+  background: var(--color-primary-dark);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.see-more-btn:hover {
+  background: #4b1669; /* slightly lighter purple */
+}
+
+@media (max-width: 900px) {
+  .project-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* ✅ Force image always on top regardless of left/right classes */
+  .project-card .project-image {
+    order: 0 !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-card .project-content {
+    order: 1 !important;
+  }
+}

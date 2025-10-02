@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
 import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
 function HomePage() {
   return (
     <div className="homePage">
@@ -22,6 +23,7 @@ function HomePage() {
       <Divider color="yellow" />
       <Skills />
       <Divider color="yellow" />
+      <Projects />
       <Footer />
     </div>
   );

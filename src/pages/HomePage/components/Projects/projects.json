@@ -1,0 +1,217 @@
+[
+  {
+    "title": "Dekaflow 2",
+    "description": "A next-generation energy management platform for Berkshire Hathaway Energy, built to optimize workflows, improve accessibility, and introduce AI-powered productivity tools.",
+    "businessImpact": "Supported critical energy infrastructure by modernizing front-end systems, improving accessibility, and mentoring engineers to ensure sustainable development practices.",
+    "highlights": [
+      "Reviewed PRs, wrote scalable React + TypeScript code with Material UI & Next.js.",
+      "Helped integrate AI tools for coding assistance, documentation, and meeting note-taking.",
+      "Collaborated across squads to align front-end delivery with backend, QA, and design requirements."
+    ],
+    "technologies": ["React", "TypeScript", "Next.js", "Material-UI", "Jotai", "Azure DevOps"],
+    "image": "/projectImages/BHE.png"
+  },
+  {
+    "title": "DanceCard",
+    "description": "A mobile-first social app connecting people through shared hobbies and events — designed to encourage real-world connection rather than doom-scrolling.",
+    "businessImpact": "Built from the ground up and deployed to iOS and Android, helping people connect locally while showcasing strong full-stack and deployment skills.",
+    "highlights": [
+      "Co-founded and led development of the React Native application.",
+      "Implemented real-time chat, event scheduling, and location-aware features.",
+      "Shipped companion web app and Supabase backend with secure authentication."
+    ],
+    "technologies": ["React Native", "React", "Supabase", "Expo", "PostgreSQL", "Sentry", "Firebase Crashlytics"],
+   "image": "/projectImages/DanceCard.png"
+  },
+  {
+    "title": "Duke’s Country",
+    "description": "A React-based site for Duke’s Mayonnaise, designed to deliver brand storytelling and event-driven content without selling products directly.",
+    "businessImpact": "Handled hundreds of thousands of visitors during the Duke’s Mayo Bowl, engaging fans through contests, recipes, and interactive content.",
+    "highlights": [
+      "Built backend tools enabling marketing teams to log in and update photos, contests, and site content dynamically.",
+      "Ensured site stability during massive traffic surges on game day.",
+      "Delivered a custom, branded experience built for speed and reliability."
+    ],
+    "technologies": ["TypeScript", "React", "CSS", "Cloudflare Pages", "Supabase"],
+    "image": "/projectImages/WTDC.png"
+  },
+  {
+    "title": "Hot Tomato Summer",
+    "description": "A large-scale, multi-city restaurant voting contest that grew from a small campaign into a nationwide phenomenon.",
+    "businessImpact": "Scaled to handle tens of thousands of voters and hundreds of participating restaurants, while implementing anti-cheating mechanisms.",
+    "highlights": [
+      "Built dashboards for restaurants to upload information and track voting analytics.",
+      "Developed internal employee dashboards for approving/denying edits and monitoring traffic.",
+      "Implemented fraud prevention with user fingerprinting and authentication."
+    ],
+    "technologies": ["React", "Redux", "Supabase", "Python", "Authentication", "Fingerprinting"],
+     "image": "/projectImages/HTS.png"
+  },
+  {
+    "title": "Kernel Season’s Sweepstakes",
+    "description": "A reusable sweepstakes platform with dynamic form generation and backend prize management.",
+    "businessImpact": "Enabled marketing teams to create and manage campaigns independently, reducing dev cycles and empowering non-technical staff.",
+    "highlights": [
+      "Built backend logic to dynamically generate Supabase tables based on custom form fields.",
+      "Delivered admin dashboard for prize management and participant tracking.",
+      "Designed reusable architecture for future promotions."
+    ],
+    "technologies": ["TypeScript", "Supabase", "Context API", "PostgreSQL", "Supabase Edge Functions"],
+    "image": "/projectImages/KSSweep.png"
+  },
+  {
+    "title": "Talos IoT",
+    "description": "IoT-driven HVAC diagnostics platform with dashboards, user interfaces, and real-time hardware feedback.",
+    "businessImpact": "Enabled predictive maintenance through real-time monitoring, reducing downtime for commercial HVAC systems.",
+    "highlights": [
+      "Built dashboard elements in Grafana for visualizing system health.",
+      "Developed user-facing websites to interact with IoT data.",
+      "Contributed to firmware for Guardian boards."
+    ],
+    "technologies": ["React", "React Native", "Grafana", "AWS", "Embedded Firmware", "C#", "Docker"],
+    "image": "/projectImages/TalosIoT.png"
+  },
+  {
+    "title": "Soar 365 Website",
+    "description": "Contract role to remediate ADA compliance issues and improve site usability for a nonprofit serving individuals with disabilities.",
+    "businessImpact": "Delivered an accessible, maintainable site and trained the marketing team to manage content post-handoff.",
+    "highlights": [
+      "Audited and fixed ADA compliance issues.",
+      "Migrated site to Wix for easier long-term management.",
+      "Provided training for non-technical staff to maintain the site."
+    ],
+    "technologies": ["Wix", "Accessibility Audits", "WCAG 2.1", "Semantic HTML"],
+     "image": "/projectImages/soar365.png"
+  },
+  {
+    "title": "PresenceLearning Website",
+    "description": "Modernized and maintained a WordPress site providing remote therapy solutions for students.",
+    "businessImpact": "Helped improve digital access for students in need of educational support services.",
+    "highlights": [
+      "Upgraded frontend with responsive, modern layouts.",
+      "Consolidated and simplified email template workflows.",
+      "Ensured accessibility and performance improvements."
+    ],
+    "technologies": ["PHP", "WordPress", "Bootstrap", "HTML", "CSS"],
+    "image": "/projectImages/Presence.png"
+  },
+  {
+    "title": "Sauer Brand Websites",
+    "description": "Core brand websites for Sauer Brands portfolio: sauers.com, dukesmayo.com, mateos.com.",
+    "businessImpact": "Delivered stable, scalable Shopify-based brand hubs with accessible design and marketing alignment.",
+    "highlights": [
+      "Collaborated with marketing to design and implement brand-consistent layouts.",
+      "Used Shopify Liquid to customize themes and functionality.",
+      "Ensured ADA compliance and cross-device responsiveness."
+    ],
+    "technologies": ["Shopify", "Liquid", "HTML", "CSS", "Accessibility"],
+    "image": "/projectImages/SBLogoPNG.png"
+  },
+  {
+    "title": "Sales Reporting Tool",
+    "description": "Custom Python-based reporting platform for Sauer Brands’ Shopify data.",
+    "businessImpact": "Replaced inadequate built-in Shopify reports, automating nightly exports and formatting for Oracle ingestion.",
+    "highlights": [
+      "Pulled daily sales data from multiple Shopify stores via API.",
+      "Transformed and formatted data for Oracle compatibility.",
+      "Automated CSV delivery via email, integrated with Oracle workflow."
+    ],
+    "technologies": ["Python", "Shopify API", "Oracle", "CSV Automation", "Backend Scripting"],
+    "image": "/projectImages/SalesReporting.jpg"
+  },
+  {
+  "title": "Blue Door Art Gallery",
+  "description": "An artist portfolio website built to showcase my wife’s paintingsand gallery exhibits in a clean, modern interface.",
+  "businessImpact": "Provided a professional online presence for her gallery work and exhibitions, making her art accessible to a broader audience.",
+  "highlights": [
+    "Built a responsive, mobile-friendly gallery layout with filtering and image zoom.",
+    "Optimized images for fast loading without sacrificing quality.",
+    "Designed a simple admin workflow so updates could be made easily."
+  ],
+  "technologies": ["Next.js", "React", "CSS Grid/Flexbox", "Cloudflare Pages"],
+    "image": "/projectImages/OctopusGarden.jpg"
+},
+{
+  "title": "Megan’s List",
+  "description": "A custom book and wine tracking app built with Supabase to help my wife log and review her reading and wine experiences.",
+  "businessImpact": "Showcases my ability to build lightweight, data-driven applications tailored to personal needs, leveraging modern back-end services.",
+  "highlights": [
+    "Implemented Supabase authentication and user profiles.",
+    "Designed schema to handle books, wines, ratings, and notes.",
+    "Built responsive UI with React for easy logging and browsing."
+  ],
+  "technologies": ["React", "Supabase", "PostgreSQL", "TypeScript", "Styled Components"],
+    "image": "/projectImages/MegansList.jpg"
+},{
+  "title": "Pick a Restaurant",
+  "description": "An APK mobile app I built for my wife and me to make choosing restaurants easier. The app uses a quick questionnaire to narrow down options from a custom database of our favorite spots.",
+  "businessImpact": "Created a personalized restaurant picker that tracks our dining habits, stores reviews, happy hour info, and remembers what we liked about each restaurant. Demonstrates practical use of full-stack mobile development to solve everyday problems.",
+  "highlights": [
+    "Developed a questionnaire flow to recommend restaurants based on stored preferences.",
+    "Built a Supabase backend to log visits, reviews, happy hour details, and restaurant styles.",
+    "Implemented logic to track how often we visit each restaurant and surface fresh suggestions.",
+    "Packaged and deployed as an APK with Expo for Android use."
+  ],
+  "technologies": ["React Native", "Supabase", "Expo", "Context API", "Supabase Edge Functions"],
+  "image": "/projectImages/PickRest.jpg"
+},{
+  "title": "Cat Tracker",
+  "description": "An APK mobile app built for my wife to track and map outdoor and stray cats around Richmond. Users can drop pins on a map, upload cat photos, and log their encounters.",
+  "businessImpact": "Demonstrates the ability to integrate geolocation and Google Maps APIs with a custom Supabase backend. A practical, real-world use of mobile development to build a fun and community-focused tool.",
+  "highlights": [
+    "Integrated Google Maps API for live location tracking and pin drops.",
+    "Enabled users to upload cat images tied to GPS coordinates.",
+    "Designed Supabase backend to store locations, photos, and encounter history.",
+    "Implemented Edge Functions for secure handling of uploads and location data."
+  ],
+  "technologies": ["React Native", "Google Maps API", "Supabase", "Supabase Edge Functions"],
+  "image": "/projectImages/Cat.jpg"
+},
+ {
+  "title": "Wyrmspire D&D Website",
+  "description": "A custom-built site to manage and showcase my original Dungeons & Dragons campaign, Wyrmspire. Designed as both a lore archive and an interactive toolset for my players.",
+  "businessImpact": "Highlights creative problem-solving, custom UI building, and integration of narrative with functional systems. A demonstration of how I use code to enhance storytelling and collaboration.",
+  "highlights": [
+    "Developed interactive features for session recaps, character tracking, and lore management.",
+    "Built modular UI components for maps, encounters, and inventory tracking.",
+    "Designed for live play, ensuring responsive layouts and real-time usability at the game table."
+  ],
+  "technologies": ["React", "TypeScript", "Supabase", "CSS Modules"],
+    "image": "/projectImages/WyrmSpire.png"
+},{
+  "title": "Longrock Slot Machine",
+  "description": "A fun, in-world slot machine mini-game created for the Wyrmspire campaign. Built to immerse players with a fully interactive, animated experience.",
+  "businessImpact": "Demonstrates my ability to blend design, animation, and logic to create engaging front-end experiences that delight users.",
+  "highlights": [
+    "Built spinning reel animations with JavaScript and React state logic.",
+    "Randomized outcomes while controlling probability for balanced gameplay.",
+    "Integrated custom styling and theming to fit the Wyrmspire universe."
+  ],
+  "technologies": ["React", "JavaScript", "CSS Animations"],
+    "image": "/projectImages/CasinoLongRock.png"
+},
+{
+  "title": "Wyrmspire Arm Wrestling Game",
+  "description": "A physics-inspired arm wrestling mini-game designed as an in-session challenge for Wyrmspire players.",
+  "businessImpact": "Showcases creative game mechanics, user input handling, and interactive UI development in React.",
+  "highlights": [
+    "Created a competitive click/tap mechanic simulating arm wrestling strength.",
+    "Balanced gameplay logic for fair outcomes while allowing dramatic swings.",
+    "Delivered an immersive side activity that enhanced the D&D session experience."
+  ],
+  "technologies": ["React", "JavaScript", "Canvas API", "CSS"],
+    "image": "/projectImages/ArmWrestling.png"
+},
+  {
+    "title": "Change in Uzbekistan",
+    "description": "Custom site for an international client built while at Kurb Media.",
+    "businessImpact": "Delivered a fully branded, client-approved site tailored to stakeholder requirements.",
+    "highlights": [
+      "Worked directly with client to capture requirements and translate them into code.",
+      "Developed responsive and accessible design.",
+      "Provided ongoing support during launch."
+    ],
+    "technologies": ["React", "HTML", "CSS", "Client Collaboration"],
+    "image": "/projectImages/CUReforms.png"
+  }
+]
