@@ -98,6 +98,69 @@
     "years": 2, 
     "description": "Applied at Talos IoT and Kurb Media for advanced styling and modular CSS architecture. Though less used recently, I can quickly reapply expertise as needed." 
   }
+], "Data & API": [
+  { 
+    "name": "MongoDB", 
+    "level": 4, 
+    "years": 3, 
+    "description": "Applied at BHE GT&S for new database systems and previously at Talos IoT. Experienced with schema design, querying, and integrating MongoDB into enterprise applications." 
+  },
+  { 
+    "name": "SQL Server", 
+    "level": 3, 
+    "years": 3, 
+    "description": "Hands-on with SQL Server at BHE GT&S, managing relational data models and writing queries to support enterprise energy applications." 
+  },
+  { 
+    "name": "MySQL", 
+    "level": 4, 
+    "years": 5, 
+    "description": "Implemented at Sauer Brands for marketing platforms and reporting dashboards, with additional SQL experience applied in enterprise environments at BHE." 
+  },
+  { 
+    "name": "Supabase", 
+    "level": 5, 
+    "years": 4, 
+    "description": "Go-to backend-as-a-service for personal and professional projects. Used at Sauer Brands for one-off campaign backends and extensively in personal apps like DanceCard for authentication, APIs, and real-time data." 
+  },
+  { 
+    "name": "PostgreSQL", 
+    "level": 4, 
+    "years": 5, 
+    "description": "Core relational database experience tied to Supabase. Skilled at writing SQL scripts, designing schemas, and managing migrations to support scalable applications." 
+  }
+],
+"Accessibility & Standards": [
+  { 
+    "name": "WCAG 2.1", 
+    "level": 5, 
+    "years": 6, 
+    "description": "Applied WCAG 2.1 guidelines across projects from freelance work to Sauer Brands and Soar 365. Conduct audits and implement changes to ensure digital experiences meet or exceed accessibility standards." 
+  },
+  { 
+    "name": "ADA Compliance", 
+    "level": 5, 
+    "years": 6, 
+    "description": "Deeply experienced in aligning applications with ADA requirements, particularly at Sauer Brands where compliance was a core priority. Advocate for inclusive design so all users can engage with digital products." 
+  },
+  { 
+    "name": "Semantic HTML", 
+    "level": 5, 
+    "years": 6, 
+    "description": "Emphasize clean, semantic HTML in every project to improve accessibility, SEO, and long-term maintainability. Standard practice since freelance days and reinforced through enterprise work." 
+  },
+  { 
+    "name": "Color Contrast Audits", 
+    "level": 5, 
+    "years": 6, 
+    "description": "Perform regular audits to verify compliance with contrast ratios, ensuring readability for users with low vision. At Kurb and Sauer Brands, led efforts to adapt branding palettes while maintaining accessibility." 
+  },
+  { 
+    "name": "Screen Reader Testing", 
+    "level": 4, 
+    "years": 6, 
+    "description": "Hands-on testing with NVDA and VoiceOver to validate site accessibility for screen reader users. Applied at Soar 365 and Sauer Brands to ensure real-world usability, not just box-check compliance." 
+  }
 ],
 "State Management": [
   { 
@@ -117,6 +180,25 @@
     "level": 5, 
     "years": 1, 
     "description": "Explored and applied at BHE GT&S; appreciated for its lightweight atom-based approach to state management. Provides React-friendly simplicity while avoiding Redux boilerplate." 
+  }
+],"Testing & QA": [
+  { 
+    "name": "Test-Driven Development (TDD)", 
+    "level": 4, 
+    "years": 5, 
+    "description": "Applied TDD principles across professional projects to ensure reliability and maintainability. Experienced in writing tests first to guide implementation and prevent regressions." 
+  },
+  { 
+    "name": "Jest", 
+    "level": 5, 
+    "years": 5, 
+    "description": "Write Jest unit tests for every professional file I develop, ensuring robust coverage from the start. Skilled in mocking, snapshot testing, and asynchronous test handling." 
+  },
+  { 
+    "name": "Integration Testing", 
+    "level": 4, 
+    "years": 5, 
+    "description": "Experienced in verifying system-level workflows across APIs, databases, and front-end integrations. Applied consistently in enterprise projects to validate real-world user flows." 
   }
 ],
  "Infrastructure & DevOps": [
@@ -164,76 +246,6 @@
 }
 
 ],
- "Development Tools": [
-  { 
-    "name": "Git", 
-    "level": 5, 
-    "years": 10, 
-    "description": "Used daily for version control and collaboration across every project. Experienced with branching strategies, pull requests, and code reviews in enterprise and open-source environments." 
-  },
-  { 
-    "name": "npm", 
-    "level": 5, 
-    "years": 10, 
-    "description": "Primary package manager for Node.js projects. Daily use for dependency management, custom scripts, and monorepo workflows." 
-  },
-  { 
-    "name": "Postman", 
-    "level": 5, 
-    "years": 6, 
-    "description": "Core tool for designing, testing, and documenting APIs. Used to debug endpoints and streamline integrations across projects at Talos IoT, Sauer Brands, and BHE GT&S." 
-  },
-  { 
-    "name": "Swagger/OpenAPI", 
-    "level": 5, 
-    "years": 5, 
-    "description": "Experienced in generating, maintaining, and consuming API documentation. Ensured alignment between frontend and backend teams with auto-generated schemas and validations." 
-  },
-  { 
-    "name": "VSCode", 
-    "level": 5, 
-    "years": 6, 
-    "description": "Daily development environment for all major projects. Customized with extensions for React, TypeScript, linting, testing, and accessibility compliance." 
-  },
-  { 
-    "name": "Bash", 
-    "level": 4, 
-    "years": 6, 
-    "description": "Applied for scripting, automation, and environment setup on Linux and WSL. Comfortable with shell scripting for DevOps tasks and developer workflows." 
-  }
-],
-  "Data & API": [
-  { 
-    "name": "MongoDB", 
-    "level": 4, 
-    "years": 3, 
-    "description": "Applied at BHE GT&S for new database systems and previously at Talos IoT. Experienced with schema design, querying, and integrating MongoDB into enterprise applications." 
-  },
-  { 
-    "name": "SQL Server", 
-    "level": 3, 
-    "years": 3, 
-    "description": "Hands-on with SQL Server at BHE GT&S, managing relational data models and writing queries to support enterprise energy applications." 
-  },
-  { 
-    "name": "MySQL", 
-    "level": 4, 
-    "years": 5, 
-    "description": "Implemented at Sauer Brands for marketing platforms and reporting dashboards, with additional SQL experience applied in enterprise environments at BHE." 
-  },
-  { 
-    "name": "Supabase", 
-    "level": 5, 
-    "years": 4, 
-    "description": "Go-to backend-as-a-service for personal and professional projects. Used at Sauer Brands for one-off campaign backends and extensively in personal apps like DanceCard for authentication, APIs, and real-time data." 
-  },
-  { 
-    "name": "PostgreSQL", 
-    "level": 4, 
-    "years": 5, 
-    "description": "Core relational database experience tied to Supabase. Skilled at writing SQL scripts, designing schemas, and managing migrations to support scalable applications." 
-  }
-],
 
 "Mobile Deployment & Monitoring": [
   { 
@@ -274,26 +286,6 @@
   }
 ],
 
-"Testing & QA": [
-  { 
-    "name": "Test-Driven Development (TDD)", 
-    "level": 4, 
-    "years": 5, 
-    "description": "Applied TDD principles across professional projects to ensure reliability and maintainability. Experienced in writing tests first to guide implementation and prevent regressions." 
-  },
-  { 
-    "name": "Jest", 
-    "level": 5, 
-    "years": 5, 
-    "description": "Write Jest unit tests for every professional file I develop, ensuring robust coverage from the start. Skilled in mocking, snapshot testing, and asynchronous test handling." 
-  },
-  { 
-    "name": "Integration Testing", 
-    "level": 4, 
-    "years": 5, 
-    "description": "Experienced in verifying system-level workflows across APIs, databases, and front-end integrations. Applied consistently in enterprise projects to validate real-world user flows." 
-  }
-],
 
  "IoT & Firmware": [
   { 
@@ -317,37 +309,42 @@
     "description": "Built and maintained dashboards at Talos IoT using Grafana as the core visualization platform. Continue to use Grafana with Supabase for monitoring applications like DanceCard and this portfolio site, tracking real-time metrics and system health." 
   }
 ],
-
-"Accessibility & Standards": [
+ "Development Tools": [
   { 
-    "name": "WCAG 2.1", 
+    "name": "Git", 
     "level": 5, 
-    "years": 6, 
-    "description": "Applied WCAG 2.1 guidelines across projects from freelance work to Sauer Brands and Soar 365. Conduct audits and implement changes to ensure digital experiences meet or exceed accessibility standards." 
+    "years": 10, 
+    "description": "Used daily for version control and collaboration across every project. Experienced with branching strategies, pull requests, and code reviews in enterprise and open-source environments." 
   },
   { 
-    "name": "ADA Compliance", 
+    "name": "npm", 
     "level": 5, 
-    "years": 6, 
-    "description": "Deeply experienced in aligning applications with ADA requirements, particularly at Sauer Brands where compliance was a core priority. Advocate for inclusive design so all users can engage with digital products." 
+    "years": 10, 
+    "description": "Primary package manager for Node.js projects. Daily use for dependency management, custom scripts, and monorepo workflows." 
   },
   { 
-    "name": "Semantic HTML", 
+    "name": "Postman", 
     "level": 5, 
     "years": 6, 
-    "description": "Emphasize clean, semantic HTML in every project to improve accessibility, SEO, and long-term maintainability. Standard practice since freelance days and reinforced through enterprise work." 
+    "description": "Core tool for designing, testing, and documenting APIs. Used to debug endpoints and streamline integrations across projects at Talos IoT, Sauer Brands, and BHE GT&S." 
   },
   { 
-    "name": "Color Contrast Audits", 
+    "name": "Swagger/OpenAPI", 
+    "level": 5, 
+    "years": 5, 
+    "description": "Experienced in generating, maintaining, and consuming API documentation. Ensured alignment between frontend and backend teams with auto-generated schemas and validations." 
+  },
+  { 
+    "name": "VSCode", 
     "level": 5, 
     "years": 6, 
-    "description": "Perform regular audits to verify compliance with contrast ratios, ensuring readability for users with low vision. At Kurb and Sauer Brands, led efforts to adapt branding palettes while maintaining accessibility." 
+    "description": "Daily development environment for all major projects. Customized with extensions for React, TypeScript, linting, testing, and accessibility compliance." 
   },
   { 
-    "name": "Screen Reader Testing", 
+    "name": "Bash", 
     "level": 4, 
     "years": 6, 
-    "description": "Hands-on testing with NVDA and VoiceOver to validate site accessibility for screen reader users. Applied at Soar 365 and Sauer Brands to ensure real-world usability, not just box-check compliance." 
+    "description": "Applied for scripting, automation, and environment setup on Linux and WSL. Comfortable with shell scripting for DevOps tasks and developer workflows." 
   }
 ]
 }

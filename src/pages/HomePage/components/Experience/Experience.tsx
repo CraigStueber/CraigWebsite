@@ -1,6 +1,13 @@
+import { useState } from "react";
 import "./Experience.styles.css";
 import experienceData from "./experience.json";
+
 function Experience() {
+  const [showAll, setShowAll] = useState(false);
+
+  // Only show first 4 unless "See More" clicked
+  const displayedJobs = showAll ? experienceData : experienceData.slice(0, 4);
+
   return (
     <section
       id="experience"
@@ -17,7 +24,8 @@ function Experience() {
           focus on performance, accessibility, and long-term impact.
         </p>
       </div>
-      {experienceData.map((job, index) => (
+
+      {displayedJobs.map((job, index) => (
         <div key={index} className="experience-card">
           <div className="experience-left">
             <h3 className="experience-role">{job.role}</h3>
@@ -36,6 +44,17 @@ function Experience() {
           </div>
         </div>
       ))}
+
+      {!showAll && experienceData.length > 4 && (
+        <div className="experience-button-container">
+          <button
+            className="experience-button"
+            onClick={() => setShowAll(true)}
+          >
+            See More Experience
+          </button>
+        </div>
+      )}
     </section>
   );
 }

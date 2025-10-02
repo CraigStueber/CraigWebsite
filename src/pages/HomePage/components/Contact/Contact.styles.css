@@ -1,0 +1,59 @@
+.contact-section {
+  padding: 4rem 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary-dark);
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-intro {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  background: #fff;
+  border: 2px solid var(--color-primary-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+  background: var(--color-primary-dark);
+  color: #fff;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+}
+.contact-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-primary-dark);
+}

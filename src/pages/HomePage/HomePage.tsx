@@ -10,6 +10,7 @@ import Education from "./components/Education/Education";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Blog from "./components/Blog/Blog";
+import Contact from "./components/Contact/Contact";
 function HomePage() {
   return (
     <div className="homePage">
@@ -27,6 +28,8 @@ function HomePage() {
       <Projects />
       <Divider color="yellow" />
       <Blog />
+      <Divider color="yellow" />
+      <Contact />
       <Footer />
     </div>
   );
