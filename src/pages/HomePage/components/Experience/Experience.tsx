@@ -6,7 +6,7 @@ function Experience() {
   const [showAll, setShowAll] = useState(false);
 
   // Only show first 4 unless "See More" clicked
-  const displayedJobs = showAll ? experienceData : experienceData.slice(0, 4);
+  const displayedJobs = showAll ? experienceData : experienceData.slice(0, 3);
 
   return (
     <section
