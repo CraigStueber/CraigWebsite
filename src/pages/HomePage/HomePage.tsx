@@ -9,6 +9,7 @@ import Experience from "./components/Experience/Experience";
 import Education from "./components/Education/Education";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
+import Blog from "./components/Blog/Blog";
 function HomePage() {
   return (
     <div className="homePage">
@@ -24,6 +25,8 @@ function HomePage() {
       <Skills />
       <Divider color="yellow" />
       <Projects />
+      <Divider color="yellow" />
+      <Blog />
       <Footer />
     </div>
   );
