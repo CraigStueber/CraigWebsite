@@ -115,7 +115,15 @@
   position: absolute;
   left: -1.25rem;
 }
-
+.education-intro {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 750px;
+  margin: 0 auto 10px;
+  line-height: 1.6;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
 /* Responsive */
 @media (max-width: 900px) {
   .education-card {

@@ -4,6 +4,13 @@ function Education() {
   return (
     <section id="education" className="education-section">
       <h2 className="education-heading">Education</h2>
+      <p className="education-intro">
+        I’ve spent the last ten years not just growing my career but also
+        continuing my education. Online learning has taught me discipline and
+        time management, and I never stop pushing myself—whether it’s earning my
+        Bachelor’s and Master’s degrees, working toward my Ph.D. dissertation,
+        or diving into every promising Udemy class I can find.
+      </p>
       {educationData.map((edu, index) => (
         <div key={index} className="education-card">
           <div className="education-logo">
