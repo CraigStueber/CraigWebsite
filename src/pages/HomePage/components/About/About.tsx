@@ -11,11 +11,15 @@ function About() {
         <h2 id="about-heading" className="about-heading">
           About Me
         </h2>
-
         <p>
           Practical front-end engineer who thrives at the intersection of
           creativity, accessibility, and clean code.
         </p>
+        <img
+          src="/me/BannerMe.jpg"
+          alt="Cartoon of Me sitting in a coffee cup with computer screens all around"
+          className="about-me-banner"
+        />
       </div>
       <div className="about-grid">
         <div className="about-main">
@@ -100,18 +104,29 @@ function About() {
           <QuickStats />
         </aside>
       </div>
-      <h3 className="about-subheading">My Approach to Development</h3>
-      <p>
-        To me, great engineering isn’t defined by frameworks or libraries, but
-        by the difference it makes for people. From consumer apps that spread
-        quickly to enterprise platforms built to last, I focus on creating
-        technology that feels natural to use and reliable behind the scenes.
-      </p>
-      <p>
-        I bring the same mindset to my personal projects as well: plan
-        carefully, experiment boldly, and never lose sight of the fact that
-        technology should elevate human experience, not overshadow it.
-      </p>
+      {/* My Approach Section */}
+      <div className="about-approach">
+        <img
+          src="/me/Avatar.png"
+          alt="Cartoon of Craig sitting with laptop in lap - Dog next to him, Cat with a cape and Roman Ruins behind"
+          className="about-me-image"
+        />
+        <div className="about-approach-text">
+          <h3 className="about-subheading">My Approach to Development</h3>
+          <p>
+            To me, great engineering isn’t defined by frameworks or libraries,
+            but by the difference it makes for people. From consumer apps that
+            spread quickly to enterprise platforms built to last, I focus on
+            creating technology that feels natural to use and reliable behind
+            the scenes.
+          </p>
+          <p>
+            I bring the same mindset to my personal projects as well: plan
+            carefully, experiment boldly, and never lose sight of the fact that
+            technology should elevate human experience, not overshadow it.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }

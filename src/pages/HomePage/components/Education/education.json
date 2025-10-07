@@ -4,6 +4,7 @@
     "school": "National University",
     "dates": "2022 – 2026 (Expected)",
     "subHeader": "Dissertation: 'Evaluating the Security of AI-Generated Code: A Quantitative Study Using a Custom Scoring Framework'",
+    "logo" : "/logos/NationalLogo2.png",
     "highlights": [
       "Currently pursuing Ph.D. in Computer Science",
       "Focus on AI Ethics, Security, and Software Engineering",
@@ -15,6 +16,7 @@
     "school": "Strayer University",
     "dates": "2020 – 2022",
     "subHeader": "4.0 GPA with coursework emphasizing Cybersecurity and Infrastructure",
+    "logo": "/logos/StrayerUniversity.jpg",
     "highlights": [
       "Graduated with highest honors (4.0 GPA)",
       "Specialized coursework in Cybersecurity, Risk Management, and IT Infrastructure",
@@ -26,6 +28,7 @@
     "school": "Strayer University",
     "dates": "2017 – 2020",
     "subHeader": "4.0 GPA with coursework in Java, Web Development, and Software Engineering",
+    "logo": "/logos/StrayerUniversity.jpg",
     "highlights": [
       "Graduated with 4.0 GPA",
       "Core coursework in Java programming, Web Development, and Database Systems",

@@ -73,6 +73,21 @@
   opacity: 0.95;
   font-family: "Inter", sans-serif;
 }
+/* Logo block */
+.education-logo {
+  flex: 0 0 120px; /* fixed width for alignment */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-logo img {
+  width: auto;
+  height: 80%; /* fills 80% of section height */
+  max-height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+}
 
 /* Right column */
 .education-right {
@@ -112,5 +127,11 @@
   }
   .education-right {
     align-items: flex-start;
+  }
+  .education-logo img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
   }
 }

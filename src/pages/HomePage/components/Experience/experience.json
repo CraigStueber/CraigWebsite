@@ -5,6 +5,7 @@
     "role": "Senior React Developer",
     "location": "Glen Allen, VA",
     "dates": "2025 – Present",
+    "image": "/logos/BHELogo.png",
     "highlights": [
       "Architect reusable React + TypeScript components with Material UI & Next.js for scalable performance.",
       "Drive accessibility and WCAG compliance across the platform.",
@@ -18,6 +19,7 @@
     "role": "Head React Native Developer & Co-Founder",
     "location": "Richmond, VA",
     "dates": "2024 – Present",
+    "image": "/logos/DanceCardLogo.png",
     "highlights": [
       "Designed and shipped on iOS & Android with real-time chat, event scheduling, and location-aware features.",
       "Built a React web companion app and Supabase backend.",
@@ -31,6 +33,7 @@
     "role": "Senior Front End Developer",
     "location": "Richmond, VA",
     "dates": "2021 – 2025",
+    "image": "/logos/SauerLogo.jpg",
     "highlights": [
       "Built Hot Tomato Summer, a live voting platform reaching 30K+ users in 2 weeks.",
       "Created marketing dashboards and admin tools empowering non-technical teams to manage content in real time.",
@@ -44,6 +47,7 @@
     "role": "Front-End Engineer",
     "location": "Richmond, VA",
     "dates": "Aug 2021 – Dec 2021",
+    "image": "/logos/SoarLogo.jpg",
     "highlights": [
       "Audited and remediated ADA accessibility issues across the organization’s main website.",
       "Migrated the site to Wix, giving the marketing team a manageable platform after contract end.",
@@ -57,6 +61,7 @@
     "role": "React Developer",
     "location": "Glen Allen, VA",
     "dates": "2021",
+    "image": "/logos/TalosoLogo.jpg",
     "highlights": [
       "Developed a cross-platform React Native app displaying real-time IoT data.",
       "Built a visual check engine light system for HVAC systems, enabling proactive maintenance.",
@@ -65,11 +70,12 @@
     ]
   },
    {
-    "company": "PresenceLearning",
+    "company": "Presence Learning",
     "subHeader": "Part-time frontend development role focused on improving web presence and streamlining marketing workflows.",
     "role": "Front-End Web Developer",
     "location": "Remote",
     "dates": "Oct 2020 – Mar 2021",
+    "image": "/logos/PresenceLogo.png",
     "highlights": [
       "Planned and implemented updated web technologies to improve operational efficiency.",
       "Mitigated risks and ensured continuity by identifying and addressing potential workflow issues.",
@@ -83,6 +89,7 @@
     "role": "Front-End Developer",
     "location": "Remote",
     "dates": "July 2019 – Oct 2020",
+    "image": "/logos/KurbMediaLogo.jpg",
     "highlights": [
       "Delivered rapid-turnaround front-end solutions from social media platforms to VR interfaces for military applications.",
       "Adapted quickly to new codebases, shifting technologies weekly (React, Liquid, PHP, HTML/CSS).",
@@ -94,6 +101,7 @@
   "role": "Front-End Developer (Freelance)",
   "location": "Richmond, VA",
   "dates": "Dec 2017 – Jan 2021",
+  "image": "/logos/CS.png",
   "highlights": [
     "Delivered custom websites and applications leveraging HTML5, CSS3, JavaScript, React.js, and WordPress.",
     "Created user-friendly, responsive designs tailored to each client’s brand and business goals.",

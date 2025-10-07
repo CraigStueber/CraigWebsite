@@ -147,19 +147,62 @@
 .experience-button:hover {
   background: var(--color-primary);
 }
+.experience-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-/* Responsive stack */
+/* Logo block */
+/* Logo block */
+.experience-logo {
+  flex: 0 0 120px; /* fixed width so columns align */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-logo img {
+  width: 80%; /* scale relative to container */
+  height: auto;
+  max-height: 90px; /* prevents tall logos from dominating */
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Adjust layout proportions */
+.experience-left {
+  flex: 1.2;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.experience-right {
+  flex: 2;
+}
+
 @media (max-width: 900px) {
   .experience-card {
-    flex-direction: column; /* stack instead of side-by-side */
-    align-items: stretch; /* let each column take full width */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-logo {
+    margin-bottom: 1.25rem;
   }
 
   .experience-left {
-    margin-bottom: 1.5rem; /* add space between left block and bullets */
+    margin-bottom: 1.5rem;
   }
 
-  .experience-right {
-    align-items: flex-start; /* reset bullet alignment for readability */
+  .experience-right ul {
+    text-align: left;
   }
 }

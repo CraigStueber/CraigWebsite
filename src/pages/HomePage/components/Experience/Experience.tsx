@@ -27,6 +27,10 @@ function Experience() {
 
       {displayedJobs.map((job, index) => (
         <div key={index} className="experience-card">
+          <div className="experience-logo">
+            <img src={job.image} alt={`${job.company} logo`} />
+          </div>
+
           <div className="experience-left">
             <h3 className="experience-role">{job.role}</h3>
             <p className="experience-company">{job.company}</p>
@@ -35,6 +39,7 @@ function Experience() {
             </span>
             <p className="experience-subheader">{job.subHeader}</p>
           </div>
+
           <div className="experience-right">
             <ul>
               {job.highlights.map((point, i) => (

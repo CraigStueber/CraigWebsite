@@ -3,6 +3,11 @@ import "./MainSection.styles.css";
 function MainSection() {
   return (
     <div className="main-section">
+      <img
+        src="/me/craigVar.jpg"
+        alt="Picture of Craig smiling"
+        className="about-me-image"
+      />
       <h1 className="main-section-title">
         Craig <br /> Stueber
       </h1>

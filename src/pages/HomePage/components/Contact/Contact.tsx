@@ -9,6 +9,11 @@ function Contact() {
       aria-labelledby="contact-heading"
     >
       <div className="contact-heading-container">
+        <img
+          src="/me/Me.jpg"
+          alt="Picture of Craig smiling"
+          className="about-me-image"
+        />
         <h2 id="contact-heading" className="contact-heading">
           Contact Me
         </h2>
