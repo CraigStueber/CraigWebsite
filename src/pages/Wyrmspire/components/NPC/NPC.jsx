@@ -3,6 +3,7 @@ import Harven from "../../../../assets/Harven.png";
 import Korda from "../../../../assets/Korda.png";
 import Revna from "../../../../assets/Revan.png";
 import Taggin from "../../../../assets/Taggin.png";
+import BrimbleFinn from "../../../../assets/BrimbleFinn.png";
 import Cedric from "../../../../assets/recap/session3/Cedric.png";
 import Morgrave from "../../../../assets/recap/session3/Morgrave.png";
 import Ghost from "../../../../assets/recap/session2/Ghost.png";
@@ -11,6 +12,13 @@ import Cult from "../../../../assets/recap/session3/Cult.png";
 import "./NPC.styles.css";
 
 const braeforgeNPCs = [
+  {
+    name: "Bramble Finn",
+    quote:
+      "Did I ever tell ya about the time I fought a goose and lost? Nasty business, that bird still owes me a hat!",
+    bio: "Bramble Finn is a wiry, red-bearded wagon driver with the boundless energy of a man who’s never once run out of things to say. Known for his impossible stories and relentless chatter, he claims to have survived everything from ghostly hauntings to aggressive poultry. Despite his questionable luck and tendency to exaggerate, Bramble has a heart of gold and nerves of steel—probably because he talks fear itself into boredom. Whether steering his oxen through a storm or telling tales by the campfire, Bramble’s enthusiasm never wanes, much to the mixed delight and exhaustion of his traveling companions.",
+    img: BrimbleFinn,
+  },
   {
     name: "The Doctrine of the Second Ember",
     quote:

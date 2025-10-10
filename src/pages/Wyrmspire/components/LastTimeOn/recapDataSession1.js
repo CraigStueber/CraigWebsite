@@ -64,6 +64,15 @@ import HemlockBA from "../../../../assets/recap/session6/HemlockBA.png";
 import Pull from "../../../../assets/recap/session6/Pull.png";
 import HemlockStuffy from "../../../../assets/recap/session6/HemlockStuffy.png";
 
+import ElephantGod from "../../../../assets/recap/session7/ElephantGod.png";
+import LoveForGods from "../../../../assets/recap/session7/LoveForGods.png";
+import MealsWithGods from "../../../../assets/recap/session7/MealsWithGods.png";
+import JumpingThrough from "../../../../assets/recap/session7/JumpingThrough.png";
+import Armor from "../../../../assets/recap/session7/Armor.png";
+import ElfFriend from "../../../../assets/recap/session7/ElfFriend.png";
+import DadChat from "../../../../assets/recap/session7/DadChat.png";
+import Wagon from "../../../../assets/recap/session7/Wagon.png";
+import PointBlank from "../../../../assets/recap/session7/PointBlank.png";
 export const recapData = [
   {
     title: "1. A Funeral, A Favor, and a Flicker of Magic",
@@ -437,5 +446,61 @@ export const recapDataSession6 = [
     description:
       "The fight kicked off at a dead sprint, the party racing the clock to stop the cultists from tearing down the Wyrmgate. Ol’Iggy roared into the fray, slamming into the largest guardian, while Dimitri danced between the other two, casually putting a bolt right through one cultist. Then came Hemlock’s big moment—his first eldritch blast of the battle. With all the dramatic flair of a hero about to save the day… he blasted Ol'Iggy directly in the back. The look on her face said it all. Quickly trying to recover, Hemlock fired again—this time actually at the enemy—sending one cultist flying into the Fey and dropping the second like a sack of potatoes. By the end, the cultists were toast, the guardians were faltering, and the cult leader took one look at the towering Elephant warrior plus this chaos-loving crew and decided retreat was the better part of villainy. As for Hemlock, well… the party will never let him forget that his first “big hit” of the fight was almost Killing Ol'Iggy. (Which would have been a public service).",
     image: HemlockBA,
+  },
+];
+export const recapDataSession7 = [
+  {
+    title: "An Audience with Ankaran",
+    description:
+      "The party met **Ankaran the Steadfast**, a towering elephant god whose calm voice rumbled like distant thunder. He told them their next mission: travel to **Mount Khrun-Duun**, reactivate the First Wyrmgate, and then rebuild the shattered one. Easy to say, terrifying to do. Even so, the group felt a strange peace in his presence—as if his words carried the weight of destiny itself.",
+    image: ElephantGod,
+  },
+  {
+    title: "A Feast Fit for Gods (and Dwarves)",
+    description:
+      "Ankaran invited the heroes to share a divine meal—food that shimmered with magic and smelled impossibly delicious. Rose and Dimitri eyed their plates with caution, whispering suspicions about enchantments and hidden tricks. Ol’Iggy, on the other hand, skipped the thinking part entirely and dove in headfirst, demanding seconds before anyone else finished their first bite. The meal bestowed a stat boost… and a nap. Moments later, both Ol’Iggy and Ankaran were fast asleep, snoring in perfect harmony.",
+    image: MealsWithGods,
+  },
+  {
+    title: "Goodbyes Beneath the Canopy",
+    description:
+      "When the group awoke, Ankaran walked them to the edge of the Faey. Rose lingered, tempted to stay forever among the lush trees and gentle light of his world. Ol’Iggy hugged Ankaran’s leg (his arms barely reaching the shin) and proudly declared, ‘You’re my best friend now!’ Ankaran simply smiled, trunk raised in blessing, as the party stepped back toward the mortal world.",
+    image: LoveForGods,
+  },
+  {
+    title: "The Hidden Intruders",
+    description:
+      "As soon as Ol’Iggy crossed the threshold, reality shimmered—and there they were: **the Thrall and the Cultist**, now visible, sprinting toward the same portal the heroes had used. They dove through in a flash of light. Ol’Iggy scratched his beard and muttered, ‘Well… that explains a lot.’ The group exchanged knowing glances, realizing how their enemies had entered the Faey before them.",
+    image: JumpingThrough,
+  },
+  {
+    title: "The Elven Armory Awakens",
+    description:
+      "Exploring the tunnels again, the group found that the once-collapsed chamber had been cleared. Inside waited an **ancient elvish armory**, full of gleaming relics from a forgotten age. Ol’Iggy’s inner blacksmith took over—he reshaped an elven full plate suit to fit his dwarven form while keeping its elegant curves. He forged matching armor for Dimitri and crafted studded leather for Rose, with tiny rose-shaped studs because, well, style matters.",
+    image: Armor,
+  },
+  {
+    title: "The Wasteland Blooms",
+    description:
+      "Stepping outside, the adventurers found the barren wasteland transformed. Green shoots pierced the cracked soil—life was returning. At the edge of the reborn valley stood a group of elves, who welcomed the heroes with reverence. They called the party **Elf-Friends** and spoke of Ankaran the Steadfast with awe. Gifts were exchanged: Rose received enchanted arrows, Dimitri magical glue for his inventions, and Ol’Iggy—eternal bragging rights as ‘Best Friend of a God.’",
+    image: ElfFriend,
+  },
+  {
+    title: "Back from the Dead (Again)",
+    description:
+      "The party returned to **Longrock**, shocking everyone who had already assumed they were long dead… again. Dimitri’s father nearly fainted when he learned his son now held exclusive rights to renegotiate the elven trade deal. ‘I always knew you’d make something of yourself,’ he said proudly—right as Ol’Iggy’s **Bag of Truth Stones** rattled like an annoyed tambourine. Awkward silence followed. Still, pride swelled, and plans for celebration began.",
+    image: DadChat,
+  },
+  {
+    title: "Wheels, Oxen, and a Talkative Driver",
+    description:
+      "Before long, the group was supplied with a wagon, two sturdy oxen, and a driver named **Bramble Finn**—a wiry, red-bearded man who could talk the ears off a troll. His stories ranged from ‘The Ghost of Barrel Hill’ to ‘The Time I Fought a Goose and Lost,’ all delivered without pause for breath. With supplies packed and spirits high, they rolled north toward Ten-Towns.",
+    image: Wagon,
+  },
+  {
+    title: "Highwaymen and Heroics",
+    description:
+      "Not far from the main road, a group of **highwaymen** made the mistake of picking the wrong travelers to rob. Two archers, two swordsmen, and one overconfident captain quickly learned what happens when you interrupt heroes with divine blessings and magical weapons. The skirmish began in chaos—**Dimitri dashed around the back of the wagon, took aim at point-blank range… and missed. Twice.** Even the bandit looked confused. Luckily, Sasha's Metal Teeth made up for the marksmanship mishap, ending the fight swiftly and decisively. The road was left littered with regrets, broken weapons, and singed cloaks as the party pressed on toward **Ten-Towns**, ready—or not—for whatever awaited them next.",
+    image: PointBlank,
   },
 ];

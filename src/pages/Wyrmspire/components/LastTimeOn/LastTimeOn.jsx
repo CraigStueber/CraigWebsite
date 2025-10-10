@@ -7,6 +7,7 @@ import {
   recapDataSession4,
   recapDataSession5,
   recapDataSession6,
+  recapDataSession7,
 } from "./recapDataSession1";
 import encounters1 from "./encounterSession1";
 import encounters2 from "./encounterSession2";
@@ -14,9 +15,10 @@ import encounters3 from "./encounterSession3"; // new import
 import encounters4 from "./encounterSession4"; // new import
 import encounters5 from "./ecncounterSession5";
 import encounters6 from "./encounterSession6"; // new import
+import encounters7 from "./encounterSession7"; // new import
 function LastTimeOn() {
   const [activeTab, setActiveTab] = useState("recap");
-  const [activeSession, setActiveSession] = useState("session6");
+  const [activeSession, setActiveSession] = useState("session7");
 
   const getData = () => {
     if (activeTab === "recap") {
@@ -26,6 +28,7 @@ function LastTimeOn() {
       if (activeSession === "session4") return recapDataSession4;
       if (activeSession === "session5") return recapDataSession5;
       if (activeSession === "session6") return recapDataSession6;
+      if (activeSession === "session7") return recapDataSession7;
     } else {
       if (activeSession === "session1") return encounters1;
       if (activeSession === "session2") return encounters2;
@@ -33,6 +36,7 @@ function LastTimeOn() {
       if (activeSession === "session4") return encounters4;
       if (activeSession === "session5") return encounters5;
       if (activeSession === "session6") return encounters6;
+      if (activeSession === "session7") return encounters7;
     }
     return []; // fallback
   };
@@ -79,6 +83,12 @@ function LastTimeOn() {
           onClick={() => setActiveSession("session6")}
         >
           Session 6
+        </button>
+        <button
+          className={activeSession === "session7" ? "active" : ""}
+          onClick={() => setActiveSession("session7")}
+        >
+          Session 7
         </button>
       </div>
 
