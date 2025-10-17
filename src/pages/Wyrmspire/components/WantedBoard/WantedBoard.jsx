@@ -3,58 +3,59 @@ import "./WantedBoard.styles.css";
 
 const wantedPosts = [
   {
-    title: "Missing: Keldra and the Twins",
-    body: "Left to gather supplies before the mountain lit up green. Didn’t come back. Last seen near Tunnel 4. If found, tell Elric — heading to Duskmere. — Etched into wood, hung with twine.",
-    reward: "Whatever food Elric didn’t pack. Maybe a kiss, maybe a punch.",
+    title: "Notice of Grave Concern",
+    body: `Travelers found half-buried in snow, drained of blood. No tracks. No fire. No gods.  
+Locals whisper of a “Scarlet Congregation” performing rites beneath the aurora.  
+Town Speaker requests discretion — children have stopped sleeping.`,
+    reward: "50 gold for any proof of their existence or destruction.",
     type: "Quest",
   },
   {
-    title: "The Breath Is Stirring",
-    body: `"I saw the stone bleed beneath the chapel. I smelled the ash in the snow.  
-One by one, the sparks are chosen — and one by one, they will burn.  
-Do not fear the flame. Fear the silence that comes after.  
-When the Second Ember arrives, only the hollow shall remain.”  
-— Brother Harven Duskwhistle`,
-    reward: "Salvation (interpret as you will)",
-    type: "Rumor",
-  },
-  {
-    title: "Final Evacuation Notice",
-    body: "Braeforge is no longer under protection. All citizens urged to flee. Last wagons leave at dusk. No room for debate. — Revna Blackspur, Watch Captain",
-    reward: "A seat on the wagon. If it holds.",
+    title: "To Madame Rose (if you’re still breathing)",
+    body: `A scrap of perfumed parchment is pinned beneath a dagger.  
+“He took the house. Says we work for him now. Don’t come alone. He watches the river road.”  
+Signed with a pressed rose petal and the faint scent of lavender soap.`,
+    reward: "None listed — but the scent alone says it’s personal.",
     type: "Quest",
   },
   {
-    title: "Call for Witnesses",
-    body: `"The mountain dreams again.  
-If you have seen green flame in the dark, heard whispers in stone, or felt the ground breathe beneath your feet — come to the square at dawn.  
-The Book of Ash remembers your name. It is time."  
-— Brother Harven Duskwhistle`,
-    reward: "A page in the book. A place in the fire.",
-    type: "Rumor",
+    title: "Nights of Black Sky",
+    body: `Attacks on outer farms have doubled on nights when the sky goes *lightless.*  
+Locals call it **The Empty Moon.**  
+No torches, no travel, no prayers outdoors when the moon disappears.  
+Those who ignored the last warning were found half-buried, staring upward.`,
+    reward: "Survival. Stay inside when the sky turns hollow.",
+    type: "Warning",
   },
-
   {
-    title: "Letter for Madame Rose",
-    body: `"Dearest Rose —  
-Hope the mountain air hasn’t dulled your wit. We’ve an open seat at the table here, and the wine flows better than ever. A few *old friends* are in town asking after you (subtle types, you know the kind).  
-Ten-Towns would love a visit — bring your charm, your smile, and that *special perfume*.  
-— L."`,
-    reward:
-      "Safe passage + formal invitation (scented parchment, faint hint of cinnamon and clove)",
-    type: "Flavor",
-  },
-
-  {
-    title: "Chicken Crisis: Cluckalina's Revenge",
-    body: "Cluckalina came back. Bigger. Meaner. Laid an egg that *hissed*. Took the shed. We live in fear. — Gilda Marsh (currently hiding)",
-    reward: "Pie, panic, and a handmade 'Chicken Slayer' sash",
+    title: "Missing: Blue Heron (Again)",
+    body: `The famous talking heron of Easthaven has gone missing for the **fourth** time this winter.  
+Answers to “Sir Feathers” and “You Idiot Bird.”  
+Last seen attempting to trade fish for beer.`,
+    reward: "One warm pie and half a pint (if he returns sober).",
     type: "Flavor",
   },
   {
-    title: "To Whoever Finds This",
-    body: "We’ve gone west — me, the boys, and little Mora. Couldn’t wait anymore. If Harven returns… tell him I forgave him. — L.",
-    reward: "A child’s drawing of a smiling dwarf family, folded inside",
+    title: "Wanted: Cheese Thief",
+    body: `Someone’s been stealing cheese wheels from the cellar under the inn.  
+Found only footprints, crumbs, and one extremely satisfied goat.`,
+    reward: "Free drink for whoever finds the culprit (or the goat).",
+    type: "Flavor",
+  },
+  {
+    title: "Strange Job Posting",
+    body: `“Seeking brave souls to retrieve my *very important bucket* from the lake.  
+It glows sometimes, hums at others, and may whisper insults.  
+Bring rope, patience, and a towel.”  
+— Signed, Tammel the Fisher of Questionable Judgment.`,
+    reward: "Gratitude, confusion, and possibly a cursed bucket.",
+    type: "Flavor",
+  },
+  {
+    title: "Public Reminder",
+    body: `Anyone found licking the frozen statues in Temple Square *again* will be fined 5 silver.  
+(Yes, even if “it looked like ale.”)`,
+    reward: "None — but dignity is priceless.",
     type: "Flavor",
   },
 ];
