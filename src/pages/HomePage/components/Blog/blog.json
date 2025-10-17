@@ -1,14 +1,19 @@
 [
-  {
-    "title": "Vibe Coding: How to Code with Flow Without Sacrificing Structure",
-    "url": "https://medium.com/@craigstueber/vibe-coding-how-to-code-with-flow-without-sacrificing-structure-b675638d3f07",
-    "image": "/blogImages/VibeCoding.png",
-    "description": "Exploring how to balance flow-state creativity with structured, maintainable code practices."
+    {
+    "title": "Why ‘Ethical AI’ Misses the Real Point",
+    "url": "https://medium.com/@craigstueber/why-ethical-ai-misses-the-real-point-97e1be6dccc6",
+    "image": "/blogImages/Ethics.png",
+    "description": "Ethical AI has become more about what's permissible than what's principled."
   },
   {
     "title": "The Case for Custom Hooks in Crash-Proof React Apps",
     "url": "https://medium.com/@craigstueber/the-case-for-custom-hooks-in-crash-proof-react-apps-98ec6d8b6b47",
     "image": "/blogImages/Hooks.jpg",
     "description": "A look at how custom hooks can make your React apps more stable, maintainable, and crash-proof."
+  },{
+    "title": "Vibe Coding: How to Code with Flow Without Sacrificing Structure",
+    "url": "https://medium.com/@craigstueber/vibe-coding-how-to-code-with-flow-without-sacrificing-structure-b675638d3f07",
+    "image": "/blogImages/VibeCoding.png",
+    "description": "Exploring how to balance flow-state creativity with structured, maintainable code practices."
   }
 ]
