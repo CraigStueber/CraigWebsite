@@ -28,6 +28,15 @@ Those who ignored the last warning were found half-buried, staring upward.`,
     type: "Warning",
   },
   {
+    title: "The Dark Elf in the Snow",
+    body: `Locals whisper of a dark-skinned elf seen on the tundra—blades that hum like song and lightning, eyes that carry storms.  
+He’s cut down raiders, wolves, and worse, yet asks for no coin nor shelter.  
+Some say he’s a ghost. Others, a guardian.  
+If you cross his path, tread with respect... or not at all.`,
+    reward: "None posted. Some debts can’t be paid in gold.",
+    type: "Legend",
+  },
+  {
     title: "Missing: Blue Heron (Again)",
     body: `The famous talking heron of Easthaven has gone missing for the **fourth** time this winter.  
 Answers to “Sir Feathers” and “You Idiot Bird.”  
