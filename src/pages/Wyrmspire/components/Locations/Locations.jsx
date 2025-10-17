@@ -5,6 +5,7 @@ import KhrunGrunn from "../KhrunGrunn/KhrunGrunn";
 import AboutBraeforge from "../AboutBraeforge/AboutBraeforge";
 import LongRock from "../LongRock/LongRock";
 import VirelinDominion from "../VirelinDominion/VirelinDominion";
+import TenTowns from "../TenTowns/TenTowns";
 function Locations() {
   const [activeLocation, setActiveLocation] = useState("braeforge");
 
@@ -18,6 +19,8 @@ function Locations() {
         return <LongRock />;
       case "virelinDominion":
         return <VirelinDominion />;
+      case "tenTowns":
+        return <TenTowns />;
       default:
         return null;
     }
@@ -50,6 +53,12 @@ function Locations() {
           onClick={() => setActiveLocation("virelinDominion")}
         >
           Virelin Dominion
+        </button>
+        <button
+          className={activeLocation === "tenTowns" ? "active" : ""}
+          onClick={() => setActiveLocation("tenTowns")}
+        >
+          Ten-Towns
         </button>
       </div>
       <div className="location-content">{renderContent()}</div>
