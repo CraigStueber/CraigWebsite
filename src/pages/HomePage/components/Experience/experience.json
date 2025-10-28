@@ -14,20 +14,6 @@
     ]
   },
   {
-    "company": "DanceCard",
-    "subHeader": "Co-founded and led development of a social dance app connecting dancers worldwide.",
-    "role": "Head React Native Developer & Co-Founder",
-    "location": "Richmond, VA",
-    "dates": "2024 – Present",
-    "image": "/logos/DanceCardLogo.png",
-    "highlights": [
-      "Designed and shipped on iOS & Android with real-time chat, event scheduling, and location-aware features.",
-      "Built a React web companion app and Supabase backend.",
-      "Navigated App Store / Google Play policies, ensuring smooth deployments.",
-      "Championed inclusive design, ensuring accessibility was never an afterthought."
-    ]
-  },
-  {
     "company": "Sauer Brands",
     "subHeader": "Built and maintained multiple brand websites, partnering closely with the marketing team to deliver scalable, accessible platforms.",
     "role": "Senior Front End Developer",
@@ -94,6 +80,19 @@
       "Delivered rapid-turnaround front-end solutions from social media platforms to VR interfaces for military applications.",
       "Adapted quickly to new codebases, shifting technologies weekly (React, Liquid, PHP, HTML/CSS).",
       "Partnered with clients to deliver responsive, user-focused web experiences under tight deadlines."
+    ]
+  },  {
+    "company": "DanceCard",
+    "subHeader": "Co-founded and led development of a social dance app connecting dancers worldwide.",
+    "role": "Head React Native Developer & Co-Founder",
+    "location": "Richmond, VA",
+    "dates": "2024 – Present",
+    "image": "/logos/DanceCardLogo.png",
+    "highlights": [
+      "Designed and shipped on iOS & Android with real-time chat, event scheduling, and location-aware features.",
+      "Built a React web companion app and Supabase backend.",
+      "Navigated App Store / Google Play policies, ensuring smooth deployments.",
+      "Championed inclusive design, ensuring accessibility was never an afterthought."
     ]
   },{
   "company": "Self-Employed (Freelance)",
