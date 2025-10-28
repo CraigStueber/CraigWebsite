@@ -10,7 +10,19 @@
     ],
     "technologies": ["React", "TypeScript", "Next.js", "Material-UI", "Jotai", "Azure DevOps"],
     "image": "/projectImages/BHE.png"
-  },
+  },{
+  "title": "Third Age Technology",
+  "description": "A modern, senior-focused website built to help older adults navigate digital life safely and confidently. Designed for clarity, accessibility, and trust, with sections on scam awareness, digital support, and contact assistance.",
+  "businessImpact": "Delivered a full, responsive web presence for a local tech-support business, emphasizing usability and security for senior clients. The site demonstrates empathy-driven UX and modern development practices with a performance-first approach.",
+  "highlights": [
+    "Built a responsive React + Vite website with a custom forest-green and gold color palette.",
+    "Implemented Supabase backend for secure contact form submissions with RLS protection.",
+    "Added scam-awareness resources and mission pages focused on online safety education.",
+    "Deployed via Cloudflare Pages with meta tags, SEO optimization, and accessibility compliance."
+  ],
+  "technologies": ["React", "Vite", "Supabase", "Cloudflare Pages", "HTML5", "CSS3"],
+  "image": "/logos/ThirdAgeTechnology.jpg"
+},
   {
     "title": "DanceCard",
     "description": "A mobile-first social app connecting people through shared hobbies and events — designed to encourage real-world connection rather than doom-scrolling.",
