@@ -11,17 +11,17 @@
     "technologies": ["React", "TypeScript", "Next.js", "Material-UI", "Jotai", "Azure DevOps"],
     "image": "/projectImages/BHE.png"
   },{
-  "title": "Third Age Technology",
-  "description": "A modern, senior-focused website built to help older adults navigate digital life safely and confidently. Designed for clarity, accessibility, and trust, with sections on scam awareness, digital support, and contact assistance.",
-  "businessImpact": "Delivered a full, responsive web presence for a local tech-support business, emphasizing usability and security for senior clients. The site demonstrates empathy-driven UX and modern development practices with a performance-first approach.",
+  "title": "Purr Quest",
+  "description": "An APK mobile app built for my wife to track and map outdoor and stray cats around Richmond. Users can drop pins on a map, upload cat photos, and log their encounters.",
+  "businessImpact": "Demonstrates the ability to integrate geolocation and Google Maps APIs with a custom Supabase backend. A practical, real-world use of mobile development to build a fun and community-focused tool.",
   "highlights": [
-    "Built a responsive React + Vite website with a custom forest-green and gold color palette.",
-    "Implemented Supabase backend for secure contact form submissions with RLS protection.",
-    "Added scam-awareness resources and mission pages focused on online safety education.",
-    "Deployed via Cloudflare Pages with meta tags, SEO optimization, and accessibility compliance."
+    "Integrated Google Maps API for live location tracking and pin drops.",
+    "Enabled users to upload cat images tied to GPS coordinates.",
+    "Designed Supabase backend to store locations, photos, and encounter history.",
+    "Implemented Edge Functions for secure handling of uploads and location data."
   ],
-  "technologies": ["React", "Vite", "Supabase", "Cloudflare Pages", "HTML5", "CSS3"],
-  "image": "/logos/ThirdAgeTechnology.jpg"
+  "technologies": ["React Native", "Google Maps API", "Supabase", "Supabase Edge Functions"],
+  "image": "/projectImages/PurrQuest.png"
 },
   {
     "title": "DanceCard",
@@ -58,7 +58,19 @@
     ],
     "technologies": ["React", "Redux", "Supabase", "Python", "Authentication", "Fingerprinting"],
      "image": "/projectImages/HTS.png"
-  },
+  },{
+  "title": "Third Age Technology",
+  "description": "A modern, senior-focused website built to help older adults navigate digital life safely and confidently. Designed for clarity, accessibility, and trust, with sections on scam awareness, digital support, and contact assistance.",
+  "businessImpact": "Delivered a full, responsive web presence for a local tech-support business, emphasizing usability and security for senior clients. The site demonstrates empathy-driven UX and modern development practices with a performance-first approach.",
+  "highlights": [
+    "Built a responsive React + Vite website with a custom forest-green and gold color palette.",
+    "Implemented Supabase backend for secure contact form submissions with RLS protection.",
+    "Added scam-awareness resources and mission pages focused on online safety education.",
+    "Deployed via Cloudflare Pages with meta tags, SEO optimization, and accessibility compliance."
+  ],
+  "technologies": ["React", "Vite", "Supabase", "Cloudflare Pages", "HTML5", "CSS3"],
+  "image": "/logos/ThirdAgeTechnology.jpg"
+},
   {
     "title": "Kernel Season’s Sweepstakes",
     "description": "A reusable sweepstakes platform with dynamic form generation and backend prize management.",
@@ -166,18 +178,6 @@
   ],
   "technologies": ["React Native", "Supabase", "Expo", "Context API", "Supabase Edge Functions"],
   "image": "/projectImages/PickRest.jpg"
-},{
-  "title": "Cat Tracker",
-  "description": "An APK mobile app built for my wife to track and map outdoor and stray cats around Richmond. Users can drop pins on a map, upload cat photos, and log their encounters.",
-  "businessImpact": "Demonstrates the ability to integrate geolocation and Google Maps APIs with a custom Supabase backend. A practical, real-world use of mobile development to build a fun and community-focused tool.",
-  "highlights": [
-    "Integrated Google Maps API for live location tracking and pin drops.",
-    "Enabled users to upload cat images tied to GPS coordinates.",
-    "Designed Supabase backend to store locations, photos, and encounter history.",
-    "Implemented Edge Functions for secure handling of uploads and location data."
-  ],
-  "technologies": ["React Native", "Google Maps API", "Supabase", "Supabase Edge Functions"],
-  "image": "/projectImages/Cat.jpg"
 },
  {
   "title": "Wyrmspire D&D Website",
