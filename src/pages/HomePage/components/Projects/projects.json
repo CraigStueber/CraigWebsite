@@ -20,7 +20,7 @@
     "Designed Supabase backend to store locations, photos, and encounter history.",
     "Implemented Edge Functions for secure handling of uploads and location data."
   ],
-  "technologies": ["React Native", "Google Maps API", "Supabase", "Supabase Edge Functions"],
+  "technologies": ["React Native", "TypeScript","Google Maps API", "Supabase", "Supabase Edge Functions"],
   "image": "/projectImages/PurrQuest.png"
 },
   {
