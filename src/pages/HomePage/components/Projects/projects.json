@@ -11,7 +11,7 @@
     "technologies": ["React", "TypeScript", "Next.js", "Material-UI", "Jotai", "Azure DevOps"],
     "image": "/projectImages/BHE.png"
   },{
-  "title": "Purr Quest",
+  "title": "PurrQuest",
   "description": "An APK mobile app built for my wife to track and map outdoor and stray cats around Richmond. Users can drop pins on a map, upload cat photos, and log their encounters.",
   "businessImpact": "Demonstrates the ability to integrate geolocation and Google Maps APIs with a custom Supabase backend. A practical, real-world use of mobile development to build a fun and community-focused tool.",
   "highlights": [
