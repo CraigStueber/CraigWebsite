@@ -10,7 +10,7 @@ function Blog() {
         </h2>
         <p className="blog-intro">
           I publish articles on Medium twice a month (most months 😉) covering
-          React, frontend strategy, and software engineering best practices.
+          AI ethics, frontend strategy, and software engineering best practices.
         </p>
       </div>
 

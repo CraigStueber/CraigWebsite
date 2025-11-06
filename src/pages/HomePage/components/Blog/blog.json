@@ -1,9 +1,21 @@
 [
-    {
+  {
+    "title": "GitHub Agent: What It’s Really Like to Code with an AI Teammate",
+    "url": "https://medium.com/@craigstueber/github-agent-what-its-really-like-to-code-with-an-ai-teammate-c391279e18d4",
+    "image": "/blogImages/GitHubAgent.png",
+    "description": "Imagine pairing with a teammate who already knows your repo, writes clean diffs, and opens pull requests on its own."
+  },  
+  {
     "title": "Why ‘Ethical AI’ Misses the Real Point",
     "url": "https://medium.com/@craigstueber/why-ethical-ai-misses-the-real-point-97e1be6dccc6",
     "image": "/blogImages/Ethics.png",
     "description": "Ethical AI has become more about what's permissible than what's principled."
+  },
+    {
+    "title": "The Machine Stops (Again)",
+    "url": "https://medium.com/@craigstueber/the-machine-stops-again-f68745134fb0",
+    "image": "/blogImages/MachineStops.png",
+    "description": "Written more than a century ago, Forster’s story reads today like a field report from our own era."
   },
   {
     "title": "The Case for Custom Hooks in Crash-Proof React Apps",
