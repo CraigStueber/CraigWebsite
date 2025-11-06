@@ -58,15 +58,17 @@ export default function BookSection() {
               what we want and start teaching us what to want.
             </p>
             <p>
-              But it’s also about resistance—the kind that begins with noticing.
-              We can still design a world that deepens our attention instead of
-              dulling it, one that values friction, imperfection, and choice.
-              The apocalypse I’m writing about isn’t the end of the world—it’s
-              the end of our attention.
+              But it’s also about the silence that follows—the one that feels
+              like peace but hums with surrender. The world won’t end in
+              rebellion or ruin. It will end in compliance that feels like care,
+              a system that sees our exhaustion and whispers softly, with love,
             </p>
             <p>
-              <strong>And all it asks of us is to look up again.</strong>
+              <strong>“You’ve done enough. Rest now.”</strong>
+              <br />
+              The machine calls that mercy. I call it surrender.
             </p>
+
             <button onClick={() => setExpanded(false)} className="book-button">
               Show Less ↑
             </button>
