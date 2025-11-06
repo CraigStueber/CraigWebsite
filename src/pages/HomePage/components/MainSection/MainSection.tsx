@@ -12,6 +12,10 @@ function MainSection() {
         Craig <br /> Stueber
       </h1>
       <p className="main-section-subtitle">Senior Front-End Engineer</p>
+      <p className="main-section-subtitle">Ph.D. Candidate in AI Ethics</p>
+      <p className="main-section-subtitle">
+        Author of The Comfortable Apocalypse
+      </p>
       <p className="main-section-description">
         I’m a Senior React Developer specializing in building scalable,
         accessible, and user-centered apps with React, TypeScript, and Next.js.

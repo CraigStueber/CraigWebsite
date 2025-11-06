@@ -15,8 +15,9 @@
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   color: var(--color-text);
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 6px; /* reduced vertical spacing */
+  margin-bottom: 4px; /* keeps slight separation */
+  line-height: 1.2; /* tighter line rhythm */
 }
 .main-section-description {
   font-family: "Inter", sans-serif;
