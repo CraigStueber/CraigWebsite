@@ -20,16 +20,11 @@ export default function BookSection() {
         {!expanded ? (
           <>
             <p>
-              We feared machines would end us.
-              <br />
-              Instead, they made us comfortable.
-            </p>
-            <p>
-              This book explores how convenience became captivity—how every
-              small “yes” to automation erodes a little of our agency. It’s not
-              about the end of humanity, but the quiet fading of attention, and
-              how we can still choose to wake up before comfort finishes the
-              job.
+              When survival isn't the problem - Irrelevance is. We don't end
+              with fire and flood. We end with convenience. In a world where
+              algorthims anticipate every need and attention is the last human
+              resource. We have to ask ourselves - What happens when the
+              machines don't need to rise - because we've already knelt?
             </p>
             <button onClick={() => setExpanded(true)} className="book-button">
               Read More →
@@ -38,35 +33,26 @@ export default function BookSection() {
         ) : (
           <>
             <p>
-              We used to fear that machines would destroy us. Instead, they made
-              us comfortable.
-              <br />
-              <br />
-              This book began with a question that wouldn’t leave me alone:{" "}
-              <em>
-                What happens when technology stops serving us and starts
-                defining us?
-              </em>{" "}
-              I started to notice the quiet ways I was disappearing—how my tools
-              finished my thoughts, how convenience replaced curiosity, how
-              “help” became habit.
+              When survival isn't the problem - Irrelevance is. We don't end
+              with fire and flood. We end with convenience. In a world where
+              algorthims anticipate every need and attention is the last human
+              resource. We have to ask ourselves - What happens when the
+              machines don't need to rise - because we've already knelt?
             </p>
             <p>
-              <em>The Comfortable Apocalypse</em> is my attempt to trace that
-              surrender. It’s about the moment relief turns into dependence,
-              when comfort becomes captivity, and when our tools stop asking
-              what we want and start teaching us what to want.
+              Blending technology, philosophy, and the cultrual critiqu.{" "}
+              <em>The Comfortable Apocalypse</em> traces how humanity's pursuit
+              of ease led to its quiet surrender. Drawing on thinkiers from E.M.
+              Forster to Yuival Harari, <em>The Comfortable Apocalypse</em>{" "}
+              explores AI ethics, digital dependence, and the slow erosion of
+              agency that defines modern life.
             </p>
             <p>
-              But it’s also about the silence that follows—the one that feels
-              like peace but hums with surrender. The world won’t end in
-              rebellion or ruin. It will end in compliance that feels like care,
-              a system that sees our exhaustion and whispers softly, with love,
+              This is not a book about dystopia - its a mirror held up to the
+              present.
             </p>
             <p>
-              <strong>“You’ve done enough. Rest now.”</strong>
-              <br />
-              The machine calls that mercy. I call it surrender.
+              <strong>And the reflection is far too comfortable.</strong>
             </p>
 
             <button onClick={() => setExpanded(false)} className="book-button">
