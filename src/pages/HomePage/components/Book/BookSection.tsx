@@ -42,7 +42,7 @@ export default function BookSection() {
             <p>
               Blending technology, philosophy, and the cultrual critiqu.{" "}
               <em>The Comfortable Apocalypse</em> traces how humanity's pursuit
-              of ease led to its quiet surrender. Drawing on thinkiers from E.M.
+              of ease led to its quiet surrender. Drawing on thinkers from E.M.
               Forster to Yuival Harari, <em>The Comfortable Apocalypse</em>{" "}
               explores AI ethics, digital dependence, and the slow erosion of
               agency that defines modern life.
