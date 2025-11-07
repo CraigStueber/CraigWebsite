@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./BookSection.css"; // optional, for styling
-import Cover from "../../../../assets/CACover.png";
+import Cover from "../../../../assets/BookCover.png";
 export default function BookSection() {
   const [expanded, setExpanded] = useState(false);
 
