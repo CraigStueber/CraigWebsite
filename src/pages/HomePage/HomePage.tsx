@@ -22,15 +22,15 @@ function HomePage() {
       <Divider color="yellow" />
       <Experience />
       <Divider color="yellow" />
+      <BookSection />
+      <Divider color="yellow" />
       <Education />
       <Divider color="yellow" />
       <Skills />
       <Divider color="yellow" />
-      <Projects />
-      <Divider color="yellow" />
-      <BookSection />
-      <Divider color="yellow" />
       <Blog />
+      <Divider color="yellow" />
+      <Projects />
       <Divider color="yellow" />
       <Contact />
       <Footer />

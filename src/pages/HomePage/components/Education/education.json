@@ -4,10 +4,14 @@
     "school": "National University",
     "dates": "2022 – 2026 (Expected)",
     "subHeader": "Dissertation: 'Evaluating the Security of AI-Generated Code: A Quantitative Study Using a Custom Scoring Framework'",
-    "logo" : "/logos/NationalLogo2.png",
+    "logo": "/logos/NationalLogo2.png",
     "highlights": [
-      "Currently pursuing Ph.D. in Computer Science",
-      "Focus on AI Ethics, Security, and Software Engineering",
+      "Pursuing a Ph.D. focused on AI Safety, Alignment, and Model Reliability.",
+      "Developing a hybrid vulnerability scoring framework combining OWASP, CVSS, and model-specific behavioral metrics.",
+      "Researching how prompt design influences downstream system behavior, risk exposure, and model consistency.",
+      "Conducting empirical evaluations of AI-generated code to identify failure modes, drift patterns, and exploit pathways.",
+      "Building behavioral test harnesses to measure hallucination rates, determinism, and reliability under adversarial inputs.",
+      "Translating ethical principles—transparency, fairness, non-manipulative UX—into actionable prompt-layer constraints.",
       "Expected graduation: June 2026"
     ]
   },

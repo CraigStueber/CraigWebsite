@@ -6,35 +6,46 @@ function QuickStats() {
       <h3 id="quick-stats-heading" className="quick-stats-title">
         Quick Stats
       </h3>
+
       <div className="quick-stats-grid">
         <div className="stat">
           <span className="stat-number">7+</span>
-          <span className="stat-label">Years Experience</span>
+          <span className="stat-label">Years Engineering Experience</span>
         </div>
+
         <div className="stat">
-          <span className="stat-number">30K+</span>
-          <span className="stat-label">Users Engaged</span>
-        </div>
-        <div className="stat">
-          <span className="stat-number">1</span>
+          <span className="stat-number">100+</span>
           <span className="stat-label">
-            Startup <br /> Co-Founded
+            Prompts <br /> Engineered
           </span>
         </div>
+
+        <div className="stat">
+          <span className="stat-number">25+</span>
+          <span className="stat-label">
+            Behavioral <br /> Evaluations Built
+          </span>
+        </div>
+
+        <div className="stat">
+          <span className="stat-number">15+</span>
+          <span className="stat-label">
+            Model Failure <br /> Analyses Conducted
+          </span>
+        </div>
+
+        <div className="stat">
+          <span className="stat-number">10+</span>
+          <span className="stat-label">
+            Incident <br /> Responses Led
+          </span>
+        </div>
+
         <div className="stat">
           <span className="stat-number">Ph.D.</span>
           <span className="stat-label">
-            Candidate <br />
-            (AI Ethics)
+            Candidate <br /> (AI Safety)
           </span>
-        </div>
-        <div className="stat">
-          <span className="stat-number">100%</span>
-          <span className="stat-label">Remote Ready</span>
-        </div>
-        <div className="stat">
-          <span className="stat-number">4</span>
-          <span className="stat-label">Continents Explored</span>
         </div>
       </div>
     </div>

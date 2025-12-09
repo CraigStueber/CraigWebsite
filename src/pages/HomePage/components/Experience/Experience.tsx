@@ -19,9 +19,12 @@ function Experience() {
           Professional Experience
         </h2>
         <p className="experience-intro">
-          Over the past 7+ years, I’ve delivered front-end solutions that scale
-          from consumer-facing campaigns to enterprise platforms, always with a
-          focus on performance, accessibility, and long-term impact.
+          Across 7+ years of engineering, I’ve worked at the intersection of
+          user experience, AI-assisted systems, and reliable model behavior. My
+          experience spans consumer apps, enterprise platforms, and
+          AI-integrated workflows—where I design system prompts, build
+          behavioral evaluations, and collaborate across teams to ensure
+          technology behaves predictably and safely in real-world use.
         </p>
       </div>
 

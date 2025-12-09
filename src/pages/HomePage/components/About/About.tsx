@@ -1,5 +1,6 @@
 import "./About.styles.css";
 import QuickStats from "./_components/QuickStats";
+
 function About() {
   return (
     <section
@@ -11,119 +12,144 @@ function About() {
         <h2 id="about-heading" className="about-heading">
           About Me
         </h2>
+
         <p>
-          Practical front-end engineer who thrives at the intersection of
-          creativity, accessibility, and clean code.
+          I’m an AI behavior–minded engineer who works at the intersection of
+          front-end systems, prompt design, and model reliability. I focus on
+          how large language models behave in real workflows—and how to guide
+          them toward safe, consistent, and beneficial outputs.
         </p>
+
+        <p>
+          My background blends 7+ years of engineering with a Ph.D. focus in AI
+          safety, giving me a practical and research-driven understanding of
+          model behavior, alignment, and evaluation. Whether I’m designing a
+          user interface or authoring system prompts, my goal is the same: build
+          technology people can trust.
+        </p>
+
         <img
           src="/me/BannerMe.jpg"
-          alt="Cartoon of Me sitting in a coffee cup with computer screens all around"
+          alt="Cartoon of Craig sitting in a coffee cup with computer screens all around"
           className="about-me-banner"
         />
       </div>
+
       <div className="about-grid">
         <div className="about-main">
           <h3 className="about-subheading">
-            The Power of Crafting Experiences
+            The Power of Crafting Intelligent Experiences
           </h3>
+
           <p>
-            Over the past 7+ years, I've learned that great engineering is more
-            than solving tickets — it's about creating experiences that feel
-            seamless for the user and maintainable for the team. From consumer
-            marketing platforms that reached tens of thousands of users in a
-            matter of days, to enterprise-level tools at Berkshire Hathaway
-            Energy, I've built systems that balance performance, scalability,
-            and accessibility.
+            Great engineering isn’t just about shipping features—it’s about
+            shaping how systems behave, how users experience intelligence, and
+            how reliably an AI assistant responds under real-world conditions.
+            My work centers on designing prompts, interfaces, and evaluations
+            that ensure AI behaves predictably, ethically, and in alignment with
+            product intent.
           </p>
+
           <p>
-            At Sauer Brands, I delivered interactive campaigns like Hot Tomato
-            Summer and built marketing dashboards that empowered non-technical
-            teams to manage content in real time. At DanceCard, I co-founded and
-            developed a mobile app focused on human connection — not
-            doom-scrolling, but actually finding people who share your passions.
-            And now at BHE, I'm shaping the future of energy management
-            platforms with React, Next.js, and TypeScript, mentoring teammates,
-            and championing WCAG/ADA compliance every step of the way.
+            At Berkshire Hathaway Energy, I lead prompt engineering initiatives,
+            design behavior-constrained prompts for internal tools, evaluate
+            model drift, and teach engineers how to work with AI safely. At
+            Sauer Brands, I built AI-augmented dashboards and authored internal
+            prompting standards. At DanceCard, I co-founded and engineered a
+            social app with a focus on trust, clarity, and safe interaction
+            patterns. Across every project, I combine human-centered design with
+            behavioral reasoning to create intelligent systems people can rely
+            on.
           </p>
 
           <div className="beyond-code" aria-labelledby="beyond-code-heading">
             <h3 id="beyond-code-heading" className="beyond-code-title">
               Beyond Code
             </h3>
+
             <ul className="beyond-code-list">
               <li>
-                <strong>Family Time</strong> – Balancing career and family keeps
-                me grounded and reminds me why building meaningful, accessible
-                technology matters.
+                <strong>AI & Ethics</strong> – My Ph.D. research explores
+                alignment, behavioral reliability, and vulnerability analysis in
+                AI systems.
               </li>
               <li>
-                <strong>Traveling</strong> – Exploring new places and cultures
-                fuels my curiosity and reminds me how connected we all are. I
-                love experiencing the world firsthand and learning that we
-                aren’t so different after all.
+                <strong>Mentorship & Teaching</strong> – I lead prompt
+                engineering workshops and help teams develop intuition for safe,
+                structured prompting.
               </li>
               <li>
-                <strong>Board Games & Tabletop Strategy</strong> – From
-                cooperative challenges to competitive play, board games fuel my
-                love of systems, mechanics, and team dynamics.
-              </li>
-
-              <li>
-                <strong>Mentorship & Growth</strong> – I thrive on helping
-                developers grow, whether through code reviews, pairing, or
-                career guidance.
+                <strong>Board Games & Strategy</strong> – A lifelong love of
+                systems thinking, incentives, and pattern recognition.
               </li>
               <li>
-                <strong>AI & Ethics</strong> – As a Ph.D. candidate, I’m
-                researching how we can build AI that is powerful yet
-                transparent, fair, and trustworthy.
+                <strong>Travel & Curiosity</strong> – Exploring new perspectives
+                keeps me grounded in the human side of technology.
               </li>
               <li>
-                <strong>Painting Models</strong> – I enjoy painting miniatures,
-                a hobby that sharpens creativity, patience, and attention to
-                detail.
+                <strong>Family Time</strong> – A reminder that the purpose of
+                technology is to elevate people, not overshadow them.
+              </li>
+              <li>
+                <strong>Painting Models</strong> – A creative discipline that
+                sharpens attention to detail—useful in engineering and AI
+                behavior work alike.
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Make the cards side by side on mobile */}
+        {/* Sidebar Cards */}
         <aside className="about-sidecards">
           <div className="about-card" aria-labelledby="drives-me-heading">
             <h3 id="drives-me-heading" className="about-subheading">
               What Drives Me
             </h3>
             <ul>
-              <li>Championing accessibility & ADA compliance</li>
-              <li>Building apps that connect people in meaningful ways</li>
-              <li>Mentoring developers and fostering team growth</li>
-              <li>Balancing performance with sustainable code</li>
-              <li>Exploring ethical questions in AI & technology</li>
+              <li>
+                Designing safe, interpretable, and predictable AI behaviors
+              </li>
+              <li>
+                Translating ethical principles into prompt-layer constraints
+              </li>
+              <li>
+                Building evaluations that detect drift, regressions, and failure
+                modes
+              </li>
+              <li>Mentoring teams and scaling responsible AI practices</li>
+              <li>
+                Creating technology that enhances human agency—not replaces it
+              </li>
             </ul>
           </div>
+
           <QuickStats />
         </aside>
       </div>
+
       {/* My Approach Section */}
       <div className="about-approach">
         <img
           src="/me/Avatar.png"
-          alt="Cartoon of Craig sitting with laptop in lap - Dog next to him, Cat with a cape and Roman Ruins behind"
+          alt="Cartoon of Craig with laptop, dog beside him, cat with cape, Roman ruins behind"
           className="about-me-image"
         />
+
         <div className="about-approach-text">
           <h3 className="about-subheading">My Approach to Development</h3>
+
           <p>
-            To me, great engineering isn’t defined by frameworks or libraries,
-            but by the difference it makes for people. From consumer apps that
-            spread quickly to enterprise platforms built to last, I focus on
-            creating technology that feels natural to use and reliable behind
-            the scenes.
+            Whether I’m designing an interface or a system prompt, I take a
+            principles-first approach: clarity, reliability, reproducibility,
+            and respect for the user. I care deeply about how intelligent
+            systems behave, and I build evaluations and guardrails that ensure
+            that behavior serves human goals.
           </p>
+
           <p>
-            I bring the same mindset to my personal projects as well: plan
-            carefully, experiment boldly, and never lose sight of the fact that
-            technology should elevate human experience, not overshadow it.
+            I plan carefully, experiment boldly, and iterate with intention.
+            Good engineering should elevate people—help them think better, work
+            smarter, and feel confident trusting the systems they rely on.
           </p>
         </div>
       </div>

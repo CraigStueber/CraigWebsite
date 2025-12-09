@@ -26,15 +26,14 @@ function HomePageHeader() {
           <li>
             <a href="#skills">Skills</a>
           </li>
-
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
           <li>
             <a href="#Book">Book</a>
           </li>
           <li>
             <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
           </li>
           <li>
             <a href="#contact">Contact</a>

@@ -1,4 +1,72 @@
-{
+{"AI, Safety & Prompt Engineering": [
+  {
+    "name": "Prompt Engineering",
+    "level": 5,
+    "years": 4,
+    "description": "Design structured, multi-step prompts for reliability, determinism, and safe behavioral shaping. Author system prompts, role prompts, meta-prompts, and constrained instruction sets used across production systems."
+  },
+  {
+    "name": "LLM Behavioral Evaluation",
+    "level": 5,
+    "years": 3,
+    "description": "Build evaluation harnesses to measure drift, hallucinations, prompt sensitivity, edge-case failures, sycophancy, refusal behavior, token dependency, and multi-run stability. Skilled in constructing behavioral test suites for Claude, GPT, and open models."
+  },
+  {
+    "name": "AI Safety & Alignment",
+    "level": 5,
+    "years": 3,
+    "description": "Research and apply safety-first techniques including constrained generation, safe completion patterns, refusal tuning, adversarial input testing, and non-manipulative UX patterns. Active PhD research in AI safety and risk quantification."
+  },
+  {
+    "name": "System Prompt Architecture",
+    "level": 5,
+    "years": 3,
+    "description": "Author system-level prompts used across tools and workflows, defining behavioral expectations, guardrails, limitations, and patterns to ensure consistent responses across contexts."
+  },
+  {
+    "name": "Meta-Prompting & Synthetic Data",
+    "level": 4,
+    "years": 2,
+    "description": "Develop meta-prompts for generating synthetic datasets, regression-testing model updates, and creating structured behavioral variations for training and evaluation pipelines."
+  },
+  {
+    "name": "Failure Mode Analysis",
+    "level": 5,
+    "years": 3,
+    "description": "Identify and diagnose model misbehavior including hallucinations, misalignment, refusal failure, over-agreeableness, multi-step reasoning collapse, and prompt collisions. Skilled at root-cause isolation and proposing prompt-layer mitigations."
+  },
+  {
+    "name": "Model Debugging & Incident Response",
+    "level": 5,
+    "years": 3,
+    "description": "Experienced in handling behavioral incidents—reproducing issues, designing minimal test prompts, analyzing logs, isolating prompts vs. model-layer issues, and shipping corrected prompt architectures."
+  },
+  {
+    "name": "Safety-Conscious UX Design",
+    "level": 5,
+    "years": 4,
+    "description": "Designs interfaces that prevent coercive UX patterns, ensure user agency, and encourage transparent AI behavior. Applies WCAG and ethical UX principles for every AI-assisted feature."
+  },
+  {
+    "name": "Python for Evaluation & Tooling",
+    "level": 5,
+    "years": 6,
+    "description": "Build Python scripts for batch evaluation, dataset generation, prompt-variant testing, and automated scoring pipelines (OWASP, CVSS, custom behavioral metrics)."
+  },
+  {
+    "name": "Model Comparison & Benchmarking",
+    "level": 4,
+    "years": 2,
+    "description": "Evaluate Claude, GPT, and open models across behavioral dimensions — safety, helpfulness, refusal quality, hallucination rate, and compliance with prompt constraints."
+  },
+  {
+    "name": "Ethical AI & Risk Assessment",
+    "level": 5,
+    "years": 3,
+    "description": "Apply research-backed frameworks to quantify model risk, evaluate harm potential, and translate ethical requirements (fairness, transparency, non-manipulation) into enforceable prompt-layer constraints."
+  }
+],
+
   "Languages": [
   { 
     "name": "HTML", 
