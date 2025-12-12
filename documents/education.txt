@@ -1,0 +1,23 @@
+Doctor of Computer Science, National University (2022 – Present, expected graduation 2026)
+
+Pursuing a doctorate with a research focus on AI safety, alignment, model reliability, and evaluation methodology.
+Dissertation titled “Evaluating the Security and Behavioral Reliability of AI-Generated Code.”
+Research explores AI safety, model behavior under adversarial conditions, behavioral reproducibility, and interpretability.
+Developed a hybrid framework that integrates OWASP, CVSS, and model-specific behavioral scoring to classify vulnerabilities in AI-generated code.
+Studies how prompt design shapes downstream system behavior, risk exposure, and model consistency.
+Builds behavioral test harnesses that measure hallucination rate, determinism, reliability drift, and failure modes under adversarial inputs.
+Translates ethical AI principles such as transparency, fairness, and non-manipulative UX into actionable prompt-layer constraints.
+
+Master of Science in Information Technology Management, Strayer University (2020 – 2022)
+
+Graduated with honors.
+Coursework focused on cybersecurity, risk management, IT infrastructure, organizational leadership, and emerging security concerns related to automation and AI-driven systems.
+Capstone centered on IT policy and strategic technology management.
+Completed remote program while working full-time in software engineering roles.
+
+Bachelor of Science in Information Technology, Strayer University (2017 – 2020)
+
+Graduated with honors.
+Coursework included Java programming, web development, database systems, networking, and software engineering.
+Senior projects focused on full-stack application design and system architecture.
+Completed remotely while working in freelance web development and early engineering positions.

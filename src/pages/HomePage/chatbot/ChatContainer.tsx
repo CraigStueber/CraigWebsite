@@ -1,25 +1,38 @@
-import React, { useState } from "react";
+import React from "react";
 import "./ChatContainer.styles.css";
+
+import { useChatState } from "../hooks/useChatState";
+import { usePersona } from "../context/chatbot/personaContext";
 
 import ChatMessageList from "./ChatMessageList";
 import ChatInput from "./ChatInput";
-import PresetQuestions from "./PresetQuestions";
-
-type Message = {
-  role: "user" | "assistant";
-  content: string;
-};
+import { PERSONA_WELCOME_MESSAGES } from "../types/chatbot/persona";
+import { useEffect, useState } from "react";
 
 export default function ChatContainer() {
-  const [messages, setMessages] = useState<Message[]>([
-    { role: "assistant", content: "Hi there! How can I help you today?" },
-  ]);
+  const { persona } = usePersona();
+  const chatState = useChatState();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const messages = chatState.getMessages(persona);
+
+  useEffect(() => {
+    chatState.ensureWelcomeMessage(persona, PERSONA_WELCOME_MESSAGES[persona]);
+  }, [persona]);
 
   return (
     <div className="chat-container">
-      <ChatMessageList messages={messages} />
-      <PresetQuestions setMessages={setMessages} />
-      <ChatInput messages={messages} setMessages={setMessages} />
+      <ChatMessageList
+        messages={messages}
+        chatState={chatState}
+        setIsLoading={setIsLoading}
+      />
+
+      <ChatInput
+        chatState={chatState}
+        isLoading={isLoading}
+        setIsLoading={setIsLoading}
+      />
     </div>
   );
 }

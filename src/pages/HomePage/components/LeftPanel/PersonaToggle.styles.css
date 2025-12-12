@@ -21,7 +21,7 @@
 }
 
 .persona-btn.active {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: #f63bdd;
+  border-color: #b31dd8;
   color: #ffffff;
 }

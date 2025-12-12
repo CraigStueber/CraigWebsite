@@ -1,0 +1,84 @@
+{
+  "type": "authoritative_facts",
+  "domain": "professional_experience",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2025-12-12",
+  "summary": "Craig Stueber is a senior front-end engineer and AI behavior–focused practitioner with experience spanning enterprise energy systems, consumer platforms, and AI-augmented products. His work emphasizes reliability, predictability, and human-centered system behavior.",
+  "roles": [
+    {
+      "company": "Berkshire Hathaway Energy",
+      "title": "Senior Front-End Engineer / AI Behavior Lead",
+      "employmentType": "Contract",
+      "focus": [
+        "Front-end architecture",
+        "AI-assisted development workflows",
+        "Prompt engineering",
+        "Behavioral reliability"
+      ],
+      "responsibilities": [
+        "Designs and reviews complex React and TypeScript systems used in mission-critical energy platforms",
+        "Leads internal prompt engineering initiatives focused on deterministic and safe AI behavior",
+        "Develops behavior-constrained prompts and evaluates LLM failure modes and drift",
+        "Collaborates with engineering, design, and QA teams to ensure predictable UI and system behavior",
+        "Documents repeatable reasoning workflows for debugging and AI-assisted development"
+      ],
+      "notes": "Work emphasizes safety, consistency, and reliability over novelty."
+    },
+    {
+      "company": "Sauer Brands, Inc.",
+      "title": "Senior Front-End Engineer",
+      "employmentType": "Contract",
+      "focus": [
+        "Consumer-facing platforms",
+        "Internal tooling",
+        "AI-augmented dashboards"
+      ],
+      "responsibilities": [
+        "Built and maintained React-based consumer and internal platforms",
+        "Developed AI-augmented dashboards with structured prompting standards",
+        "Helped teams adopt safe prompting practices for Copilot and LLM tools",
+        "Improved accessibility, performance, and content reliability across brand sites"
+      ]
+    },
+    {
+      "company": "DanceCard",
+      "title": "Co-Founder & Lead Engineer",
+      "employmentType": "Founder",
+      "focus": [
+        "Product architecture",
+        "Trust and safety",
+        "Cross-platform development"
+      ],
+      "responsibilities": [
+        "Designed and built a cross-platform social application (iOS, Android, web)",
+        "Implemented real-time chat, event scheduling, and location-aware features",
+        "Designed moderation-ready schemas and safe interaction patterns",
+        "Built Supabase backend with authentication, RLS, and auditability"
+      ],
+      "notes": "Project prioritizes user safety, clarity, and predictable interaction flows."
+    },
+    {
+      "company": "Independent / Consulting",
+      "title": "Front-End Engineer & Systems Consultant",
+      "employmentType": "Freelance",
+      "focus": [
+        "Web applications",
+        "Accessibility",
+        "System reliability"
+      ],
+      "responsibilities": [
+        "Delivered React, WordPress, and Shopify solutions for clients",
+        "Performed ADA/WCAG accessibility audits and remediation",
+        "Built data pipelines and reporting tools",
+        "Advised on system architecture and maintainability"
+      ]
+    }
+  ],
+  "careerThemes": [
+    "Predictable system behavior",
+    "Human-centered design",
+    "AI safety and alignment",
+    "Reliability over novelty",
+    "Clear documentation and communication"
+  ]
+}

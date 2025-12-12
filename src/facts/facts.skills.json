@@ -1,0 +1,126 @@
+{
+  "type": "authoritative_facts",
+  "domain": "technical_skills_and_capabilities",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2025-12-12",
+  "summary": "Craig Stueber is a senior front-end engineer and AI behavior–focused practitioner with deep expertise in AI safety, prompt engineering, behavioral evaluation, and production-grade software systems.",
+  "aiAndSafety": {
+    "promptEngineering": {
+      "level": "Expert",
+      "capabilities": [
+        "Designs structured prompts, system prompts, meta-prompts, and constrained instructions",
+        "Optimizes determinism and reduces hallucination risk",
+        "Builds multi-step and role-based prompting systems",
+        "Authors production-grade system prompt architectures"
+      ]
+    },
+    "behavioralEvaluation": {
+      "capabilities": [
+        "Measures hallucination rate and refusal behavior",
+        "Evaluates prompt sensitivity and model drift",
+        "Tests sycophancy, over-agreeableness, and reasoning collapse",
+        "Performs multi-run stability analysis across models"
+      ],
+      "modelsEvaluated": [
+        "GPT family",
+        "Claude family",
+        "Open-source LLMs"
+      ]
+    },
+    "aiSafetyAndAlignment": {
+      "capabilities": [
+        "Applies constrained generation and safe completion patterns",
+        "Designs adversarial testing workflows",
+        "Performs ethical UX analysis for AI-assisted systems",
+        "Quantifies risk using hybrid OWASP, CVSS, and behavioral metrics"
+      ]
+    },
+    "failureModeAnalysis": [
+      "Hallucinations",
+      "Refusal failures",
+      "Misalignment",
+      "Prompt brittleness",
+      "Token dependency",
+      "Multi-step reasoning collapse"
+    ],
+    "modelDebuggingAndIncidentResponse": [
+      "Diagnoses model-layer versus prompt-layer failures",
+      "Designs minimal reproduction prompts",
+      "Implements corrective prompt strategies",
+      "Leads behavioral incident response"
+    ]
+  },
+  "programmingLanguages": {
+    "html": { "experience": "10+ years", "notes": "Accessible, standards-compliant interfaces" },
+    "css": { "experience": "10+ years", "notes": "Flexbox, Grid, responsive design" },
+    "javascript": { "experience": "10+ years", "notes": "Dashboards, enterprise platforms, UI systems" },
+    "typescript": { "experience": "6+ years", "notes": "Scalable React and Next.js systems" },
+    "python": { "experience": "6+ years", "notes": "Evaluation tooling, automation, backend scripting" },
+    "php": { "experience": "8+ years", "notes": "WordPress and backend services" },
+    "java": { "experience": "5+ years", "notes": "Enterprise backend development (BHE)" },
+    "csharp": { "experience": "Project-based", "notes": "IoT firmware and device programming" },
+    "nodejs": { "experience": "6+ years", "notes": "REST APIs, microservices, CLI tooling" }
+  },
+  "frameworksAndLibraries": [
+    "React",
+    "Next.js",
+    "React Native",
+    "Material UI",
+    "Tailwind CSS",
+    "Bootstrap",
+    "SASS"
+  ],
+  "dataAndBackend": [
+    "Supabase (auth, RLS, triggers, storage)",
+    "PostgreSQL",
+    "MongoDB",
+    "SQL Server",
+    "MySQL"
+  ],
+  "stateManagement": [
+    "React Context API",
+    "Redux",
+    "Jotai"
+  ],
+  "testingAndQuality": [
+    "Test-driven development",
+    "Jest unit testing",
+    "Integration testing",
+    "Async and mock-heavy test scenarios"
+  ],
+  "accessibilityAndUX": [
+    "WCAG 2.1 compliance",
+    "ADA remediation",
+    "Semantic HTML",
+    "Color contrast audits",
+    "Screen reader testing (NVDA, VoiceOver)",
+    "Ethical and safety-conscious UX design"
+  ],
+  "infrastructureAndDevOps": [
+    "Docker",
+    "Linux and Bash",
+    "AWS (EC2, Lambda, S3)",
+    "Cloudflare Workers and Pages",
+    "Azure pipelines and repositories"
+  ],
+  "mobileAndMonitoring": [
+    "Expo",
+    "OTA updates",
+    "App Store and Google Play publishing",
+    "Firebase Crashlytics",
+    "Sentry"
+  ],
+  "iotAndMonitoring": [
+    "Embedded firmware development",
+    "Real-time sensor pipelines",
+    "Grafana dashboards"
+  ],
+  "tooling": [
+    "Git",
+    "npm",
+    "Postman",
+    "Swagger / OpenAPI",
+    "VS Code",
+    "Bash scripting"
+  ]
+}

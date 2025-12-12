@@ -1,0 +1,180 @@
+{
+  "type": "authoritative_facts",
+  "domain": "professional_experience",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2025-12-12",
+  "currentRole": {
+    "title": "Senior Full Stack Engineer — AI Systems Integration",
+    "company": "Berkshire Hathaway Energy",
+    "location": "Richmond, VA",
+    "startYear": 2025,
+    "status": "Current",
+    "summary": "Works on Dekaflow 2, a next-generation cloud-based enterprise platform supporting large-scale operational workflows. Leads AI-assisted engineering initiatives with a focus on behavioral reliability, drift detection, prompt standards, and safe adoption of LLM tools across engineering teams."
+  },
+  "roles": [
+    {
+      "title": "Senior Full Stack Engineer — AI Systems Integration",
+      "company": "Berkshire Hathaway Energy",
+      "location": "Richmond, VA",
+      "years": "2025 – Present",
+      "responsibilities": [
+        "Spearheaded company-wide GitHub Copilot integration, defining usage standards, prompt guidelines, and guardrails",
+        "Led internal training on structured prompting, failure modes, and reproducible AI-assisted workflows",
+        "Designed prompt standards and evaluation approaches to detect drift and unintended model behavior",
+        "Participated in AI-related incident analysis when outputs deviated from expectations",
+        "Contributed to production frontend and backend systems using Next.js, TypeScript, Java, Azure, Jotai, and Cloudflare Workers"
+      ],
+      "themes": [
+        "AI behavior reliability",
+        "Prompt engineering",
+        "LLM safety",
+        "Enterprise systems",
+        "Cross-team collaboration"
+      ]
+    },
+    {
+      "title": "Head React Native Developer & Co-Founder",
+      "company": "DanceCard",
+      "location": "Remote (Richmond, VA)",
+      "years": "2024 – Present",
+      "responsibilities": [
+        "Co-founded and led engineering for a social platform focused on safety and predictable interaction patterns",
+        "Architected and built a cross-platform mobile app using React Native and Expo",
+        "Designed Supabase-backed data models for users, events, chat, and attendance",
+        "Developed moderation and safety tooling, including prompt-driven content classification helpers",
+        "Managed App Store and Play Store releases with emphasis on trust and accessibility"
+      ],
+      "themes": [
+        "Mobile architecture",
+        "User safety",
+        "Predictable systems",
+        "Moderation tooling"
+      ]
+    },
+    {
+      "title": "Senior Full Stack Developer — LLM-Integrated Systems",
+      "company": "Sauer Brands, Inc.",
+      "location": "Richmond, VA",
+      "years": "2021 – 2025",
+      "responsibilities": [
+        "Led engineering for internal and public-facing platforms spanning marketing, analytics, and content management",
+        "Built production systems using React, TypeScript, Python, SQL, Java, and PeopleSoft",
+        "Integrated LLM-assisted features including summarization, classification, and content generation",
+        "Authored structured prompts and meta-prompts for constrained behavior and predictable outputs",
+        "Ran prompt experiments to evaluate drift, sensitivity, and safety edge cases",
+        "Helped normalize GitHub Copilot usage while maintaining code quality and human oversight",
+        "Led accessibility and ADA reviews across multiple projects"
+      ],
+      "notableProjects": [
+        "Duke’s Country",
+        "Hot Tomato Summer",
+        "Kernel Season’s Sweepstakes",
+        "Sauer Brand Websites",
+        "Sales Reporting Tool"
+      ],
+      "themes": [
+        "LLM integration",
+        "Accessibility",
+        "Reliability",
+        "Prompt safety",
+        "High-traffic systems"
+      ]
+    },
+    {
+      "title": "Front-End Engineer (Contract)",
+      "company": "Soar365",
+      "location": "Richmond, VA",
+      "years": "Aug 2021 – Dec 2021",
+      "responsibilities": [
+        "Conducted full WCAG/ADA audit and remediation",
+        "Migrated site to a maintainable Wix platform",
+        "Improved UX clarity, semantic structure, and device compatibility",
+        "Trained staff on accessibility-informed workflows"
+      ],
+      "themes": [
+        "Accessibility",
+        "UX clarity",
+        "Maintainability"
+      ]
+    },
+    {
+      "title": "Full Stack Engineer — ML-Enhanced IoT Systems",
+      "company": "Talos IoT",
+      "location": "Glen Allen, VA",
+      "years": "2021",
+      "responsibilities": [
+        "Built IoT dashboards translating diagnostic data into actionable insights",
+        "Integrated ML-based anomaly detection into backend services",
+        "Designed evaluation pipelines measuring drift, accuracy, and false positives",
+        "Developed real-time interfaces using React, Python, Java, and WebSockets"
+      ],
+      "themes": [
+        "ML evaluation",
+        "IoT systems",
+        "Interpretability",
+        "Real-time data"
+      ]
+    },
+    {
+      "title": "Front-End Web Developer",
+      "company": "PresenceLearning",
+      "location": "Remote",
+      "years": "2020 – 2021",
+      "responsibilities": [
+        "Modernized frontend templates",
+        "Consolidated fragmented email systems",
+        "Improved mobile UX and accessibility",
+        "Reduced workflow risks through clearer structure"
+      ]
+    },
+    {
+      "title": "Front-End Developer — Interactive & Emerging Tech",
+      "company": "Kurb Media, LLC",
+      "location": "Remote",
+      "years": "2019 – 2020",
+      "responsibilities": [
+        "Built responsive interfaces using React, Next.js, WordPress, Shopify, PHP, and SCSS",
+        "Developed UI components for early AR prototypes",
+        "Explored foundational ML and computer-vision concepts"
+      ]
+    },
+    {
+      "title": "Front-End Developer (Freelance)",
+      "location": "Richmond, VA",
+      "years": "2017 – 2021",
+      "responsibilities": [
+        "Built accessible websites and web applications for nonprofits, authors, and small businesses",
+        "Delivered responsive solutions using HTML, CSS, JavaScript, React, and WordPress",
+        "Ensured performance, maintainability, and cross-device compatibility"
+      ]
+    }
+  ],
+  "careerSignals": {
+    "seniority": "Senior / Lead-level engineer",
+    "coreStrengths": [
+      "AI behavior and prompt reliability",
+      "Full-stack system design",
+      "Accessibility and ethical constraints",
+      "Clear documentation and mentorship"
+    ],
+    "roleFit": [
+      "AI Safety Engineer",
+      "AI Behavior / Alignment Engineer",
+      "AI Systems Engineer",
+      "Senior or Lead Front-End Engineer"
+    ]
+  },
+  "usageRulesForFred": {
+    "mayStateConfidently": [
+      "Current and past titles",
+      "Leadership and seniority level",
+      "AI-focused responsibilities",
+      "Enterprise and startup experience"
+    ],
+    "mustNotInfer": [
+      "Management authority beyond stated roles",
+      "Headcount ownership unless explicitly stated",
+      "Employment gaps not listed"
+    ]
+  }
+}

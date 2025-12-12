@@ -1,0 +1,230 @@
+Research Focus Overview
+
+Craig Stueber’s doctoral research centers on AI-generated code safety, model reliability, and behavioral evaluation. His dissertation investigates why large language models often produce insecure code, how those vulnerabilities can be measured systematically, and how improved prompting frameworks can reduce risk. Craig’s work combines software security analysis, AI behavioral study, and structured evaluation methods, with the goal of creating an empirical foundation for safer AI-assisted software development.
+
+His research sits at the intersection of three fields:
+
+AI Safety & Alignment — understanding failure modes, drift, prompt sensitivity, and model unreliability.
+
+Software Security — identifying injection vulnerabilities, misconfigurations, authentication flaws, and systemic weaknesses in generated code.
+
+Research Methodology & Evaluation — designing a scoring framework that quantifies the security quality of AI-generated code across models and prompts.
+
+Craig’s overarching question:
+How can we evaluate and mitigate security risks in AI-generated code using a measurable, reproducible framework?
+
+Problem Statement
+
+AI coding assistants generate enormous amounts of production-facing code, yet the safety of that code is inconsistent and difficult to evaluate. Existing security frameworks—such as OWASP, CVSS, CWE, FAIR, and STRIDE—were built for traditional human-written software and do not map cleanly onto code produced by probabilistic language models. Empirical studies show that AI-generated code frequently contains vulnerabilities that differ in pattern, severity, and origin from human-written code. However, there is no reliable, standardized method to measure these risks across models, prompts, or task types.
+
+This gap prevents organizations from understanding:
+
+How safe or unsafe AI-generated code truly is
+
+How prompt design influences vulnerability patterns
+
+How to compare risk between models or versions
+
+How to implement guardrails that measurably reduce harm
+
+Craig’s dissertation addresses this unmet need.
+
+Purpose of the Study
+
+The purpose of Craig’s research is to develop and validate a hybrid vulnerability scoring framework that quantifies the security risks of AI-generated code. The framework combines elements from OWASP, CVSS, and behavioral evaluation metrics specific to LLMs. It measures:
+
+Vulnerability presence and severity
+
+Exploitability
+
+Consistency across model runs
+
+Sensitivity to prompt variations
+
+Stability of system behavior
+
+Code correctness versus code confidence
+
+Using this framework, Craig conducts controlled experiments comparing different models and prompts to determine which combinations produce safer, more reliable output.
+
+The goal is to build a repeatable, scientific method for evaluating AI-generated code at scale.
+
+Research Questions
+
+Craig’s dissertation is driven by the following core questions:
+
+What types of security vulnerabilities occur most frequently in AI-generated code?
+
+How do different prompting strategies affect the safety and reliability of generated code?
+
+Can existing frameworks like OWASP and CVSS be adapted to evaluate AI-generated code meaningfully?
+
+What new behavioral metrics are needed to capture model instability, drift, or unsafe tendencies?
+
+Does explicit prompt structuring (role prompts, constraints, meta-prompts) reduce code-level vulnerabilities?
+
+Can a unified scoring system predict overall risk across models and tasks?
+
+Methodological Approach
+
+Craig uses a constructive research methodology, which prioritizes creating a practical artifact—in this case, a scoring framework—and validating it through controlled experiments.
+
+His method includes:
+
+1. Controlled Code Generation Benchmarks
+Each model generates code for a standardized set of tasks (authentication flow, database queries, input sanitization, common API patterns).
+
+2. Automated Vulnerability Scanning
+He applies OWASP and CVSS–aligned tools to detect and quantify security flaws.
+
+3. Behavioral Testing
+He evaluates model behavior using structured prompts to identify patterns like:
+
+refusal failure
+
+instruction reversal
+
+hallucination under pressure
+
+inconsistent output across identical requests
+
+unstable code structures
+
+optimistic but incorrect explanations
+
+4. Prompt Variation Experiments
+Craig tests:
+
+system prompts
+
+role prompts
+
+explicit guardrails
+
+meta-prompts
+
+adversarial prompts
+
+minimal prompts
+
+to determine their security impact.
+
+5. Hybrid Scoring Framework Development
+His artifact integrates quantitative scoring from traditional security tools with qualitative and behavioral observations unique to LLMs.
+
+6. Expert Validation
+The final framework is reviewed by software security professionals and evaluated using real-world codebases.
+
+Significance of the Research
+
+Craig’s dissertation contributes to multiple domains:
+
+1. Software Engineering
+
+It provides a measurable way to determine whether AI-generated code is production-safe.
+
+2. AI Ethics & Safety
+
+It identifies how model behavior and prompt design influence risk, highlighting failure modes that traditional testing fails to capture.
+
+3. Organizational Policy
+
+It offers actionable guidance for companies integrating AI coding tools:
+
+guardrails
+
+approved prompts
+
+safe usage boundaries
+
+evaluation pipelines
+
+risk scoring thresholds
+
+4. Research Community
+
+It fills a major gap: the absence of a unified, empirical method for comparing the safety of code from different models.
+
+Craig’s Research Identity & Contributions
+
+Craig’s work is defined by his focus on:
+
+Behavioral reliability of AI models
+
+Prompt architecture as a safety mechanism
+
+Vulnerability classification for AI-generated artifacts
+
+Structured evaluation loops
+
+Risk quantification through hybrid scoring
+
+His contributions include:
+
+1. A Hybrid Scoring Framework
+
+A novel method combining:
+
+OWASP Top 10
+
+CVSS severity scoring
+
+LLM behavioral diagnostics
+
+Prompt-pattern influence metrics
+
+2. A Behavioral Test Harness
+
+Code that repeatedly queries models under varied conditions to expose drift, inconsistency, or unsafe routines.
+
+3. Prompt-Based Mitigation Strategies
+
+Evidence-based guidance showing how structured prompting reduces vulnerability rates.
+
+4. A Model Comparison Dataset
+
+A reproducible corpus of generated code samples used to compare GPT, Claude, and open-source models.
+
+5. A Foundation for Safer AI-Assisted Development
+
+Artifacts that organizations can adopt to score model risk before adopting AI coding workflows.
+
+Why This Research Matters
+
+AI-generated code is already flowing into production systems daily. As organizations adopt GitHub Copilot, GitHub Agent, and other coding LLMs, the security risk becomes systemic:
+
+vulnerabilities scale
+
+failure modes multiply
+
+reliance increases
+
+audits lag behind
+
+prompts become the new attack surface
+
+Craig’s dissertation directly addresses these risks by creating:
+
+reproducible methods
+
+structured guardrails
+
+clear evaluation metrics
+
+This ensures AI tools can accelerate development without silently introducing catastrophic security flaws.
+
+Intellectual Summary (For Vector Search)
+
+Craig’s dissertation establishes him as:
+
+A researcher specializing in AI safety applied to software development
+
+A designer of prompt-layer safety mitigations
+
+A creator of quantitative evaluation frameworks for AI-generated artifacts
+
+A practitioner who blends human-centered design with security engineering
+
+A developer deeply concerned with behavioral reliability, interpretability, and ethical constraints
+
+His work defines a blueprint for safer, more predictable AI coding systems — combining academic rigor with real-world engineering experience.

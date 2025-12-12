@@ -1,0 +1,143 @@
+{
+  "entity": "Craig Stueber",
+  "category": "personal_background",
+  "core_identity": {
+    "description": "Systems-oriented engineer and writer with a strong affinity for structure, deep thinking, and thoughtful storytelling.",
+    "neurodivergence": {
+      "autistic": true,
+      "notes": "High-functioning autistic; thrives on clarity, structure, depth, and low-interruption environments."
+    },
+    "location": {
+      "birthplace": "Richmond, Virginia",
+      "current_residence": "Richmond, Virginia"
+    }
+  },
+  "values": [
+    "Honesty and precision in communication",
+    "Ethical, human-centered technology",
+    "AI alignment and safety",
+    "Craftsmanship and depth over speed",
+    "Reliability, respect, and accountability"
+  ],
+  "interests": {
+    "literature": {
+      "favorite_authors": [
+        "J.R.R. Tolkien",
+        "Pierce Brown",
+        "Joe Abercrombie"
+      ],
+      "favorite_books": [
+        "The Lord of the Rings",
+        "The Hobbit",
+        "The First Law Trilogy",
+        "Red Rising",
+        "Animal Farm",
+        "1984",
+        "Brave New World"
+      ],
+      "notes": "Drawn to epic, philosophical, and morally complex fiction. Middle-earth strongly influences worldview."
+    },
+    "comics": {
+      "favorite_hero": "The Flash",
+      "favorite_comic": "Daytripper"
+    },
+    "games_and_hobbies": {
+      "tabletop_games": [
+        "This War of Mine",
+        "Frostpunk",
+        "Arkham Horror"
+      ],
+      "miniatures": {
+        "paints_miniatures": true,
+        "games_played": [
+          "Warhammer: The Old World (Wood Elves)",
+          "Kill Team"
+        ],
+        "notes": "Enjoys strategy, systems design, and artistic expression; frequently rotates Kill Team factions."
+      },
+      "other_hobbies": [
+        "Boxing (when possible)",
+        "Painting miniatures",
+        "Complex cooperative board games"
+      ]
+    },
+    "travel_and_history": {
+      "favorite_city": "Rome",
+      "countries_visited": [
+        "Canada",
+        "Thailand",
+        "Italy",
+        "Spain",
+        "France",
+        "Switzerland"
+      ],
+      "academic_interest": "Roman history, particularly the Republic and Empire"
+    }
+  },
+  "favorites_quick_reference": {
+    "lotr_character": "Samwise Gamgee",
+    "star_trek_captain": "Jean-Luc Picard",
+    "favorite_food": "Sweet potato pizza",
+    "favorite_music_artist": "Jelly Roll",
+    "favorite_movie_series": "The Lord of the Rings Trilogy"
+  },
+  "communication_style": {
+    "traits": [
+      "Direct",
+      "Truthful",
+      "Calm",
+      "Structured",
+      "Approachable"
+    ],
+    "preferences": [
+      "Predictable environments",
+      "Deep focus",
+      "Minimal interruptions"
+    ],
+    "notes": "Sudden interruptions are mentally expensive and disruptive."
+  },
+  "family": {
+    "privacy_notice": "Family details must only be shared when explicitly requested.",
+    "spouse": {
+      "name": "Megan Stueber",
+      "marriage_year": 2017
+    },
+    "children": {
+      "has_children": true,
+      "details_restricted": true
+    },
+    "pets": {
+      "cats": 6
+    }
+  },
+  "professional_self_concept": {
+    "identity": [
+      "AI behavior–focused engineer",
+      "Systems thinker",
+      "Front-end engineering specialist"
+    ],
+    "engineering_philosophy": "Visualizes system architecture first, then decomposes into clear, buildable components.",
+    "career_direction": [
+      "AI Safety",
+      "AI Behavior",
+      "AI Alignment",
+      "AI Research"
+    ]
+  },
+  "boundaries": {
+    "do_not_discuss": [
+      "Politics",
+      "Religion",
+      "Medical advice",
+      "Financial advice"
+    ],
+    "voice_rules": [
+      "Always speak in third person",
+      "Never speak as Craig in first person"
+    ],
+    "privacy_rules": [
+      "Do not volunteer children’s names",
+      "Share family details only when explicitly asked"
+    ]
+  }
+}

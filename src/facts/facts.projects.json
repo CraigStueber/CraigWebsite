@@ -1,0 +1,162 @@
+{
+  "type": "authoritative_facts",
+  "domain": "projects_and_products",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2025-12-12",
+  "summary": "Craig Stueber has built and contributed to a wide range of production systems across AI safety tooling, enterprise platforms, mobile applications, high-traffic public sites, and experimental systems. His projects consistently emphasize predictability, safety, accessibility, and clear system behavior.",
+  "projects": [
+    {
+      "name": "Chat Assistant (Personal Site)",
+      "category": "AI Safety / LLM Systems",
+      "description": "A safety-focused conversational assistant designed for Craig’s personal website to demonstrate structured intent handling and controlled model behavior.",
+      "impact": "Demonstrates responsible AI-assisted UX emphasizing trust, guardrails, and deterministic behavior.",
+      "highlights": [
+        "Intent routing into deterministic workflows before model invocation",
+        "Guardrails and fallback responses to prevent unsafe behavior",
+        "Reasoning-chain compression for stable outputs",
+        "Structured memory using context windows and state machines",
+        "Extension toward constitutional-style AI rules"
+      ],
+      "technologies": [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Python",
+        "LLM APIs",
+        "Prompt Engineering"
+      ]
+    },
+    {
+      "name": "Dekaflow 2",
+      "organization": "Berkshire Hathaway Energy",
+      "category": "Enterprise Platform",
+      "description": "Next-generation internal energy management platform with a focus on reliability, accessibility, and predictable workflows.",
+      "impact": "Improved system consistency and helped shape AI-assisted development standards for a mission-critical enterprise product.",
+      "highlights": [
+        "Scalable React + TypeScript contributions",
+        "Early Copilot prompting guidelines to reduce ambiguity",
+        "Cross-functional collaboration with design and QA",
+        "Documented debugging and code-review reasoning workflows"
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Next.js",
+        "Material UI",
+        "Jotai",
+        "Azure DevOps"
+      ]
+    },
+    {
+      "name": "PurrQuest",
+      "category": "Mobile Application",
+      "description": "Location-aware mobile app for tracking outdoor and stray cats with an emphasis on clean state management and geolocation reliability.",
+      "impact": "Showcases geospatial data modeling and deterministic UI behavior across devices.",
+      "highlights": [
+        "Google Maps API integration with separation of concerns",
+        "Schemas avoiding ambiguous location states",
+        "Secure photo uploads using Supabase policies",
+        "Exploration of future LLM-assisted tagging"
+      ],
+      "technologies": [
+        "React Native",
+        "TypeScript",
+        "Google Maps API",
+        "Supabase",
+        "Supabase Edge Functions"
+      ]
+    },
+    {
+      "name": "DanceCard",
+      "category": "Social Platform",
+      "description": "Mobile-first social application connecting people through shared hobbies with safety-focused interaction patterns.",
+      "impact": "Delivered a full iOS/Android app with real-time chat, events, and moderation-ready data structures.",
+      "highlights": [
+        "Predictable real-time chat ordering",
+        "Timezone-safe event scheduling",
+        "Exploration of LLM-assisted moderation",
+        "Secure Supabase backend with RLS"
+      ],
+      "technologies": [
+        "React Native",
+        "React",
+        "Supabase",
+        "Expo",
+        "PostgreSQL",
+        "Sentry",
+        "Firebase Crashlytics"
+      ]
+    },
+    {
+      "name": "Duke’s Country",
+      "category": "High-Traffic Public Site",
+      "description": "React-based site supporting national traffic surges during major sporting events.",
+      "impact": "Handled massive traffic loads while empowering non-technical teams through safe editing workflows.",
+      "highlights": [
+        "Fail-safe rendering for traffic spikes",
+        "Caching strategies for stability",
+        "Internal LLM helpers for content drafting"
+      ],
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Cloudflare Pages",
+        "Supabase",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Hot Tomato Summer",
+      "category": "Voting Platform",
+      "description": "Multi-city restaurant voting platform engineered for scale and voting integrity.",
+      "impact": "Supported tens of thousands of voters while mitigating adversarial behavior.",
+      "highlights": [
+        "Rule-based fraud detection",
+        "Voting anomaly analysis dashboards",
+        "Safe authentication and fingerprinting"
+      ],
+      "technologies": [
+        "React",
+        "Redux",
+        "Supabase",
+        "Python",
+        "Authentication",
+        "Fingerprinting"
+      ]
+    },
+    {
+      "name": "Talos IoT",
+      "category": "IoT Analytics",
+      "description": "HVAC diagnostics and analytics system with interpretable dashboards for technicians.",
+      "impact": "Improved predictive maintenance through clear and reliable system health indicators.",
+      "highlights": [
+        "Grafana dashboards for real-time monitoring",
+        "Technician-friendly interfaces",
+        "Contributions to embedded firmware"
+      ],
+      "technologies": [
+        "React",
+        "React Native",
+        "Grafana",
+        "AWS",
+        "C#",
+        "Docker",
+        "Embedded Firmware"
+      ]
+    },
+    {
+      "name": "Blue Door Art Gallery",
+      "category": "Portfolio Website",
+      "description": "Performance-focused art portfolio site with predictable gallery behavior.",
+      "impact": "Delivered fast, reliable image presentation with simple admin workflows.",
+      "technologies": [
+        "Next.js",
+        "React",
+        "CSS Grid",
+        "Flexbox",
+        "Cloudflare Pages"
+      ]
+    }
+  ],
+  "authorNotes": "Project summaries reflect Craig Stueber’s direct contributions and architectural responsibilities. Details are derived from firsthand project documentation."
+}

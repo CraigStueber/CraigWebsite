@@ -1,0 +1,372 @@
+Project Portfolio — Craig Stueber
+Chat Assistant
+
+Description:
+A safety-focused conversational assistant designed for my personal website, built to explore structured intent handling, controlled model outputs, and responsible LLM feature integration.
+
+Business Impact:
+Demonstrates AI-assisted UX that prioritizes user trust, predictable behavior, and guardrail-driven interactions aligned with modern AI safety principles.
+
+Highlights:
+
+Built an intent-routing system that categorizes queries into safe, deterministic workflows before calling any model
+
+Designed guardrails and fallback responses to avoid unsafe or ambiguous model behavior
+
+Implemented reasoning-chain compression to ensure concise, stable answers without exposing system prompts
+
+Added structured memory (context windows, state machines) for multi-step interactions without unintended persistence
+
+Extending the system with constitutional-style rules for tone, safety, and clarity
+
+Technologies: React, Next.js, TypeScript, Python, LLM APIs, Prompt Engineering
+
+Dekaflow 2 (Berkshire Hathaway Energy)
+
+Description:
+A next-generation energy management platform delivering predictable, accessible, and high-reliability workflows for internal teams.
+
+Business Impact:
+Improved system consistency and accessibility while shaping coding standards, AI-assisted development patterns, and front-end architecture for a mission-critical enterprise product.
+
+Highlights:
+
+Reviewed PRs and contributed scalable React + TypeScript code with predictable behavior patterns
+
+Developed early Copilot prompting guidelines to reduce ambiguity and failure modes
+
+Collaborated across engineering, design, and QA to maintain consistency across edge cases
+
+Documented repeatable reasoning workflows for debugging and code review
+
+Technologies: React, TypeScript, Next.js, Material UI, Jotai, Azure DevOps
+
+PurrQuest
+
+Description:
+A location-aware mobile app for tracking outdoor and stray cats, emphasizing clean state management and geolocation reliability.
+
+Business Impact:
+Showcases geospatial data modeling, safe image uploads, and deterministic rendering across devices.
+
+Highlights:
+
+Integrated Google Maps API with separation of concerns between location, image, and metadata
+
+Designed schemas that avoid ambiguous states and ensure deterministic pin behavior
+
+Implemented secure photo uploads using Supabase policies and Edge Functions
+
+Explored future LLM-assisted tagging and encounter summaries
+
+Technologies: React Native, TypeScript, Google Maps API, Supabase, Supabase Edge Functions
+
+DanceCard
+
+Description:
+A mobile-first social platform connecting people through shared hobbies while prioritizing safety and predictable interaction flows.
+
+Business Impact:
+Shipped a full iOS/Android app with real-time chat, events, and moderation-ready data structures.
+
+Highlights:
+
+Built real-time chat with predictable ordering and safe rendering
+
+Designed event scheduling with consistent timezone handling
+
+Explored LLM-assisted moderation patterns
+
+Deployed companion web app and Supabase backend with secure auth and RLS
+
+Technologies: React Native, React, Supabase, Expo, PostgreSQL, Sentry, Firebase Crashlytics
+
+Duke’s Country
+
+Description:
+A React-based site supporting large national traffic events such as the Duke’s Mayo Bowl.
+
+Business Impact:
+Handled massive traffic surges and empowered non-technical teams through predictable editing workflows.
+
+Highlights:
+
+Built secure backend tools for reliable content updates
+
+Implemented caching and fail-safe rendering for high-traffic stability
+
+Designed internal LLM helpers for drafting and categorizing content
+
+Technologies: React, TypeScript, Cloudflare Pages, Supabase, CSS
+
+Hot Tomato Summer
+
+Description:
+A multi-city restaurant voting platform engineered for scale and voting integrity.
+
+Business Impact:
+Supported tens of thousands of voters while mitigating adversarial behavior.
+
+Highlights:
+
+Designed rule-based fraud detection for suspicious voting patterns
+
+Built dashboards for restaurant analytics and content management
+
+Implemented safe authentication, fingerprinting, and anomaly detection
+
+Technologies: React, Redux, Supabase, Python, Authentication, Fingerprinting
+
+Third Age Technology
+
+Description:
+A senior-focused technology support site emphasizing clarity, safety, and accessibility.
+
+Business Impact:
+Delivered a high-trust experience with scam-awareness and predictable navigation.
+
+Highlights:
+
+Built accessible React + Vite interface
+
+Implemented secure Supabase forms with RLS
+
+Designed UX materials to help users avoid scams
+
+Deployed with SEO and accessibility audits
+
+Technologies: React, Vite, Supabase, Cloudflare Pages, HTML, CSS
+
+Kernel Season’s Sweepstakes
+
+Description:
+A reusable sweepstakes engine with dynamic schema generation.
+
+Business Impact:
+Enabled marketing teams to launch campaigns independently while preserving backend safety.
+
+Highlights:
+
+Dynamic table generation with schema validation
+
+Admin dashboards for prize and submission tracking
+
+Architecture protecting against malformed configurations
+
+Technologies: TypeScript, Supabase, PostgreSQL, Context API, Supabase Edge Functions
+
+Talos IoT
+
+Description:
+An IoT analytics system for HVAC diagnostics with interpretable dashboards.
+
+Business Impact:
+Improved predictive maintenance through clear system health indicators.
+
+Highlights:
+
+Built Grafana dashboards for reliable visualization
+
+Developed technician-friendly real-time interfaces
+
+Contributed to embedded firmware with predictable communication patterns
+
+Technologies: React, React Native, Grafana, AWS, C#, Docker, Embedded Firmware
+
+Soar 365 Website
+
+Description:
+Accessibility remediation and redesign for a nonprofit serving individuals with disabilities.
+
+Business Impact:
+Ensured WCAG compliance and stable editing workflows.
+
+Highlights:
+
+Audited and remediated ADA issues
+
+Migrated to Wix to remove brittle dependencies
+
+Trained staff on safe content updates
+
+Technologies: Wix, WCAG 2.1, Accessibility Audits, Semantic HTML
+
+PresenceLearning Website
+
+Description:
+Modernized WordPress site supporting digital therapy access.
+
+Business Impact:
+Improved reliability and accessibility for vulnerable student populations.
+
+Highlights:
+
+Updated templates for predictable responsive behavior
+
+Simplified email workflows
+
+Enhanced accessibility and performance
+
+Technologies: WordPress, PHP, Bootstrap, HTML, CSS
+
+Sauer Brand Websites
+
+Description:
+Suite of Shopify brand sites with consistent theming and accessibility improvements.
+
+Business Impact:
+Delivered stable, brand-aligned public-facing sites with safe editing workflows.
+
+Highlights:
+
+Theme-level Liquid customizations
+
+Close collaboration with marketing teams
+
+Documented safe Copilot prompting techniques
+
+Technologies: Shopify, Liquid, HTML, CSS, Accessibility
+
+Sales Reporting Tool
+
+Description:
+Python-based reporting pipeline replacing Shopify’s native reporting.
+
+Business Impact:
+Ensured deterministic nightly exports into Oracle pipelines.
+
+Highlights:
+
+Queried and normalized Shopify API data
+
+Designed deterministic transforms
+
+Automated guaranteed-format delivery
+
+Technologies: Python, Shopify API, Oracle, CSV Automation
+
+Blue Door Art Gallery
+
+Description:
+A performance-first art portfolio website.
+
+Business Impact:
+Delivered predictable gallery behavior and simple admin workflows.
+
+Highlights:
+
+Responsive layouts using CSS Grid and Flexbox
+
+Image optimization for clarity and speed
+
+Non-technical editing workflow
+
+Technologies: Next.js, React, CSS Grid, Flexbox, Cloudflare Pages
+
+Megan’s List
+
+Description:
+A structured book and wine tracking application.
+
+Business Impact:
+Demonstrates clean schema design and predictable UI behavior.
+
+Highlights:
+
+Normalized schema for books, wines, and ratings
+
+Supabase auth with RLS
+
+Responsive browsing and logging
+
+Technologies: React, Supabase, PostgreSQL, TypeScript
+
+Pick a Restaurant
+
+Description:
+A mobile restaurant recommendation system using deterministic selection logic.
+
+Business Impact:
+Demonstrates algorithm design for freshness and preference memory.
+
+Highlights:
+
+Questionnaire-driven recommendation flow
+
+Backend tracking visits and categories
+
+Logic preventing stale or repetitive outcomes
+
+Technologies: React Native, Supabase, Expo, Context API, Supabase Edge Functions
+
+Wyrmspire D&D Website
+
+Description:
+A custom site for managing an original D&D campaign.
+
+Business Impact:
+Highlights structured lore modeling and reusable UI components.
+
+Highlights:
+
+Structured schemas for characters and locations
+
+Modular UI for live-table use
+
+Predictable in-session reference behavior
+
+Technologies: React, TypeScript, Supabase, CSS Modules
+
+Longrock Slot Machine
+
+Description:
+A themed slot-machine mini-game with controlled randomness.
+
+Business Impact:
+Demonstrates probability design and animation timing.
+
+Highlights:
+
+Reel animations with predictable physics
+
+Controlled probability curves
+
+Custom theming and CSS animations
+
+Technologies: React, JavaScript, CSS Animations
+
+Wyrmspire Arm Wrestling Game
+
+Description:
+A physics-inspired mini-game simulating strength and struggle.
+
+Business Impact:
+Demonstrates fair gameplay mechanics and responsive input handling.
+
+Highlights:
+
+Balanced input with controlled randomness
+
+Logic preventing runaway outcomes
+
+Optimized low-latency feedback
+
+Technologies: React, JavaScript, Canvas API, CSS
+
+Change in Uzbekistan
+
+Description:
+An international client site built at Kurb Media.
+
+Business Impact:
+Demonstrates requirements gathering and predictable content modeling.
+
+Highlights:
+
+Direct stakeholder collaboration
+
+Accessible layouts across devices
+
+Stable launch and iteration support
+
+Technologies: React, HTML, CSS, Client Collaboration

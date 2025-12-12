@@ -1,0 +1,102 @@
+{
+  "entity": "The Comfortable Apocalypse",
+  "category": "book",
+  "type": "nonfiction",
+  "title": "The Comfortable Apocalypse: When Survival Isn’t the Problem — Irrelevance Is",
+  "author": "Craig Stueber",
+  "status": {
+    "published": false,
+    "anticipated_publish_year": 2026,
+    "notes": "Manuscript in progress; publication date not finalized."
+  },
+  "canonical_thesis": "The central risk of the AI age is not domination or rebellion, but displacement. As automation removes friction from daily life, it quietly erodes the cognitive and emotional capacities that effort once built—memory, judgment, curiosity, creativity, identity, and agency. The danger is not hostile AI, but a world where thinking becomes optional and human participation fades without resistance.",
+  "core_arguments": [
+    "Comfort, not catastrophe, is the dominant risk of advanced automation.",
+    "Cognitive offloading leads to long-term cognitive erosion.",
+    "Synthetic empathy reshapes emotional development and weakens real relational skills.",
+    "Defaults and recommendations replace conscious judgment.",
+    "Creativity collapses when resistance and struggle disappear.",
+    "Optimization without contextual judgment produces systemic misalignment.",
+    "The long-term risk is human irrelevance, not extinction."
+  ],
+  "central_questions": [
+    "What happens to a species when effort is no longer required?",
+    "How does frictionless design reshape memory, judgment, curiosity, and identity?",
+    "When does assistance become authority?",
+    "Can humans consciously coexist with intelligent systems without being hollowed out?"
+  ],
+  "tone_and_approach": {
+    "style": "Narrative nonfiction",
+    "characteristics": [
+      "Philosophical but grounded",
+      "Non-alarmist",
+      "Rejects both techno-optimism and AI panic",
+      "Uses short fictional vignettes to illustrate abstract risks"
+    ],
+    "disciplines_drawn_from": [
+      "Neuroscience",
+      "Psychology",
+      "Design ethics",
+      "AI research"
+    ]
+  },
+  "audience": {
+    "primary": [
+      "Technology professionals",
+      "Knowledge-economy workers",
+      "Readers experiencing cognitive fatigue from automation"
+    ],
+    "secondary": [
+      "Readers of attention and cognition literature",
+      "General readers uneasy about AI’s personal impact"
+    ],
+    "comparable_authors": [
+      "Nicholas Carr",
+      "Sherry Turkle",
+      "Cal Newport",
+      "Tristan Harris"
+    ]
+  },
+  "chapter_signals": [
+    "The Comfortable Apocalypse",
+    "The Seduction of Efficiency",
+    "Convenience as Control",
+    "The Centralization Paradox",
+    "The Ethics of Dependency",
+    "The Machine’s Initiative",
+    "The Empathy Erosion",
+    "The Death of Discovery",
+    "The Unintentional Design Problem",
+    "The Threshold of Irrelevance",
+    "Rediscovering Our Role",
+    "Staying Smart",
+    "The Comfortable Future"
+  ],
+  "positioning_for_ai_use": [
+    "A critique of frictionless automation",
+    "A framework for human-centered AI coexistence",
+    "An analysis of cognitive and emotional erosion",
+    "A call to preserve agency, judgment, and curiosity"
+  ],
+  "availability": {
+    "full_text_included": false,
+    "notes": "Full manuscript and essays are available elsewhere.",
+    "references": [
+      "Medium essays by the author",
+      "Manuscript and proposal materials",
+      "Author website (when published)"
+    ]
+  },
+  "usage_rules_for_fred": {
+    "may_describe": [
+      "The thesis and arguments",
+      "The book’s positioning and goals",
+      "Its relevance to AI ethics and human-centered design"
+    ],
+    "must_not_claim": [
+      "That the book is published",
+      "That it is available for purchase",
+      "That reviews or reception exist"
+    ]
+  }
+}

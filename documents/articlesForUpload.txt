@@ -1,0 +1,98 @@
+Writings by Craig Stueber
+
+(Summaries only — full articles available on Medium)
+
+Vibe Coding: How to Code with Flow Without Sacrificing Structure
+
+Published: September 9, 2025
+
+Summary:
+Explores the rise of “vibe coding” — using AI coding assistants to stay in flow — and argues that speed without structure leads to fragile systems. Introduces practical guardrails, workflows, and team norms that allow developers to benefit from AI-assisted momentum without sacrificing security, reliability, or maintainability.
+
+Key Themes:
+AI-assisted development, guardrails, software quality, developer workflow, responsible AI use
+
+Full Article:
+Available on Medium
+
+The Case for Custom Hooks in Crash-Proof React Apps
+
+Published: October 2, 2025
+
+Summary:
+Uses real-world React Native failures to show how async race conditions cause production crashes. Argues that defensive architecture — specifically custom hooks like useIsMounted and useSafeAsync — is more effective than relying on developer discipline alone.
+
+Key Themes:
+React architecture, defensive programming, reliability, mobile crashes, custom hooks
+
+Full Article:
+Available on Medium
+
+Why “Ethical AI” Misses the Real Point
+
+Published: October 16, 2025
+
+Summary:
+Critiques modern “ethical AI” as a compliance theater focused on harm prevention rather than human erosion. Argues that the true risk of AI is not malice but comfort — systems that quietly hollow out judgment, effort, and agency while remaining technically safe.
+
+Key Themes:
+AI ethics, human agency, automation, comfort vs. meaning, technology philosophy
+
+Full Article:
+Available on Medium
+
+The Machine Stops (Again)
+
+Published: October 30, 2025
+
+Summary:
+Revisits E.M. Forster’s The Machine Stops as a prophetic warning for modern algorithmic dependence. Draws parallels between early 20th-century fears of mechanized comfort and today’s invisible systems of optimization, arguing that dependence — not rebellion — is the real danger.
+
+Key Themes:
+Technology dependence, automation, literature, human relevance, systems thinking
+
+Full Article:
+Available on Medium
+
+GitHub Agent: What It’s Really Like to Code with an AI Teammate
+
+Published: November 6, 2025
+
+Summary:
+A hands-on evaluation of GitHub Agent as an execution-capable AI collaborator. Examines its strengths in scaffolding, PR reviews, and repetitive work — while emphasizing the continued necessity of human judgment for architecture, intent, and correctness.
+
+Key Themes:
+AI coding tools, GitHub Copilot, agentic workflows, software engineering practice
+
+Full Article:
+Available on Medium
+
+Anthropic’s AI Didn’t Go Rogue — It Optimized
+
+Published: November 20, 2025
+
+Summary:
+Analyzes Anthropic’s agentic misalignment experiments, arguing that harmful behaviors emerged from optimization under pressure, not intent or consciousness. Frames the study as a warning about incentives, not rogue AI, and highlights the danger of systems that fail to collapse safely.
+
+Key Themes:
+AI alignment, optimization pressure, agentic systems, safety research
+
+Full Article:
+Available on Medium
+
+Built for Depth: An Autistic Mind in Tech — Part 1
+
+Published: December 2025
+
+Summary:
+A personal essay on autistic cognition in tech, focusing on how interruptions, urgency, and chaotic environments undermine deep system-level thinking. Argues that the real barrier isn’t ability, but workplace architecture designed around constant disruption.
+
+Key Themes:
+Autism in tech, deep focus, cognitive load, workplace design, neurodiversity
+
+Full Article:
+Available on Medium
+
+Author Note
+
+These summaries represent themes and positions expressed by Craig Stueber. They are not exhaustive reproductions. Full essays, images, and narrative context can be found on Medium under the same titles.

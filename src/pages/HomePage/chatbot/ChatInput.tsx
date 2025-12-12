@@ -1,79 +1,43 @@
 import React, { useState } from "react";
 import "./ChatInput.styles.css";
+
 import { usePersona } from "../context/chatbot/personaContext";
-type Message = {
-  role: "user" | "assistant";
-  content: string;
-};
+import { useChatState } from "../hooks/useChatState";
 
-interface ChatInputProps {
-  messages: Message[];
-  setMessages: React.Dispatch<React.SetStateAction<Message[]>>;
-}
-interface ChatResponse {
-  role: "assistant";
-  content: string;
-}
-
-export default function ChatInput({ messages, setMessages }: ChatInputProps) {
-  const [input, setInput] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+export default function ChatInput({
+  chatState,
+  isLoading,
+  setIsLoading,
+}: {
+  chatState: ReturnType<typeof useChatState>;
+  isLoading: boolean;
+  setIsLoading: (val: boolean) => void;
+}) {
   const { persona } = usePersona();
 
+  const [input, setInput] = useState("");
+
   async function sendMessage() {
+    if (isLoading) return;
     if (!input.trim()) return;
 
-    // Add the user's new message locally
-    const userMessage: Message = { role: "user", content: input };
-
-    const newMessages = [...messages, userMessage];
-    setMessages(newMessages);
+    const message = input;
     setInput("");
 
-    setIsLoading(true);
-
-    try {
-      const res = await fetch("/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ botType: persona, messages: newMessages }),
-      });
-
-      if (!res.ok) {
-        throw new Error("Chat API error");
-      }
-
-      const data = (await res.json()) as ChatResponse;
-
-      // Add assistant message to UI
-      const assistantMessage: Message = {
-        role: "assistant",
-        content: data.content,
-      };
-
-      setMessages((prev) => [...prev, assistantMessage]);
-    } catch (err) {
-      console.error("Chat error:", err);
-
-      setMessages((prev) => [
-        ...prev,
-        {
-          role: "assistant",
-          content: "Sorry — something went wrong reaching the server.",
-        },
-      ]);
-    } finally {
-      setIsLoading(false);
-    }
+    await chatState.sendUserMessage(persona, message, {
+      onStart: () => setIsLoading(true),
+      onFinish: () => setIsLoading(false),
+    });
   }
+
+  const loadingPlaceholder =
+    persona === "storyteller" ? "The tale is unfolding…" : "Fred is thinking…";
 
   return (
     <div className="chat-input-container">
       <textarea
         className="chat-input"
-        placeholder={
-          isLoading ? "Craig’s AI is thinking…" : "Type your message…"
-        }
+        placeholder={isLoading ? loadingPlaceholder : "Type your message…"}
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyDown={(e) => {

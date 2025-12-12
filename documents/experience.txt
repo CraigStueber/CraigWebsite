@@ -1,0 +1,91 @@
+Senior Full Stack Engineer — AI Systems Integration
+
+Berkshire Hathaway Energy (BHE) — Richmond, VA
+2025 – Present
+
+Works on Dekaflow 2, a next-generation cloud-based enterprise platform supporting large-scale operational workflows.
+
+Spearheaded the company-wide GitHub Copilot integration, establishing usage standards, prompt guidelines, and guardrails to improve reliability, reproducibility, and safe adoption across engineering teams. Trained developers through hands-on sessions and internal workshops focused on effective Copilot usage, structured prompting, and failure-mode awareness.
+
+Leads AI-assisted engineering initiatives centered on behavioral reliability, drift detection, and safety in LLM-supported workflows. Defines prompt standards and evaluation approaches to identify regressions and unintended model behavior, and participates in incident analysis when AI-assisted outputs deviate from expectations.
+
+Contributes extensively to both frontend and backend development, building and maintaining dozens of production components using Next.js, TypeScript, Java, Azure, Jotai, and Cloudflare Workers. Collaborates within a large Agile organization, participating in design reviews, sprint planning, and cross-team technical discussions.
+Head React Native Developer & Co-Founder
+
+DanceCard — Richmond, VA (Remote)
+2024 – Present
+
+Co-founded and leads engineering for a social platform focused on meaningful real-world connection, safety, and predictable interaction patterns.
+
+Architected and built a cross-platform mobile application using React Native and Expo, supporting real-time chat, scheduling, geolocation, and activity-based social features. Designed a scalable Supabase-backed data model for users, events, friends, and attendance tracking.
+
+Developed moderation and safety tooling, including prompt-driven content classification helpers. Ensured accessibility, inclusive UX, and consistent performance across iOS, Android, and web. Manages App Store and Play Store releases with an emphasis on trust and user safety.
+
+Senior Full Stack Developer — LLM-Integrated Systems
+
+Senior Full Stack Developer — LLM-Integrated Systems
+
+Sauer Brands, Inc. — Richmond, VA
+2021 – 2025
+
+Served as an engineering lead for internal and public-facing platforms spanning marketing, analytics, and content management, with a focus on reliability, accessibility, and long-term maintainability.
+
+Built multiple production systems from the ground up using React, TypeScript, Python, SQL, Java, and PeopleSoft, including business tools, dashboards, and high-traffic public experiences. Designed scalable frontend architectures and backend services supporting real-time updates, data export, and administrative workflows.
+
+Integrated third-party AI services and LLM-assisted capabilities into select platforms, including summarization, classification, and content-generation features. Authored structured prompts and meta-prompts tuned for constrained behavior and predictable outputs, and ran prompt experiments to evaluate drift, sensitivity, and safety edge cases.
+
+Helped introduce and normalize GitHub Copilot within development workflows, supporting teammates in effective usage while maintaining code quality and human oversight.
+
+Developed ingestion pipelines and supporting infrastructure using PostgreSQL, Redis, Supabase, and Cloudflare, ensuring validated data flows into both traditional systems and AI-assisted features.
+
+Led accessibility and ADA reviews across projects and worked closely with stakeholders to translate ethical, compliance, and brand requirements into concrete technical constraints.
+
+Notable projects included high-traffic interactive voting platforms, real-time marketing dashboards, scalable giveaway systems, and internal business tools used across multiple teams.
+Projects Craig worked on at Sauer Brands Inc - Duke’s Country, Hot Tomato Summer, Kernel Season's Sweepstakes, Sauer Brand Websites, Sales Reporting Tool
+
+Front-End Engineer (Contract)
+
+Soar365 — Richmond, VA
+Aug 2021 – Dec 2021
+
+Short-term contract focused on accessibility modernization and long-term maintainability.
+
+Conducted a full WCAG/ADA audit and resolved accessibility issues across the public website. Migrated the site to a maintainable Wix-based platform to empower non-technical staff. Improved UX clarity, semantic structure, and device compatibility, and trained staff on accessibility-informed content workflows.
+
+Full Stack Engineer — ML-Enhanced IoT Systems
+
+Talos IoT — Glen Allen, VA
+2021
+
+Developed IoT dashboards translating complex diagnostic data into clear, actionable user experiences.
+
+Built real-time interfaces using React, WebSockets, Python, and Java. Integrated ML-based anomaly detection models into backend services and designed evaluation pipelines measuring drift, accuracy, and false-positive rates. Translated machine-learning outputs into human-interpretable insights for technician environments.
+
+Also developed early React Native tooling to improve device configuration workflows.
+
+Front-End Web Developer
+
+PresenceLearning — Remote
+2020 – 2021
+
+Improved frontend systems supporting digital marketing and operational consistency.
+
+Modernized templates, consolidated fragmented email systems into a single maintainable master template, and improved mobile UX and accessibility through responsive design. Identified workflow risks and implemented mitigations to improve reliability.
+
+Front-End Developer — Interactive & Emerging Tech
+
+Kurb Media, LLC — Remote
+2019 – 2020
+
+Delivered interactive and emerging-technology web experiences under fast-turnaround conditions.
+
+Built responsive interfaces using React, Next.js, WordPress, Shopify, PHP, and SCSS. Developed UI elements for early augmented-reality prototypes and explored foundational ML and computer-vision concepts supporting AR interactions.
+
+Front-End Developer (Freelance)
+
+Richmond, VA
+2017 – 2021
+
+Designed and built accessible, human-centered websites and web applications for authors, nonprofits, and small businesses.
+
+Delivered responsive solutions using HTML, CSS, JavaScript, React, and WordPress. Created interactive tools including property-listing interfaces and donor-engagement widgets. Ensured cross-device compatibility, performance optimization, and long-term maintainability.

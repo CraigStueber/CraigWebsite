@@ -1,0 +1,215 @@
+AI, Safety, and Prompt Engineering
+
+Prompt Engineering
+Expert-level experience designing structured prompts, system prompts, meta-prompts, and constrained instructions that maximize reliability and reduce hallucinations. Skilled in multi-step prompting, determinism, and safe behavioral shaping for production systems.
+
+LLM Behavioral Evaluation
+Builds evaluation harnesses that measure hallucination rate, drift, prompt sensitivity, sycophancy, refusal behavior, token dependency, and multi-run stability. Experienced with behavioral testing for GPT, Claude, and open models.
+
+AI Safety and Alignment
+Applies safety-first techniques including constrained generation, safe completion patterns, adversarial testing, refusal tuning, and ethical UX. PhD research focused on risk quantification, mitigation, and responsible AI deployment.
+
+System Prompt Architecture
+Authors system-level prompts defining behavioral rules, guardrails, constraints, limitations, and persona consistency for production applications.
+
+Meta-Prompting and Synthetic Data
+Develops meta-prompts for generating structured datasets, training examples, regression test suites, and behavioral variations for evaluation pipelines.
+
+Failure Mode Analysis
+Identifies root causes of LLM misbehavior including hallucinations, misalignment, refusal failures, over-agreeableness, and multi-step reasoning collapse. Skilled in isolating minimal reproduction cases.
+
+Model Debugging and Incident Response
+Handles LLM behavioral incidents by diagnosing issues, designing minimal test prompts, isolating model-layer vs prompt-layer causes, and implementing corrected prompt strategies.
+
+Safety-Conscious UX
+Designs interfaces that minimize coercion, preserve user agency, and emphasize transparency. Applies WCAG, ADA principles, and ethical UX patterns to all AI-assisted interactions.
+
+Python for Evaluation
+Builds scripts for batch evaluation, prompt-variant testing, automated analysis, and behavioral scoring based on OWASP, CVSS, and custom metrics.
+
+Model Comparison and Benchmarking
+Compares GPT, Claude, and open models across safety, helpfulness, refusal quality, accuracy, and prompt adherence.
+
+Ethical AI and Risk Assessment
+Applies fairness, transparency, and risk quantification principles to evaluate model behavior and ensure ethical deployment.
+
+Languages
+
+HTML
+Ten years of experience building accessible, standards-compliant interfaces.
+
+CSS
+Ten years of experience using modern CSS, Flexbox, Grid, and responsive design.
+
+JavaScript
+Ten years building interactive applications, dashboards, and enterprise platforms.
+
+TypeScript
+Six years using TypeScript for scalable, type-safe React and Next.js applications.
+
+Python
+Six years building automation scripts, evaluation tooling, and backend integrations.
+
+PHP
+Eight years building and maintaining WordPress systems and backend services.
+
+Java
+Five years of experience including backend development at BHE for Dekaflow systems.
+
+C#
+Used for firmware and device programming in IoT environments at Talos IoT.
+
+Node.js
+Six years building REST APIs, microservices, backend utilities, and CLI tooling.
+
+Frameworks
+
+Next.js
+Enterprise-level experience architecting apps with routing, SSR, API routes, and React Server Components.
+
+React
+Eight years building production-grade applications with hooks, context, component architecture, and scalable UI systems.
+
+React Native
+Four years building and deploying mobile apps including DanceCard with Expo, notifications, and multi-platform support.
+
+Bootstrap
+Six years using Bootstrap for rapid prototyping and responsive layouts.
+
+Material-UI
+Six years building advanced interfaces including DataGrid-heavy enterprise dashboards.
+
+Tailwind CSS
+Two years using utility-first design for fast iteration and clean component patterns.
+
+SASS
+Experience building modular, maintainable stylesheets for advanced UI systems.
+
+Data and API
+
+MongoDB
+Experience with schema design and integration for enterprise applications at BHE.
+
+SQL Server
+Used for relational modeling and query design within BHE applications.
+
+MySQL
+Developed dashboards and reporting tools at Sauer Brands using MySQL.
+
+Supabase
+Primary backend platform for multiple applications including DanceCard. Skilled in auth, RLS, triggers, storage, and SQL functions.
+
+PostgreSQL
+Five years of experience designing relational schemas and managing Supabase-backed databases.
+
+Accessibility and Standards
+
+WCAG 2.1
+Ensures compliance across all projects through audits, semantic structure, and contrast corrections.
+
+ADA Compliance
+Deep experience designing accessible interfaces for enterprise and nonprofit organizations.
+
+Semantic HTML
+Uses accessible semantic structure across all projects.
+
+Color Contrast Audits
+Performs branding-accessibility alignment across interfaces and design systems.
+
+Screen Reader Testing
+Hands-on testing using NVDA and VoiceOver.
+
+State Management
+
+Context API
+Primary state solution for most personal and professional projects.
+
+Redux
+Used for large, state-heavy applications requiring predictable architecture.
+
+Jotai
+Used at BHE for atom-based state management with lightweight patterns.
+
+Testing and QA
+
+Test-Driven Development
+Used to guide implementation and prevent regressions.
+
+Jest
+Writes unit tests for every file, with strong experience in mocks, async cases, and snapshots.
+
+Integration Testing
+Validates workflows spanning APIs, frontends, and databases.
+
+Infrastructure and DevOps
+
+Docker
+Daily use at BHE for containerizing services and optimizing builds.
+
+Linux and Bash
+Comfortable building tools and scripts in Linux environments and WSL.
+
+AWS
+Used EC2, Lambda, S3 for deployments at Talos IoT and Sauer Brands.
+
+Cloudflare
+Four years using Workers, Pages, DNS, and serverless architectures.
+
+Azure
+Used for pipelines, repos, and enterprise workflows at Sauer Brands and BHE.
+
+Trello
+Used for agile workflows and cross-team coordination.
+
+Mobile Deployment and Monitoring
+
+Expo
+Used for building, publishing, and maintaining React Native apps.
+
+OTA Updates
+Manages over-the-air updates for live mobile applications.
+
+App Store Publishing
+Experienced with provisioning, certificates, TestFlight, and release workflows.
+
+Google Play Publishing
+Experienced with deployment tracks and policy compliance.
+
+Firebase Crashlytics
+Used to track crashes and stability in mobile apps.
+
+Sentry
+Used for client-side and server-side monitoring and exception tracking.
+
+IoT and Firmware
+
+Embedded Firmware
+Developed firmware for Guardian boards at Talos IoT.
+
+Real-Time Sensor Pipelines
+Built pipelines for telemetry and anomaly detection.
+
+Data Visualization and Monitoring
+
+Grafana
+Built dashboards for IoT telemetry, Supabase metrics, and system monitoring.
+
+Development Tools
+
+Git
+Used daily across all professional roles.
+
+npm
+Primary dependency and script manager.
+
+Postman
+Used for API design, testing, and debugging.
+
+Swagger and OpenAPI
+Ensures alignment between frontend and backend schema definitions.
+
+VSCode
+Primary IDE used with customized tooling.
+
+Bash
+Used for automation, scripting, and environment setup.

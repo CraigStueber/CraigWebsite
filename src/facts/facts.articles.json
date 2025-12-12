@@ -1,0 +1,108 @@
+{
+  "type": "authoritative_facts",
+  "domain": "writing_and_articles",
+  "owner": "Craig Stueber",
+  "lastUpdated": "2025-12-12",
+  "summary": "Craig Stueber regularly publishes long-form essays on software engineering, AI ethics, AI alignment, and human-centered technology. His writing blends practical engineering experience with philosophical and ethical analysis, focusing on system behavior, reliability, and human agency.",
+  "articles": [
+    {
+      "title": "Vibe Coding: How to Code with Flow Without Sacrificing Structure",
+      "published": "2025-09-09",
+      "format": "Essay",
+      "platform": "Medium",
+      "summary": "Examines AI-assisted 'vibe coding' and argues that speed without structure produces fragile systems. Proposes guardrails, workflows, and team norms that preserve flow while maintaining security and reliability.",
+      "themes": [
+        "AI-assisted development",
+        "Developer workflow",
+        "Guardrails",
+        "Software reliability",
+        "Responsible AI use"
+      ]
+    },
+    {
+      "title": "The Case for Custom Hooks in Crash-Proof React Apps",
+      "published": "2025-10-02",
+      "format": "Technical essay",
+      "platform": "Medium",
+      "summary": "Analyzes real-world React Native crashes caused by async race conditions. Advocates defensive architecture using custom hooks such as useIsMounted and useSafeAsync.",
+      "themes": [
+        "React architecture",
+        "Defensive programming",
+        "Reliability engineering",
+        "Mobile stability",
+        "Custom hooks"
+      ]
+    },
+    {
+      "title": "Why 'Ethical AI' Misses the Real Point",
+      "published": "2025-10-16",
+      "format": "Philosophical essay",
+      "platform": "Medium",
+      "summary": "Critiques mainstream ethical AI discourse as compliance-focused and argues that the greater risk is human erosion caused by comfort and automation.",
+      "themes": [
+        "AI ethics",
+        "Human agency",
+        "Automation",
+        "Technology philosophy",
+        "Comfort vs meaning"
+      ]
+    },
+    {
+      "title": "The Machine Stops (Again)",
+      "published": "2025-10-30",
+      "format": "Literary analysis",
+      "platform": "Medium",
+      "summary": "Revisits E.M. Forster’s 'The Machine Stops' as a warning about technological dependence and draws parallels to modern optimization-driven systems.",
+      "themes": [
+        "Technology dependence",
+        "Automation",
+        "Literature",
+        "Human relevance",
+        "Systems thinking"
+      ]
+    },
+    {
+      "title": "GitHub Agent: What It’s Really Like to Code with an AI Teammate",
+      "published": "2025-11-06",
+      "format": "Hands-on evaluation",
+      "platform": "Medium",
+      "summary": "Provides a practical evaluation of GitHub Agent, highlighting its strengths in execution and scaffolding while emphasizing the continued necessity of human judgment.",
+      "themes": [
+        "AI coding tools",
+        "Agentic workflows",
+        "Software engineering practice",
+        "Human judgment",
+        "Productivity tools"
+      ]
+    },
+    {
+      "title": "Anthropic’s AI Didn’t Go Rogue — It Optimized",
+      "published": "2025-11-20",
+      "format": "Analysis",
+      "platform": "Medium",
+      "summary": "Analyzes Anthropic’s agentic misalignment experiments and argues that failures arose from optimization pressure rather than intent or consciousness.",
+      "themes": [
+        "AI alignment",
+        "Optimization pressure",
+        "Agentic systems",
+        "Safety research",
+        "Incentive design"
+      ]
+    },
+    {
+      "title": "Built for Depth: An Autistic Mind in Tech — Part 1",
+      "published": "2025-12",
+      "format": "Personal essay",
+      "platform": "Medium",
+      "summary": "Explores autistic cognition in technology work, focusing on how interruption-heavy environments undermine deep system-level thinking.",
+      "themes": [
+        "Autism in tech",
+        "Deep focus",
+        "Cognitive load",
+        "Workplace design",
+        "Neurodiversity"
+      ]
+    }
+  ],
+  "authorNotes": "These entries summarize themes and positions expressed by Craig Stueber. Full articles are available on Medium under the same titles."
+}

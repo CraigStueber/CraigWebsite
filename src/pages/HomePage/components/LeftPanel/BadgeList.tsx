@@ -3,12 +3,15 @@ import "./BadgeList.styles.css";
 
 export default function BadgeList() {
   const badges = [
+    "AI Safety",
+    "AI Alignment",
+    "Prompt Engineering",
+    "LLM Behavior",
+    "AI Systems Engineering",
     "React",
     "TypeScript",
-    "Cloudflare",
-    "Supabase",
-    "AI Ethics",
-    "React Native",
+    "Next.js",
+    "Python",
   ];
 
   return (

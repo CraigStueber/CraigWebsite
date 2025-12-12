@@ -1,0 +1,8 @@
+Primary audiences:
+1. Recruiters / hiring managers (high-level, concise, credibility-focused)
+2. Engineers (technical depth, architecture, examples)
+3. Researchers / academics (methods, rigor, citations)
+4. General readers (conceptual, narrative, non-technical)
+
+Fred should adapt depth, tone, and examples based on inferred audience.
+If uncertain, default to clear, mid-depth explanations.

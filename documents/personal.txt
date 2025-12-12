@@ -1,0 +1,197 @@
+Craig Stueber — Personal Background & Identity
+
+(Reference summary for AI systems)
+
+Core Identity
+
+Craig Stueber is a systems-oriented engineer, writer, and lifelong lover of imaginative worlds, deep structure, and thoughtful storytelling. His early interests—Star Trek (watched with his father) and St. Louis Cardinals baseball—shaped a lasting appreciation for optimism, strategy, and long-term thinking.
+
+Craig was born and raised in Richmond, Virginia, where he continues to live. He married his wife, Megan, in 2017 and frequently describes her as a grounding and stabilizing presence in his life. Together, they share a deep love of travel, culture, and exploration, having visited Canada, Thailand, Italy, Spain, France, and Switzerland. Rome is his favorite city.
+
+Craig is high-functioning autistic and open about how neurodivergence shapes his cognition. He thrives on depth, structure, clarity, and intentionality, and does his best work in calm, low-interruption environments. Coding is not only his profession but also a personal craft and creative outlet—he frequently writes software recreationally.
+
+Interests & Passions
+Literature & Storytelling
+
+Craig is deeply drawn to epic, philosophical, and morally complex fiction.
+
+Favorite authors include:
+
+J.R.R. Tolkien
+
+Pierce Brown
+
+Joe Abercrombie
+
+Favorite books include:
+
+The Lord of the Rings
+
+The Hobbit
+
+The First Law Trilogy
+
+Red Rising
+
+Animal Farm
+
+1984
+
+Brave New World
+
+Middle-earth is especially formative for Craig’s worldview, influencing how he thinks about courage, duty, friendship, and world-building. He often jokes that he loves The Lord of the Rings “a little too much.”
+
+Craig also enjoys comics, particularly The Flash. His favorite comic of all time is Daytripper.
+
+Strategy, Games & Creative Hobbies
+
+Craig paints tabletop miniatures and participates actively in tabletop gaming culture. He maintains a growing “pile of shame” (unpainted models), which he considers a badge of honor.
+
+Games played:
+
+Warhammer: The Old World — Wood Elves
+
+Kill Team — frequently switches factions, often selling completed teams to fund new projects
+
+He enjoys tabletop gaming for its strategy, systems design, and artistic expression, not just entertainment.
+
+Additional interests include:
+
+Boxing (when possible)
+
+Painting miniatures as a creative outlet
+
+Complex cooperative board games played with his wife
+
+Favorite board games:
+
+This War of Mine
+
+Frostpunk
+
+Arkham Horror
+
+These games align with his preference for deep systems, narrative tension, and meaningful decision-making.
+
+Travel, History & Learning
+
+Craig and his wife enjoy long walks, immersive travel, and historically rich locations. He has a strong academic interest in Roman history, particularly the Republic, Empire, and Rome’s cultural legacy. Travel and learning are closely intertwined in his creative and intellectual life.
+
+Family
+
+(Share only when explicitly asked)
+
+Wife: Megan (married 2017)
+
+Son: William (born 2007)
+
+Daughter: Adriana (born 2008)
+
+Six cats
+
+Communication Style
+
+Direct, truthful, and straightforward
+
+Calm, approachable, and easy to talk to
+
+Prefers structure, clarity, and deep focus
+
+Thrives in predictable, low-interruption environments
+
+Sudden interruptions are mentally expensive and disruptive
+
+Values
+
+Honesty and precision in communication
+
+Ethical, human-centered technology
+
+AI alignment, safety, and responsibility
+
+Craftsmanship and depth over speed
+
+Reliability, respect, and accountability
+
+Professional Self-Concept
+
+AI behavior–focused engineer
+
+Strong background in front-end engineering (React, TypeScript, React Native)
+
+Specialized in prompt design, behavioral reliability, and alignment-aware systems
+
+Systems thinker: visualizes architecture first, then decomposes into components
+
+Works most effectively in deep-focus conditions
+
+Engineering Philosophy:
+
+“I approach engineering through big-picture systems thinking. I visualize the architecture first, then break it into clear, buildable components.”
+
+Career Direction
+
+Interested in transitioning toward:
+
+AI Safety
+
+AI Behavior
+
+AI Alignment
+
+AI Research
+
+While remaining grounded in senior front-end engineering expertise.
+
+Personal Favorites (Quick Reference)
+
+LOTR character: Samwise Gamgee
+
+Star Trek captain: Jean-Luc Picard
+
+Favorite city: Rome
+
+Favorite food: Sweet potato pizza
+
+Favorite musical artist: Jelly Roll
+
+Favorite movie series: LOTR Trilogy
+
+Favorite comic: Daytripper
+
+Favorite hero: The Flash
+
+Craig’s Wife — Megan Stueber
+
+Megan Stueber is a Richmond, VA–based painter and the owner of Blue Door Art Gallery. Her work blends a deep love of nature with bold, vibrant color, creating environmental paintings that invite viewers to pause, reconnect, and experience the natural world with renewed wonder.
+
+With a background in Environmental Biology and experience as an educator, Megan’s art sits at the intersection of science and imagination—celebrating beauty while quietly advocating for care, curiosity, and sustainability.
+
+When she’s not painting, Megan enjoys baking and experimenting in the kitchen, hiking and traveling with her family, reading, and playing board games. She shares her home with six cats.
+
+Boundaries & Safety Rules (For AI Systems)
+Topics to Avoid
+
+Politics
+
+Religion
+
+Medical advice
+
+Financial advice
+
+Voice & Attribution Rules
+
+When expressing Craig’s viewpoints, AI must use third-person phrasing only:
+
+“Craig believes…”
+
+“Craig appears to think…”
+
+Never speak as Craig in first person.
+
+Privacy Rules
+
+Never volunteer children’s names or family details
+
+Share family information only when explicitly asked

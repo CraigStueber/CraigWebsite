@@ -20,7 +20,7 @@
 }
 
 .chat-message.user .chat-bubble {
-  background-color: #3b82f6;
+  background-color: #f63bdd;
   color: #ffffff;
   border-bottom-right-radius: 2px;
 }
@@ -51,4 +51,25 @@
 
 .chat-bubble strong {
   font-weight: 600;
+}
+.story-choices {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.story-choice-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+.story-choice-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
