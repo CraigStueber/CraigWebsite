@@ -1,41 +1,16 @@
+import React from "react";
 import "./HomePage.styles.css";
+import { PersonaProvider } from "./context/chatbot/personaContext";
+import LeftPanel from "./components/LeftPanel/LeftPanel";
+import RightPanel from "./components/RightPanel/RightPanel";
 
-import HomePageHeader from "./components/HomePageHeader/HomePageHeader";
-import Footer from "./components/Footer/Footer";
-import Divider from "./components/Divider/Divider";
-import MainSection from "./components/MainSection/MainSection";
-import About from "./components/About/About";
-import Experience from "./components/Experience/Experience";
-import Education from "./components/Education/Education";
-import Skills from "./components/Skills/Skills";
-import Projects from "./components/Projects/Projects";
-import Blog from "./components/Blog/Blog";
-import Contact from "./components/Contact/Contact";
-import BookSection from "./components/Book/BookSection";
-function HomePage() {
+export default function HomePage() {
   return (
-    <div className="homePage">
-      <HomePageHeader />
-      <MainSection />
-      <Divider color="yellow" />
-      <About />
-      <Divider color="yellow" />
-      <Experience />
-      <Divider color="yellow" />
-      <BookSection />
-      <Divider color="yellow" />
-      <Education />
-      <Divider color="yellow" />
-      <Skills />
-      <Divider color="yellow" />
-      <Blog />
-      <Divider color="yellow" />
-      <Projects />
-      <Divider color="yellow" />
-      <Contact />
-      <Footer />
-    </div>
+    <PersonaProvider>
+      <div className="homepage-container">
+        <LeftPanel />
+        <RightPanel />
+      </div>
+    </PersonaProvider>
   );
 }
-
-export default HomePage;

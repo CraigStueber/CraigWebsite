@@ -1,45 +1,37 @@
 {
   "compilerOptions": {
-    /* File Layout */
-    "rootDir": "./src",
+    "rootDir": ".",
     "outDir": "./dist",
 
-    /* Environment Settings */
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
     "lib": ["dom", "dom.iterable", "esnext"],
+   
 
-    /* Other Outputs */
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
 
-    /* Stricter Typechecking Options */
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
 
-    /* Style Options */
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
-
-    /* JSX */
     "jsx": "react-jsx",
 
-    /* Module Resolution */
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "skipLibCheck": true,
 
-    /* Experimental */
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+
+    "types": ["@cloudflare/workers-types"]
   },
-  "include": ["src"]
+
+  "include": [
+    "src",
+    "functions"   
+  ]
 }

@@ -1,0 +1,27 @@
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.intro-name {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  text-shadow: none;
+}
+
+.intro-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+.intro-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #d0d0d0;
+  margin-top: 0.5rem;
+}

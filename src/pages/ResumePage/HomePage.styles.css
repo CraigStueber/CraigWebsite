@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap");
+
+:root {
+  --color-bg: #f9f7fc; /* pale lavender (almost white) */
+  --color-header-bg: #f3f0fa; /* slightly darker lavender */
+  --color-primary: #b886ff; /* main purple */
+  --color-primary-dark: #230736;
+  --color-accent: #9b30ff; /* hover accent */
+  --color-text: #141414; /* dark gray text for ADA compliance */
+  --color-heading: #1a1a1a; /* almost black for headings */
+  --color-highlight: #ffb400; /* optional gold accent */
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--color-text);
+}
+
+.hpHeader-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.homePage {
+  background-color: var(--color-bg);
+  height: 100%;
+}
