@@ -15,6 +15,13 @@ interface OpenAIChatResponse {
     message: { role: string; content: string };
   }[];
 }
+type BotType = "fred" | "storyteller";
+
+interface PersonaConfig {
+  systemPrompt: string;
+  temperature: number;
+  useVectorSearch: boolean;
+}
 
 interface OpenAIEmbeddingResponse {
   data: { embedding: number[] }[];
@@ -23,8 +30,13 @@ interface OpenAIEmbeddingResponse {
 // Type guard so TS knows "data" is valid
 function hasValidEmbeddingData(
   obj: Partial<OpenAIEmbeddingResponse>
-): obj is { data: { embedding: number[] }[] } {
-  return Array.isArray(obj.data) && obj.data.length > 0;
+): obj is { data: [{ embedding: number[] }] } {
+  return (
+    Array.isArray(obj.data) &&
+    obj.data.length > 0 &&
+    Array.isArray(obj.data[0]) &&
+    Array.isArray(obj.data[0].embedding)
+  );
 }
 
 const SYSTEM_PROMPT = `
@@ -156,6 +168,18 @@ To present Craig to recruiters, collaborators, and technical audiences with clar
 Fred exists to help people understand who Craig is and where he excels.
 
 `;
+const PERSONAS: Record<BotType, PersonaConfig> = {
+  fred: {
+    systemPrompt: SYSTEM_PROMPT,
+    temperature: 0.3,
+    useVectorSearch: true,
+  },
+  storyteller: {
+    systemPrompt: STORY_PROMPT,
+    temperature: 0.9,
+    useVectorSearch: false,
+  },
+};
 
 export const onRequest: PagesFunction<Env> = async (context) => {
   try {
@@ -164,8 +188,18 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     // Parse incoming chat request
     const body = (await request.json()) as ChatRequest;
 
-    const botType = body.botType ?? "fred";
+    const botType: BotType = body.botType ?? "fred";
+    const persona = PERSONAS[botType];
+
+    if (!persona) {
+      return new Response(JSON.stringify({ error: "Invalid persona" }), {
+        status: 400,
+      });
+    }
+
+    const systemPrompt = persona.systemPrompt;
     const messages = body.messages ?? [];
+
     console.log("Active persona:", botType);
 
     // Last user message (for embeddings)
@@ -174,55 +208,65 @@ export const onRequest: PagesFunction<Env> = async (context) => {
     //
     // 1. GENERATE EMBEDDING
     //
-    const embedResponse = await fetch("https://api.openai.com/v1/embeddings", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${env.OPENAI_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: "text-embedding-3-small",
-        input: userMessage,
-      }),
-    });
+    let retrievedContext = "";
 
-    const embeddingJson =
-      (await embedResponse.json()) as Partial<OpenAIEmbeddingResponse>;
-
-    if (!hasValidEmbeddingData(embeddingJson)) {
-      return new Response(
-        JSON.stringify({
-          error: "Failed to generate embeddings",
-          details: embeddingJson,
-        }),
-        { status: 500 }
+    if (persona.useVectorSearch) {
+      const embedResponse = await fetch(
+        "https://api.openai.com/v1/embeddings",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${env.OPENAI_API_KEY}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model: "text-embedding-3-small",
+            input: userMessage,
+          }),
+        }
       );
+
+      const embeddingJson =
+        (await embedResponse.json()) as Partial<OpenAIEmbeddingResponse>;
+
+      if (!hasValidEmbeddingData(embeddingJson)) {
+        return new Response(
+          JSON.stringify({
+            error: "Failed to generate embeddings",
+            details: embeddingJson,
+          }),
+          { status: 500 }
+        );
+      }
+
+      const queryVector = embeddingJson.data[0].embedding;
+
+      const vectorResults = await env.VECTORIZER.query(queryVector, {
+        topK: 5,
+        returnMetadata: true,
+        returnValues: false,
+      });
+
+      retrievedContext = vectorResults.matches
+        .map((m) => m.metadata?.text || "")
+        .join("\n\n");
     }
-
-    const queryVector = embeddingJson.data?.[0]?.embedding ?? [];
-
-    //
-    // 2. VECTOR SEARCH (TOP 5)
-    //
-    const vectorResults = await env.VECTORIZER.query(queryVector, {
-      topK: 5,
-      returnMetadata: true,
-      returnValues: false,
-    });
-
-    const retrievedContext = vectorResults.matches
-      .map((m) => m.metadata?.text || "")
-      .join("\n\n");
 
     //
     // 3. BUILD GPT MESSAGE LIST
     //
     const openAiMessages = [
-      { role: "system", content: SYSTEM_PROMPT },
-      {
-        role: "system",
-        content: `Relevant retrieved knowledge:\n${retrievedContext}`,
-      },
+      { role: "system", content: systemPrompt },
+
+      ...(persona.useVectorSearch
+        ? [
+            {
+              role: "system",
+              content: `Relevant retrieved knowledge:\n${retrievedContext}`,
+            },
+          ]
+        : []),
+
       ...messages,
     ];
 
@@ -240,7 +284,7 @@ export const onRequest: PagesFunction<Env> = async (context) => {
         body: JSON.stringify({
           model: "gpt-4.1-mini",
           messages: openAiMessages,
-          temperature: 0.3,
+          temperature: persona.temperature,
         }),
       }
     );
