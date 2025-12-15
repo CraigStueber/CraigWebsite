@@ -20,7 +20,7 @@
 }
 
 .chat-message.user .chat-bubble {
-  background-color: #f63bdd;
+  background-color: #6b5c7a;
   color: #ffffff;
   border-bottom-right-radius: 2px;
 }
@@ -36,7 +36,7 @@
 }
 .chat-bubble em,
 .chat-bubble strong {
-  color: white;
+  color: #ffffff;
 }
 .chat-bubble h1,
 .chat-bubble h2,
@@ -62,7 +62,7 @@
 .story-choice-btn {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  color: white;
+  color: #ffffff;
   padding: 0.6rem 0.8rem;
   border-radius: 8px;
   cursor: pointer;

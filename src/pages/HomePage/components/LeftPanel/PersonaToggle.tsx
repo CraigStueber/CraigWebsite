@@ -3,6 +3,12 @@ import { usePersona } from "../../context/chatbot/personaContext";
 import { BotPersona } from "../../types/chatbot/persona";
 import "./PersonaToggle.styles.css";
 
+const PERSONA_LABELS: Record<BotPersona, string> = {
+  fred: "About Craig",
+  storyteller: "Story Mode",
+  socratic: "Socratic Analyst",
+};
+
 export default function PersonaToggle() {
   const { persona, setPersona } = usePersona();
 
@@ -14,19 +20,16 @@ export default function PersonaToggle() {
 
   return (
     <div className="persona-toggle">
-      <button
-        className={`persona-btn ${persona === "fred" ? "active" : ""}`}
-        onClick={() => selectPersona("fred")}
-      >
-        About Craig
-      </button>
-
-      <button
-        className={`persona-btn ${persona === "storyteller" ? "active" : ""}`}
-        onClick={() => selectPersona("storyteller")}
-      >
-        Story Mode
-      </button>
+      {(Object.keys(PERSONA_LABELS) as BotPersona[]).map((key) => (
+        <button
+          key={key}
+          className={`persona-btn ${persona === key ? "active" : ""}`}
+          onClick={() => selectPersona(key)}
+          aria-pressed={persona === key}
+        >
+          {PERSONA_LABELS[key]}
+        </button>
+      ))}
     </div>
   );
 }

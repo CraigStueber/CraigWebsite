@@ -17,11 +17,12 @@ export function useChatState() {
     {
       fred: [],
       storyteller: [],
+      socratic: [],
     }
   );
 
   function getMessages(persona: BotPersona): ChatMessage[] {
-    return messagesByPersona[persona];
+    return messagesByPersona[persona] ?? [];
   }
 
   function setMessages(persona: BotPersona, messages: ChatMessage[]) {
@@ -70,7 +71,11 @@ export function useChatState() {
   ) {
     const userMessage: ChatMessage = { role: "user", content };
 
-    const outgoingMessages = [...messagesByPersona[persona], userMessage];
+    const outgoingMessages = [
+      ...(messagesByPersona[persona] ?? []),
+      userMessage,
+    ];
+
     setMessages(persona, outgoingMessages);
 
     options?.onStart?.();

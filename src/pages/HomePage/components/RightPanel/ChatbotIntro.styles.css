@@ -17,3 +17,9 @@
   font-size: 0.95rem;
   line-height: 1.45;
 }
+@media (max-width: 900px) {
+  .chatbot-intro {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}

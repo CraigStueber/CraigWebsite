@@ -1,30 +1,51 @@
 import React from "react";
 import "./PresetQuestions.styles.css";
+import { useChatState } from "../hooks/useChatState";
+import { BotPersona } from "../types/chatbot/persona";
 
-type Message = {
-  role: "user" | "assistant";
-  content: string;
+const PRESETS: Record<BotPersona, string[]> = {
+  fred: [
+    "What does Craig specialize in?",
+    "Tell me about Craig's AI Ethics research",
+    "What roles is Craig looking for next?",
+  ],
+  storyteller: [
+    "I want a quiet, hopeful story",
+    "Tell me an adventurous tale",
+    "Something cozy by a fire",
+  ],
+  socratic: [
+    "I disagree with someone and want to understand the reasoning on both sides.",
+    "I’m weighing two options and struggling to compare them.",
+    "I feel confident about something but want to test that confidence.",
+  ],
 };
 
 interface PresetQuestionsProps {
-  setMessages: React.Dispatch<React.SetStateAction<Message[]>>;
+  chatState: ReturnType<typeof useChatState>;
+  persona: BotPersona;
+  setIsLoading: (val: boolean) => void;
 }
 
-const PRESETS = [
-  "What does Craig specialize in?",
-  "Show me Craig's resume",
-  "Tell me about Craig's AI Ethics research",
-  "What roles is Craig looking for next?",
-];
-
-export default function PresetQuestions({ setMessages }: PresetQuestionsProps) {
+export default function PresetQuestions({
+  chatState,
+  persona,
+  setIsLoading,
+}: PresetQuestionsProps) {
   function handleClick(text: string) {
-    setMessages((prev) => [...prev, { role: "user", content: text }]);
+    chatState.sendUserMessage(persona, text, {
+      onStart: () => setIsLoading(true),
+      onFinish: () => setIsLoading(false),
+    });
   }
+
+  const presets = PRESETS[persona] ?? [];
+
+  if (presets.length === 0) return null;
 
   return (
     <div className="preset-questions">
-      {PRESETS.map((q) => (
+      {presets.map((q) => (
         <button
           key={q}
           className="preset-question"

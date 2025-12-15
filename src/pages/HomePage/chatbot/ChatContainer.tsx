@@ -9,6 +9,8 @@ import ChatInput from "./ChatInput";
 import { PERSONA_WELCOME_MESSAGES } from "../types/chatbot/persona";
 import { useEffect, useState } from "react";
 
+import PresetQuestions from "./PresetQuestions";
+
 export default function ChatContainer() {
   const { persona } = usePersona();
   const chatState = useChatState();
@@ -27,7 +29,13 @@ export default function ChatContainer() {
         chatState={chatState}
         setIsLoading={setIsLoading}
       />
-
+      {messages.length === 1 && (
+        <PresetQuestions
+          chatState={chatState}
+          persona={persona}
+          setIsLoading={setIsLoading}
+        />
+      )}
       <ChatInput
         chatState={chatState}
         isLoading={isLoading}

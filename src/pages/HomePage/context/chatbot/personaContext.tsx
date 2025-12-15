@@ -3,7 +3,7 @@ import { BotPersona } from "../../types/chatbot/persona";
 
 interface PersonaContextValue {
   persona: BotPersona;
-  setPersona: (p: BotPersona) => void;
+  setPersona: React.Dispatch<React.SetStateAction<BotPersona>>;
 }
 
 const PersonaContext = createContext<PersonaContextValue | undefined>(
