@@ -1,4 +1,5 @@
 name = "craig-ai"
+account_id = "1e6412807f33d56a62217477e87196d2"
 compatibility_date = "2025-12-11"
 
 pages_build_output_dir = "dist"
@@ -6,3 +7,8 @@ pages_build_output_dir = "dist"
 [[vectorize]]
 binding = "VECTORIZER"
 index_name = "craig-knowledge"
+
+[[kv_namespaces]]
+binding = "NEWS_CACHE"
+id = "088a5937d1c84c76bebdb0786835374c"
+preview_id = "632f95a1feb04affb4f5987b43eeb118"

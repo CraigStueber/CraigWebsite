@@ -17,7 +17,7 @@ export function useChatState() {
     {
       fred: [],
       storyteller: [],
-      socratic: [],
+      local_news: [],
     }
   );
 
@@ -71,10 +71,7 @@ export function useChatState() {
   ) {
     const userMessage: ChatMessage = { role: "user", content };
 
-    const outgoingMessages = [
-      ...(messagesByPersona[persona] ?? []),
-      userMessage,
-    ];
+    const outgoingMessages = [...getMessages(persona), userMessage];
 
     setMessages(persona, outgoingMessages);
 

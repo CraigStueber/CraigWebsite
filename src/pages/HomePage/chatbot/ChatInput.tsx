@@ -31,7 +31,11 @@ export default function ChatInput({
   }
 
   const loadingPlaceholder =
-    persona === "storyteller" ? "The tale is unfolding…" : "Fred is thinking…";
+    persona === "storyteller"
+      ? "The tale is unfolding…"
+      : persona === "local_news"
+      ? "Checking local headlines…"
+      : "Fred is thinking…";
 
   return (
     <div className="chat-input-container">

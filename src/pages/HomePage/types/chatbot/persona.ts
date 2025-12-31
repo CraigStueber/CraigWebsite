@@ -1,4 +1,4 @@
-export type BotPersona = "fred" | "storyteller" | "socratic";
+export type BotPersona = "fred" | "storyteller" | "local_news";
 
 export const PERSONA_WELCOME_MESSAGES: Record<BotPersona, string> = {
   fred: `Hello — Fred can help explain Craig’s engineering background, AI ethics research, and professional experience. Feel free to ask about his work, projects, or research focus.`,
@@ -12,11 +12,10 @@ A quiet, cozy tale by firelight?
 Something dark and dangerous — or hopeful, even when things look grim?
 
 Just say the word, and I’ll walk with you wherever the story leads.`,
-  socratic: `Hello. This mode is designed for careful thinking, not debate.
 
-You can bring an idea, belief, or argument you’re wrestling with, and we’ll examine it together.
+  local_news: `Local News Digest mode.
 
-I’ll help clarify assumptions, explore counter-arguments, and surface tradeoffs — without trying to persuade or “win.”
+Tell me a city/region (for example: “Richmond, VA” or “Fredericksburg, VA”), and this agent will pull a short digest of recent local headlines with sources.
 
-If you’d like, start by sharing a claim or question you want to think through more clearly.`,
+Try: “Give me a local news digest for Richmond, VA.”`,
 };

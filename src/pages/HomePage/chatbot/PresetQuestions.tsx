@@ -14,10 +14,10 @@ const PRESETS: Record<BotPersona, string[]> = {
     "Tell me an adventurous tale",
     "Something cozy by a fire",
   ],
-  socratic: [
-    "I disagree with someone and want to understand the reasoning on both sides.",
-    "I’m weighing two options and struggling to compare them.",
-    "I feel confident about something but want to test that confidence.",
+  local_news: [
+    "Give me a local news digest for Richmond, VA.",
+    "What are the top local headlines in Fredericksburg, VA today?",
+    "Any important weather alerts or city updates for Charlottesville, VA?",
   ],
 };
 

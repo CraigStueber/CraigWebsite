@@ -6,7 +6,7 @@ import "./PersonaToggle.styles.css";
 const PERSONA_LABELS: Record<BotPersona, string> = {
   fred: "About Craig",
   storyteller: "Story Mode",
-  socratic: "Socratic Analyst",
+  local_news: "Local News Digest",
 };
 
 export default function PersonaToggle() {
