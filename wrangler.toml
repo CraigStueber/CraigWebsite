@@ -1,5 +1,4 @@
 name = "craig-ai"
-account_id = "1e6412807f33d56a62217477e87196d2"
 compatibility_date = "2025-12-11"
 
 pages_build_output_dir = "dist"
