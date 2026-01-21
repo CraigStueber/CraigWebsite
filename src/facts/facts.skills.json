@@ -2,125 +2,304 @@
   "type": "authoritative_facts",
   "domain": "technical_skills_and_capabilities",
   "owner": "Craig Stueber",
-  "lastUpdated": "2025-12-12",
-  "summary": "Craig Stueber is a senior front-end engineer and AI behavior–focused practitioner with deep expertise in AI safety, prompt engineering, behavioral evaluation, and production-grade software systems.",
+  "lastUpdated": "2026-01-21",
+  "summary": "Craig Stueber is a senior front-end engineer and applied AI systems practitioner focused on AI behavior, safety, and reliability in production environments. His work spans prompt architecture, agentic systems, behavioral evaluation, and enterprise-grade software engineering.",
   "aiAndSafety": {
     "promptEngineering": {
       "level": "Expert",
-      "capabilities": [
-        "Designs structured prompts, system prompts, meta-prompts, and constrained instructions",
-        "Optimizes determinism and reduces hallucination risk",
-        "Builds multi-step and role-based prompting systems",
-        "Authors production-grade system prompt architectures"
+      "experience": "Designs and deploys production-grade prompt architectures for real-world systems, not one-off demos.",
+      "knowledge": [
+        "System prompts, developer prompts, and user prompt layering",
+        "Meta-prompts for self-checking and constraint enforcement",
+        "Determinism tuning and temperature control strategies",
+        "Role-based and task-isolated prompt design",
+        "Failure-aware prompt patterns to reduce hallucination and overconfidence"
+      ],
+      "applications": [
+        "Enterprise AI tooling",
+        "Internal decision-support systems",
+        "AI-assisted developer workflows"
       ]
     },
     "behavioralEvaluation": {
-      "capabilities": [
-        "Measures hallucination rate and refusal behavior",
-        "Evaluates prompt sensitivity and model drift",
-        "Tests sycophancy, over-agreeableness, and reasoning collapse",
-        "Performs multi-run stability analysis across models"
+      "experience": "Actively evaluates model behavior under realistic usage conditions rather than benchmark-only testing.",
+      "knowledge": [
+        "Hallucination rate measurement across repeated runs",
+        "Prompt sensitivity and brittleness testing",
+        "Sycophancy and over-agreeableness detection",
+        "Reasoning degradation in multi-step tasks",
+        "Long-context and instruction-following decay"
       ],
       "modelsEvaluated": [
         "GPT family",
         "Claude family",
         "Open-source LLMs"
+      ],
+      "methods": [
+        "Multi-run stability analysis",
+        "Comparative behavioral testing across models",
+        "Scenario-based evaluation instead of static prompts"
       ]
     },
     "aiSafetyAndAlignment": {
-      "capabilities": [
-        "Applies constrained generation and safe completion patterns",
-        "Designs adversarial testing workflows",
-        "Performs ethical UX analysis for AI-assisted systems",
-        "Quantifies risk using hybrid OWASP, CVSS, and behavioral metrics"
+      "experience": "Applies AI safety principles at the system and UX level, not just model selection.",
+      "knowledge": [
+        "Constrained generation and safe completion patterns",
+        "Adversarial prompt testing workflows",
+        "Human-in-the-loop escalation design",
+        "Ethical UX analysis for AI-assisted interfaces",
+        "Risk quantification using hybrid OWASP, CVSS, and behavioral metrics"
       ]
     },
-    "failureModeAnalysis": [
-      "Hallucinations",
-      "Refusal failures",
-      "Misalignment",
-      "Prompt brittleness",
-      "Token dependency",
-      "Multi-step reasoning collapse"
-    ],
-    "modelDebuggingAndIncidentResponse": [
-      "Diagnoses model-layer versus prompt-layer failures",
-      "Designs minimal reproduction prompts",
-      "Implements corrective prompt strategies",
-      "Leads behavioral incident response"
-    ]
+    "failureModeAnalysis": {
+      "experience": "Identifies and mitigates failure modes observed in real production systems.",
+      "knowledge": [
+        "Hallucinations",
+        "Refusal failures",
+        "Misalignment between system intent and model output",
+        "Prompt brittleness under minor input variation",
+        "Token and context dependency",
+        "Multi-step reasoning collapse"
+      ]
+    },
+    "modelDebuggingAndIncidentResponse": {
+      "experience": "Treats AI failures as operational incidents requiring diagnosis, reproduction, and correction.",
+      "knowledge": [
+        "Separating model-layer issues from prompt-layer issues",
+        "Designing minimal reproduction prompts",
+        "Implementing corrective prompt and agent strategies",
+        "Leading behavioral incident response and postmortems"
+      ]
+    },
+    "agenticFrameworksAndTooling": {
+      "experience": "Builds and evaluates agent-based systems with explicit control, observability, and failure boundaries.",
+      "frameworks": {
+        "CrewAI": {
+          "knowledge": [
+            "Multi-agent task orchestration",
+            "Role-based agent design",
+            "Explicit responsibility boundaries",
+            "Failure containment between agents"
+          ]
+        },
+        "LangChain": {
+          "knowledge": [
+            "Tool calling and chain composition",
+            "Prompt templating and structured outputs",
+            "Integration with external systems and APIs"
+          ]
+        },
+        "LangGraph": {
+          "knowledge": [
+            "Graph-based agent workflows",
+            "Stateful multi-step execution",
+            "Conditional branching and recovery paths",
+            "Loop prevention and execution control"
+          ]
+        },
+        "LangSmith": {
+          "knowledge": [
+            "Tracing and observability of agent runs",
+            "Prompt and chain debugging",
+            "Evaluation of intermediate agent behavior"
+          ]
+        }
+      }
+    },
+    "openAIAndTracing": {
+      "experience": "Uses OpenAI APIs in production contexts with an emphasis on traceability and evaluation.",
+      "knowledge": [
+        "OpenAI SDK usage for chat and responses APIs",
+        "Structured outputs and tool calling",
+        "Token and cost optimization",
+        "Tracing and run inspection",
+        "Behavioral evaluation via logged runs"
+      ]
+    }
   },
   "programmingLanguages": {
-    "html": { "experience": "10+ years", "notes": "Accessible, standards-compliant interfaces" },
-    "css": { "experience": "10+ years", "notes": "Flexbox, Grid, responsive design" },
-    "javascript": { "experience": "10+ years", "notes": "Dashboards, enterprise platforms, UI systems" },
-    "typescript": { "experience": "6+ years", "notes": "Scalable React and Next.js systems" },
-    "python": { "experience": "6+ years", "notes": "Evaluation tooling, automation, backend scripting" },
-    "php": { "experience": "8+ years", "notes": "WordPress and backend services" },
-    "java": { "experience": "5+ years", "notes": "Enterprise backend development (BHE)" },
-    "csharp": { "experience": "Project-based", "notes": "IoT firmware and device programming" },
-    "nodejs": { "experience": "6+ years", "notes": "REST APIs, microservices, CLI tooling" }
+    "html": {
+      "experience": "10+ years",
+      "knowledge": "Accessible, semantic, standards-compliant interfaces"
+    },
+    "css": {
+      "experience": "10+ years",
+      "knowledge": "Flexbox, Grid, responsive layouts, maintainable design systems"
+    },
+    "javascript": {
+      "experience": "10+ years",
+      "knowledge": "Enterprise dashboards, complex UI systems, event-driven architectures"
+    },
+    "typescript": {
+      "experience": "6+ years",
+      "knowledge": "Type-safe React and Next.js applications at scale"
+    },
+    "python": {
+      "experience": "6+ years",
+      "knowledge": "Evaluation tooling, automation, AI experimentation, backend scripting"
+    },
+    "php": {
+      "experience": "8+ years",
+      "knowledge": "WordPress, backend services, legacy system integration"
+    },
+    "java": {
+      "experience": "5+ years",
+      "knowledge": "Enterprise backend development in regulated environments"
+    },
+    "csharp": {
+      "experience": "Project-based",
+      "knowledge": "IoT firmware and device-level programming"
+    },
+    "nodejs": {
+      "experience": "6+ years",
+      "knowledge": "REST APIs, microservices, CLI tooling"
+    }
   },
-  "frameworksAndLibraries": [
-    "React",
-    "Next.js",
-    "React Native",
-    "Material UI",
-    "Tailwind CSS",
-    "Bootstrap",
-    "SASS"
-  ],
-  "dataAndBackend": [
-    "Supabase (auth, RLS, triggers, storage)",
-    "PostgreSQL",
-    "MongoDB",
-    "SQL Server",
-    "MySQL"
-  ],
-  "stateManagement": [
-    "React Context API",
-    "Redux",
-    "Jotai"
-  ],
-  "testingAndQuality": [
-    "Test-driven development",
-    "Jest unit testing",
-    "Integration testing",
-    "Async and mock-heavy test scenarios"
-  ],
-  "accessibilityAndUX": [
-    "WCAG 2.1 compliance",
-    "ADA remediation",
-    "Semantic HTML",
-    "Color contrast audits",
-    "Screen reader testing (NVDA, VoiceOver)",
-    "Ethical and safety-conscious UX design"
-  ],
-  "infrastructureAndDevOps": [
-    "Docker",
-    "Linux and Bash",
-    "AWS (EC2, Lambda, S3)",
-    "Cloudflare Workers and Pages",
-    "Azure pipelines and repositories"
-  ],
-  "mobileAndMonitoring": [
-    "Expo",
-    "OTA updates",
-    "App Store and Google Play publishing",
-    "Firebase Crashlytics",
-    "Sentry"
-  ],
-  "iotAndMonitoring": [
-    "Embedded firmware development",
-    "Real-time sensor pipelines",
-    "Grafana dashboards"
-  ],
-  "tooling": [
-    "Git",
-    "npm",
-    "Postman",
-    "Swagger / OpenAPI",
-    "VS Code",
-    "Bash scripting"
+  "frameworksAndLibraries": {
+    "experience": "Used across production and internal platforms.",
+    "knowledge": [
+      "React",
+      "Next.js",
+      "React Native",
+      "Material UI",
+      "Tailwind CSS",
+      "Bootstrap",
+      "SASS"
+    ]
+  },
+  "dataAndBackend": {
+    "experience": "Designs and integrates data layers for both web and mobile systems.",
+    "knowledge": [
+      "Supabase (auth, RLS, triggers, storage)",
+      "PostgreSQL",
+      "MongoDB",
+      "SQL Server",
+      "MySQL"
+    ]
+  },
+  "stateManagement": {
+    "experience": "Selects state tools based on complexity and risk.",
+    "knowledge": [
+      "React Context API",
+      "Redux",
+      "Jotai"
+    ]
+  },
+  "testingAndQuality": {
+    "experience": "Strong emphasis on reliability and regression prevention.",
+    "knowledge": [
+      "Test-driven development",
+      "Jest unit testing",
+      "Integration testing",
+      "Async and mock-heavy test scenarios"
+    ]
+  },
+  "accessibilityAndUX": {
+    "experience": "Accessibility treated as a core engineering requirement.",
+    "knowledge": [
+      "WCAG 2.1 compliance",
+      "ADA remediation",
+      "Semantic HTML",
+      "Color contrast audits",
+      "Screen reader testing (NVDA, VoiceOver)",
+      "Ethical and safety-conscious UX design"
+    ]
+  },
+  "infrastructureAndDevOps": {
+    "experience": "Supports production deployment and observability.",
+    "knowledge": [
+      "Docker",
+      "Linux and Bash",
+      "AWS (EC2, Lambda, S3)",
+      "Cloudflare Workers and Pages",
+      "Azure pipelines and repositories"
+    ]
+  },
+  "mobileAndMonitoring": {
+    "experience": "End-to-end mobile delivery and monitoring.",
+    "knowledge": [
+      "Expo",
+      "OTA updates",
+      "App Store and Google Play publishing",
+      "Firebase Crashlytics",
+      "Sentry"
+    ]
+  },
+  "iotAndMonitoring": {
+    "experience": "Builds monitoring pipelines for physical systems.",
+    "knowledge": [
+      "Embedded firmware development",
+      "Real-time sensor pipelines",
+      "Grafana dashboards"
+    ]
+  },
+  "tooling": {
+    "experience": "Daily professional tooling.",
+    "knowledge": [
+      "Git",
+      "npm",
+      "Postman",
+      "Swagger / OpenAPI",
+      "VS Code",
+      "Bash scripting"
+    ]
+  },"llmEvaluationFrameworks": {
+  "experience": "Designs custom evaluation harnesses for testing LLM behavior beyond accuracy metrics.",
+  "knowledge": [
+    "Prompt regression testing",
+    "Behavioral consistency checks",
+    "Multi-run variance analysis",
+    "Scenario-based evaluation",
+    "Failure mode tagging and tracking"
   ]
+},"retrievalAugmentedGeneration": {
+  "experience": "Designs RAG systems to reduce hallucination and improve factual grounding.",
+  "knowledge": [
+    "Chunking and embedding strategies",
+    "Semantic search and relevance tuning",
+    "Context window budgeting",
+    "Failure modes in retrieval (stale data, over-recall)",
+    "Separation of retrieval and reasoning responsibilities"
+  ]
+},"vectorSearchAndEmbeddings": {
+  "experience": "Uses vector embeddings to support retrieval and similarity-based workflows.",
+  "knowledge": [
+    "Embedding model selection",
+    "Cosine similarity and distance metrics",
+    "Index freshness and drift concerns",
+    "Evaluation of retrieval relevance"
+  ]
+},"guardrailsAndOutputControl": {
+  "experience": "Implements guardrails to constrain LLM output and reduce unsafe or unreliable responses.",
+  "knowledge": [
+    "Schema-based output validation",
+    "Tool-only response enforcement",
+    "Refusal and fallback strategies",
+    "Partial response rejection",
+    "Post-generation validation layers"
+  ]
+},"llmObservabilityAndTelemetry": {
+  "experience": "Treats LLM systems as observable production services.",
+  "knowledge": [
+    "Prompt and response tracing",
+    "Token usage and cost monitoring",
+    "Behavioral anomaly detection",
+    "Incident-driven log review",
+    "Model and prompt versioning"
+  ]
+},"modelAbstractionAndRouting": {
+  "experience": "Designs systems that support multiple LLM providers and models.",
+  "knowledge": [
+    "Model capability tradeoffs",
+    "Fallback and escalation strategies",
+    "Cost-aware routing",
+    "Determinism and temperature normalization",
+    "Provider-specific failure patterns"
+  ]
+}
+
+
+
+
+
 }
