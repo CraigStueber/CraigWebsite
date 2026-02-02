@@ -6,6 +6,7 @@ import { CharacterProvider } from "./context/CharacterContext";
 
 import { SessionProvider } from "./context/SessionContext";
 import HomePage from "./pages/HomePage/HomePage";
+import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <>
@@ -13,7 +14,7 @@ function App() {
         <SessionProvider>
           <Routes>
             <Route path="/" element={<HomePage />} />
-
+            <Route path="/contact" element={<Contact />} />
             <Route path="/pp" element={<PrivacyPolicy />} />
           </Routes>
         </SessionProvider>
