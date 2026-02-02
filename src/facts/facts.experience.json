@@ -12,26 +12,30 @@
     "summary": "Works on Dekaflow 2, a next-generation cloud-based enterprise platform supporting large-scale operational workflows. Leads AI-assisted engineering initiatives with a focus on behavioral reliability, drift detection, prompt standards, and safe adoption of LLM tools across engineering teams."
   },
   "roles": [
-    {
-      "title": "Senior Full Stack Engineer — AI Systems Integration",
-      "company": "Berkshire Hathaway Energy",
-      "location": "Richmond, VA",
-      "years": "2025 – Present",
-      "responsibilities": [
-        "Spearheaded company-wide GitHub Copilot integration, defining usage standards, prompt guidelines, and guardrails",
-        "Led internal training on structured prompting, failure modes, and reproducible AI-assisted workflows",
-        "Designed prompt standards and evaluation approaches to detect drift and unintended model behavior",
-        "Participated in AI-related incident analysis when outputs deviated from expectations",
-        "Contributed to production frontend and backend systems using Next.js, TypeScript, Java, Azure, Jotai, and Cloudflare Workers"
-      ],
-      "themes": [
-        "AI behavior reliability",
-        "Prompt engineering",
-        "LLM safety",
-        "Enterprise systems",
-        "Cross-team collaboration"
-      ]
-    },
+   {
+  "title": "Senior Full Stack Engineer — AI Systems Integration",
+  "company": "Berkshire Hathaway Energy",
+  "location": "Richmond, VA",
+  "years": "2025 – Present",
+  "responsibilities": [
+    "Lead engineer on Dekaflow 2, a real-time enterprise platform supporting large-scale operational and grid-related workflows",
+    "Built and optimized high-performance React + TypeScript interfaces handling thousands of live telemetry updates per second",
+    "Reduced UI latency through targeted performance improvements including memoization, virtualization, and streaming data pipelines",
+    "Led enterprise-wide GitHub Copilot adoption, defining usage standards, prompt guidelines, and behavioral guardrails",
+    "Designed and evaluated behavior-constrained LLM workflows to reduce hallucinations and unsafe outputs in production systems",
+    "Built evaluation and monitoring approaches to detect behavioral drift and regression across model and prompt updates",
+    "Partnered with product, engineering, and leadership teams to translate AI risk and reliability requirements into deployable system designs",
+    "Contributed to production frontend and backend systems using Next.js, TypeScript, Java, Azure, Jotai, and Cloudflare Workers"
+  ],
+  "themes": [
+    "AI behavior reliability",
+    "Applied AI systems",
+    "High-performance UI",
+    "Enterprise systems",
+    "Cross-team collaboration"
+  ]
+}
+,
     {
       "title": "Head React Native Developer & Co-Founder",
       "company": "DanceCard",
@@ -51,35 +55,37 @@
         "Moderation tooling"
       ]
     },
-    {
-      "title": "Senior Full Stack Developer — LLM-Integrated Systems",
-      "company": "Sauer Brands, Inc.",
-      "location": "Richmond, VA",
-      "years": "2021 – 2025",
-      "responsibilities": [
-        "Led engineering for internal and public-facing platforms spanning marketing, analytics, and content management",
-        "Built production systems using React, TypeScript, Python, SQL, Java, and PeopleSoft",
-        "Integrated LLM-assisted features including summarization, classification, and content generation",
-        "Authored structured prompts and meta-prompts for constrained behavior and predictable outputs",
-        "Ran prompt experiments to evaluate drift, sensitivity, and safety edge cases",
-        "Helped normalize GitHub Copilot usage while maintaining code quality and human oversight",
-        "Led accessibility and ADA reviews across multiple projects"
-      ],
-      "notableProjects": [
-        "Duke’s Country",
-        "Hot Tomato Summer",
-        "Kernel Season’s Sweepstakes",
-        "Sauer Brand Websites",
-        "Sales Reporting Tool"
-      ],
-      "themes": [
-        "LLM integration",
-        "Accessibility",
-        "Reliability",
-        "Prompt safety",
-        "High-traffic systems"
-      ]
-    },
+   {
+  "title": "Senior Full Stack Developer — LLM-Integrated Systems",
+  "company": "Sauer Brands, Inc.",
+  "location": "Richmond, VA",
+  "years": "2021 – 2025",
+  "responsibilities": [
+    "Led engineering for internal and public-facing platforms spanning marketing, analytics, and operational workflows",
+    "Built and shipped production systems using React, TypeScript, Python, SQL, Java, and PeopleSoft",
+    "Integrated LLM-powered features including summarization, classification, and decision-support tooling",
+    "Authored structured prompts and meta-prompts focused on predictable, interpretable, and safety-bounded outputs",
+    "Ran controlled prompt experiments to evaluate drift, edge cases, sensitivity, and regression risk prior to production rollout",
+    "Helped normalize GitHub Copilot usage while maintaining code quality, accessibility, and human oversight",
+    "Led accessibility and ADA reviews across multiple projects",
+    "Supported high-traffic consumer campaigns and live promotions with large concurrent user loads"
+  ],
+  "notableProjects": [
+    "Duke’s Country",
+    "Hot Tomato Summer",
+    "Kernel Season’s Sweepstakes",
+    "Sauer Brand Websites",
+    "Sales Reporting Tool"
+  ],
+  "themes": [
+    "LLM integration",
+    "Prompt safety",
+    "Accessibility",
+    "Reliability",
+    "High-traffic systems"
+  ]
+}
+,
     {
       "title": "Front-End Engineer (Contract)",
       "company": "Soar365",
@@ -98,23 +104,26 @@
       ]
     },
     {
-      "title": "Full Stack Engineer — ML-Enhanced IoT Systems",
-      "company": "Talos IoT",
-      "location": "Glen Allen, VA",
-      "years": "2021",
-      "responsibilities": [
-        "Built IoT dashboards translating diagnostic data into actionable insights",
-        "Integrated ML-based anomaly detection into backend services",
-        "Designed evaluation pipelines measuring drift, accuracy, and false positives",
-        "Developed real-time interfaces using React, Python, Java, and WebSockets"
-      ],
-      "themes": [
-        "ML evaluation",
-        "IoT systems",
-        "Interpretability",
-        "Real-time data"
-      ]
-    },
+  "title": "Full Stack Engineer — ML-Enhanced IoT Systems",
+  "company": "Talos IoT",
+  "location": "Glen Allen, VA",
+  "years": "2021",
+  "responsibilities": [
+    "Built real-time IoT monitoring dashboards translating diagnostic sensor data into actionable insights",
+    "Developed React-based web interfaces and backend services using Python, Java, and WebSockets",
+    "Integrated traditional machine learning models for anomaly detection and classification",
+    "Designed evaluation pipelines measuring model accuracy, false positives, and telemetry drift",
+    "Collaborated with product, firmware, and operations teams to ensure ML outputs were interpretable and operationally useful"
+  ],
+  "themes": [
+    "ML evaluation",
+    "IoT systems",
+    "Interpretability",
+    "Real-time data",
+    "Reliability"
+  ]
+}
+,
     {
       "title": "Front-End Web Developer",
       "company": "PresenceLearning",
@@ -150,20 +159,32 @@
     }
   ],
   "careerSignals": {
-    "seniority": "Senior / Lead-level engineer",
-    "coreStrengths": [
-      "AI behavior and prompt reliability",
-      "Full-stack system design",
-      "Accessibility and ethical constraints",
-      "Clear documentation and mentorship"
+  "seniority": "Senior / Lead-level engineer",
+  "coreStrengths": [
+    "AI behavior reliability and prompt governance",
+    "Applied AI system design and evaluation",
+    "High-performance front-end architecture",
+    "Accessibility and ethical constraints",
+    "Clear documentation, mentorship, and cross-team enablement"
+  ],
+  "roleFit": [
+    "Applied AI Engineer",
+    "AI Safety Engineer",
+    "AI Behavior / Alignment Engineer",
+    "AI Systems Engineer",
+    "Senior Front-End Engineer",
+    "Lead Front-End Engineer"
+  ],
+  "locationFlexibility": {
+    "openToRelocation": true,
+    "targetRegions": [
+      "California",
+      "New York City"
     ],
-    "roleFit": [
-      "AI Safety Engineer",
-      "AI Behavior / Alignment Engineer",
-      "AI Systems Engineer",
-      "Senior or Lead Front-End Engineer"
-    ]
-  },
+    "notes": "Open to hybrid or in-person roles in major tech hubs."
+  }
+},
+
   "usageRulesForFred": {
     "mayStateConfidently": [
       "Current and past titles",
