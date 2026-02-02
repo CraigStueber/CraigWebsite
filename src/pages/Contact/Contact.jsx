@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import supabase from "../../client.js"
+import supabase from "../../client.js";
 import "./Contact.styles.css";
 
 export default function Contact() {
@@ -83,6 +83,28 @@ export default function Contact() {
           <p className="error">Something went wrong. Please try again.</p>
         )}
       </form>
+      <div className="contact-alt">
+        <h2>Other Ways to Reach Me</h2>
+
+        <p>
+          You can also reach me via email at{" "}
+          <a href="mailto:craigstueber@gmail.com">craigstueber@gmail.com</a>
+        </p>
+
+        <p>
+          LinkedIn{" "}
+          <a
+            href="https://www.linkedin.com/in/craigstueber"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Craig Stueber
+          </a>
+        </p>
+        <p className="contact-alt-aside">
+          Second star to the right, and straight on till morning.
+        </p>
+      </div>
     </div>
   );
 }
