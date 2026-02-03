@@ -3,15 +3,13 @@ import "./BadgeList.styles.css";
 
 export default function BadgeList() {
   const badges = [
-    "Senior Front-End Engineering",
     "React",
     "TypeScript",
-    "Front-End Architecture",
-    "Performance Optimization",
     "Real-Time UI Systems",
     "Next.js",
-    "Accessibility (WCAG/ADA)",
     "Design Systems",
+    "Python",
+    "AI Integration",
   ];
   return (
     <div className="badge-list">
