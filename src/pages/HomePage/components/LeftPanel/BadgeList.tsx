@@ -5,11 +5,11 @@ export default function BadgeList() {
   const badges = [
     "React",
     "TypeScript",
-    "Real-Time UI Systems",
+    "React Native",
     "Next.js",
-    "Design Systems",
     "Python",
     "AI Integration",
+    "Prompt Engineering",
   ];
   return (
     <div className="badge-list">
