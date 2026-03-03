@@ -4,7 +4,7 @@ import ChatbotIntro from "./ChatbotIntro";
 import ChatContainer from "../../chatbot/ChatContainer";
 import { usePersona } from "../../context/chatbot/personaContext";
 import { BotPersona } from "../../types/chatbot/persona";
-
+import RoleFitModal from "../RoleFitModal/RoleFitModal";
 const PERSONA_LABELS: Record<BotPersona, string> = {
   fred: "About Craig",
   storyteller: "Story Mode",
@@ -30,6 +30,13 @@ export default function RightPanel() {
           <div className="mobile-identity">
             <div className="mobile-name">Craig Stueber</div>
             <div className="mobile-persona">{PERSONA_LABELS[persona]}</div>
+            <RoleFitModal
+              trigger={
+                <span className="persona-mode-pill">
+                  Good fit for your role?
+                </span>
+              }
+            />
           </div>
         </div>
 
