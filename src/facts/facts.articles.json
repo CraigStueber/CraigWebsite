@@ -6,6 +6,68 @@
   "summary": "Craig Stueber regularly publishes long-form essays on applied AI, software engineering, AI safety, and operational ethics. His writing focuses on post-demo realities: system behavior in production, integration failures, human-in-the-loop design, reliability, and responsibility in socio-technical systems.",
   "articles": [
     {
+      "title": "Accuracy Is a Comfort Metric: What We Actually Need to Measure in Applied AI",
+      "published": "2026-02",
+      "format": "Applied systems analysis",
+      "platform": "Medium",
+      "summary": "Argues that accuracy is a snapshot metric that answers the wrong question for production AI systems. Distinguishes between model correctness and system behavior, and examines three categories of blind spots accuracy consistently hides: interaction dynamics, feedback loops, and gradual behavioral erosion. Proposes shifting evaluation toward behavioral observability, drift detection, and consequence modeling.",
+      "themes": [
+        "AI evaluation",
+        "Production reliability",
+        "Behavioral drift",
+        "Observability",
+        "Applied AI systems",
+        "Measurement design",
+        "Failure modes"
+      ]
+    },
+    {
+      "title": "Tools Don't Remove Responsibility — They Move It",
+      "published": "2026-02",
+      "format": "Philosophical and systems essay",
+      "platform": "Medium",
+      "summary": "Challenges the framing of AI as 'just a tool' and traces how responsibility migrates through AI system layers: guardrails, prompt design, configuration, and deployment decisions. Argues that accountability is not eliminated by automation but pushed upstream and spread across architecture. Responsibility in AI systems lives in design decisions, not runtime behavior.",
+      "themes": [
+        "AI accountability",
+        "Responsibility migration",
+        "System design",
+        "AI governance",
+        "Production ethics",
+        "Architecture and risk"
+      ]
+    },
+    {
+      "title": "Human-in-the-Loop Isn't a Safety Net — It's a System Design Choice",
+      "published": "2026-02",
+      "format": "Applied systems analysis",
+      "platform": "Medium",
+      "summary": "Deconstructs the common HITL declaration as organizational comfort rather than actual design. Argues that human oversight only functions when the surrounding system is architected to support meaningful intervention — with proper information visibility, time constraints, escalation paths, and decision authority. HITL fails not because humans make errors but because systems were never designed to support real oversight.",
+      "themes": [
+        "Human-in-the-loop",
+        "AI safety",
+        "System design",
+        "Oversight architecture",
+        "Applied AI governance",
+        "Production reliability"
+      ]
+    },
+    {
+      "title": "Ambiguity Is a System Load: Traditional Architectures Aren't Built for It",
+      "published": "2026-03",
+      "format": "Applied systems analysis",
+      "platform": "Medium",
+      "summary": "Argues that AI introduces persistent ambiguity as a structural load on production architectures designed to assume decision finality. Deterministic systems fail silently when fed probabilistic outputs that appear valid but remain unresolved. The solution is not better models but architectures explicitly designed to carry, route, and resolve ambiguity.",
+      "themes": [
+        "AI architecture",
+        "Production systems",
+        "Ambiguity handling",
+        "Deterministic vs probabilistic systems",
+        "Applied AI engineering",
+        "System design",
+        "Failure modes"
+      ]
+    },
+    {
       "title": "Vibe Coding: How to Code with Flow Without Sacrificing Structure",
       "published": "2025-09-09",
       "format": "Essay",

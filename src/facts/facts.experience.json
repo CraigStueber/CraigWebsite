@@ -17,23 +17,25 @@
   "company": "Berkshire Hathaway Energy",
   "location": "Richmond, VA",
   "years": "2025 – Present",
-  "responsibilities": [
-    "Lead engineer on Dekaflow 2, a real-time enterprise platform supporting large-scale operational and grid-related workflows",
-    "Built and optimized high-performance React + TypeScript interfaces handling thousands of live telemetry updates per second",
-    "Reduced UI latency through targeted performance improvements including memoization, virtualization, and streaming data pipelines",
-    "Led enterprise-wide GitHub Copilot adoption, defining usage standards, prompt guidelines, and behavioral guardrails",
-    "Designed and evaluated behavior-constrained LLM workflows to reduce hallucinations and unsafe outputs in production systems",
-    "Built evaluation and monitoring approaches to detect behavioral drift and regression across model and prompt updates",
-    "Partnered with product, engineering, and leadership teams to translate AI risk and reliability requirements into deployable system designs",
-    "Contributed to production frontend and backend systems using Next.js, TypeScript, Java, Azure, Jotai, and Cloudflare Workers"
-  ],
+ "responsibilities": [
+  "Leading early-stage AI agent R&D initiatives exploring agentic workflows for internal business processes, including data understanding and document retrieval use cases",
+  "Tech lead and people lead for a team of front-end engineers building Dekaflow 2.0, a next-generation enterprise platform supporting large-scale operational and grid-related workflows",
+  "Designed and delivered a recurring AI-assisted development training program, building organizational fluency around structured prompting, responsible usage patterns, and LLM failure modes",
+  "Led enterprise-wide GitHub Copilot deployment, establishing usage standards, behavioral guardrails, and governance practices enabling safe AI adoption across multiple engineering teams",
+  "Designed behavior-constrained AI workflows for internal tools, reducing hallucination-related defects in production-critical systems",
+  "Built evaluation and monitoring pipelines to detect LLM behavioral regressions before model or prompt updates reached production",
+  "Conducted behavioral incident triage for AI-assisted systems, diagnosing failure modes including intention drift, unsafe outputs, and requirement misalignment",
+  "Translated abstract AI risk, safety, and compliance requirements into deployable, auditable system designs"
+],
   "themes": [
-    "AI behavior reliability",
-    "Applied AI systems",
-    "High-performance UI",
-    "Enterprise systems",
-    "Cross-team collaboration"
-  ]
+  "AI agent R&D",
+  "Agentic workflow design",
+  "Engineering team leadership",
+  "Applied AI architecture",
+  "AI governance and evaluation",
+  "Enterprise AI enablement",
+  "Recurring AI training programs"
+]
 }
 ,
     {
@@ -61,15 +63,15 @@
   "location": "Richmond, VA",
   "years": "2021 – 2025",
   "responsibilities": [
-    "Led engineering for internal and public-facing platforms spanning marketing, analytics, and operational workflows",
-    "Built and shipped production systems using React, TypeScript, Python, SQL, Java, and PeopleSoft",
-    "Integrated LLM-powered features including summarization, classification, and decision-support tooling",
-    "Authored structured prompts and meta-prompts focused on predictable, interpretable, and safety-bounded outputs",
-    "Ran controlled prompt experiments to evaluate drift, edge cases, sensitivity, and regression risk prior to production rollout",
-    "Helped normalize GitHub Copilot usage while maintaining code quality, accessibility, and human oversight",
-    "Led accessibility and ADA reviews across multiple projects",
-    "Supported high-traffic consumer campaigns and live promotions with large concurrent user loads"
-  ],
+  "Designed and delivered AI-powered analytics and workflow tools integrated into internal business systems, supporting real business decision-making through LLM-generated insights in day-to-day operations",
+  "Built an agentic customer service tool that combined customer-submitted context with rep-authored input to research against an internal knowledge base and generate complete, ready-to-send response emails — including recipient routing, CC recommendations, and delivery destination",
+  "Implemented rule-based priority classification on incoming customer service requests, automatically escalating and routing emergency-tier messages to the appropriate internal teams without requiring manual triage",
+  "Authored structured meta-prompts supporting classification, summarization, and predictive UX behaviors, with a focus on consistency, interpretability, and safe output boundaries",
+  "Ran controlled prompt experiments and A/B evaluations to analyze token sensitivity, edge-case behavior, and regression risks across evolving model versions prior to production rollout",
+  "Built data ingestion, caching, and retrieval pipelines (PostgreSQL, Redis) to supply LLM systems with structured, validated inputs suitable for production use",
+  "Developed internal prompting standards and documentation, guiding engineers on responsible usage patterns, known model limitations, and common failure modes",
+  "Integrated AI-driven features into React and Python-based applications, ensuring smooth end-to-end behavior from backend logic through user-facing interfaces"
+],
   "notableProjects": [
     "Duke’s Country",
     "Hot Tomato Summer",
@@ -77,13 +79,14 @@
     "Sauer Brand Websites",
     "Sales Reporting Tool"
   ],
-  "themes": [
-    "LLM integration",
-    "Prompt safety",
-    "Accessibility",
-    "Reliability",
-    "High-traffic systems"
-  ]
+ "themes": [
+  "Agentic AI systems",
+  "LLM integration",
+  "Automated routing and escalation",
+  "Prompt governance",
+  "Applied AI systems",
+  "Production reliability"
+]
 }
 ,
     {
