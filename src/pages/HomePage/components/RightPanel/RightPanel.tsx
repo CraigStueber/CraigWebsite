@@ -30,24 +30,24 @@ export default function RightPanel() {
           <div className="mobile-identity">
             <div className="mobile-name">Craig Stueber</div>
             <div className="mobile-persona">{PERSONA_LABELS[persona]}</div>
-            <RoleFitModal
-              trigger={
-                <span className="persona-mode-pill">
-                  Good fit for your role?
-                </span>
-              }
-            />
           </div>
         </div>
 
-        <button
-          className="persona-mode-pill"
-          onClick={() => setShowPersonaMenu((v) => !v)}
-          aria-haspopup="true"
-          aria-expanded={showPersonaMenu}
-        >
-          Switch mode
-        </button>
+        <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+          <button
+            className="persona-mode-pill"
+            onClick={() => setShowPersonaMenu((v) => !v)}
+            aria-haspopup="true"
+            aria-expanded={showPersonaMenu}
+          >
+            Switch mode
+          </button>
+          <RoleFitModal
+            trigger={
+              <span className="persona-mode-pill">Good fit for your role?</span>
+            }
+          />
+        </div>
       </div>
 
       {showPersonaMenu && (
