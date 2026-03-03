@@ -12,7 +12,6 @@ export default function LeftPanel() {
       <HeroImage />
       <IntroText />
       <PersonaToggle />
-      <BadgeList />
       <RoleFitModal />
       <div className="left-panel-footer">
         <Link to="/pp">Privacy Policy</Link>
