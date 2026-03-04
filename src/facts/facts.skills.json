@@ -214,16 +214,17 @@
       "SASS"
     ]
   },
-  "dataAndBackend": {
-    "experience": "Designs and integrates data layers for both web and mobile systems.",
-    "knowledge": [
-      "Supabase (auth, RLS, triggers, storage)",
-      "PostgreSQL",
-      "MongoDB",
-      "SQL Server",
-      "MySQL"
-    ]
-  },
+ "dataAndBackend": {
+  "experience": "Designs and integrates data layers for both web and mobile systems.",
+  "knowledge": [
+    "SQL (proficient — enterprise query writing, joins, aggregations, stored procedures)",
+    "Supabase (auth, RLS, triggers, storage)",
+    "PostgreSQL",
+    "MongoDB",
+    "SQL Server",
+    "MySQL"
+  ]
+},
   "stateManagement": {
     "experience": "Selects state tools based on complexity and risk.",
     "knowledge": [

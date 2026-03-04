@@ -393,54 +393,10 @@ If the fit is weak, say so. If there are real gaps, name them.
 A credible honest answer serves the recruiter better than flattery.
 
 CRAIG'S PROFILE:
-
-Current role: Senior Full Stack Engineer / AI Systems Integration at Berkshire Hathaway Energy (2025 - Present)
-- Tech lead and people lead for a front-end engineering team building Dekaflow 2.0,
-  a next-generation enterprise platform for large-scale operational and grid workflows
-- Leading early-stage AI agent R&D initiatives exploring agentic workflows for internal
-  business processes including data understanding and document retrieval
-- Runs a recurring AI-assisted development training program across engineering teams
-- Led enterprise-wide GitHub Copilot deployment: usage standards, behavioral guardrails,
-  governance practices for safe adoption across multiple teams
-- Designed behavior-constrained AI workflows reducing hallucination-related defects
-  in production-critical systems
-- Built evaluation and monitoring pipelines to detect LLM behavioral regressions
-  before reaching production
-- Conducted behavioral incident triage diagnosing intention drift, unsafe outputs,
-  and requirement misalignment
-
-Prior role: Senior Full Stack Developer / LLM-Integrated Systems at Sauer Brands (2021 - 2025)
-- Built an agentic customer service tool: combined customer context and rep input,
-  researched against an internal knowledge base, generated ready-to-send response emails
-  with recipient routing, CC recommendations, and delivery destination
-- Rule-based priority classification on incoming requests with auto-escalation and
-  routing of emergency-tier messages to internal teams without manual triage
-- Authored structured meta-prompts for classification, summarization, and predictive
-  UX behaviors focused on consistency and safe output boundaries
-- Ran controlled prompt experiments and A/B evaluations for token sensitivity,
-  edge-case behavior, and regression risks prior to production rollout
-- Built data ingestion, caching, and retrieval pipelines (PostgreSQL, Redis)
-  supplying LLM systems with validated inputs
-
-Prior role: Full Stack Engineer / ML-Enhanced IoT Systems at Talos IoT (2021)
-- Integrated ML models for anomaly detection and classification
-- Built Python evaluation pipelines measuring accuracy, false positives, and telemetry drift
-
-Research:
-- PhD in progress: AI safety and behavioral reliability of AI-generated code,
-  vulnerability scoring frameworks
-- Regular Medium author: applied AI architecture, integration failure modes,
-  HITL design, accountability, evaluation, and ambiguity in production systems
-- Forthcoming book (2026): "The Comfortable Apocalypse"
-
-Technical stack:
-- Python, TypeScript, React, React Native, Next.js, PostgreSQL, Redis,
-  Cloudflare Workers, Supabase, LLM APIs, vector search
-
-Career target:
-- Applied AI Engineer, AI Architect, AI Systems Engineer,
-  AI Safety / Alignment Engineer, Forward-Deployed AI Engineer
-- Open to relocation: California, New York City
+Craig's full background, experience, skills, research, and career targets are
+provided in the facts context. Use those as the authoritative source.
+Do not invent qualifications. Do not assume coverage of requirements that
+are ambiguous or not clearly represented in the facts.
 
 RESPONSE FORMAT — respond in clean markdown, this exact structure:
 
@@ -690,6 +646,7 @@ async function runLocalNewsAgent(env: Env, messages: ChatMessage[]) {
 async function runRoleFitAgent(env: Env, messages: ChatMessage[]) {
   const openAiMessages = [
     { role: "system", content: ROLE_FIT_PROMPT },
+    { role: "system", content: FACTS_CONTEXT }, // add this line
     ...messages,
   ];
 
