@@ -26,7 +26,12 @@
 .left-panel-footer a:hover {
   text-decoration: underline;
 }
-
+.profile-lockup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
 /* Tablet & mobile */
 @media (max-width: 1024px) {
   .left-panel {

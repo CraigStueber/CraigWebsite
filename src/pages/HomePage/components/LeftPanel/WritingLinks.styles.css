@@ -1,0 +1,43 @@
+.writing-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.writing-heading {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #666666;
+}
+
+.writing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.writing-article-link {
+  font-size: 0.85rem;
+  color: #c8c8c8;
+  text-decoration: none;
+  line-height: 1.4;
+  transition: color 0.15s ease;
+}
+
+.writing-article-link:hover {
+  color: #ffffff;
+}
+
+.writing-more-link {
+  font-size: 0.8rem;
+  color: #555555;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  margin-top: 0.15rem;
+}
+
+.writing-more-link:hover {
+  color: #888888;
+}

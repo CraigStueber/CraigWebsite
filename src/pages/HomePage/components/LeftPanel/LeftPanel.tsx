@@ -2,15 +2,23 @@ import React from "react";
 import "./LeftPanel.styles.css";
 import HeroImage from "./HeroImage";
 import IntroText from "./IntroText";
-import BadgeList from "./BadgeList";
 import PersonaToggle from "./PersonaToggle";
 import RoleFitModal from "../RoleFitModal/RoleFitModal";
+import SignalList from "./SignalList";
+import NowSection from "./NowSection";
+import WritingLinks from "./WritingLinks";
 import { Link } from "react-router-dom";
+
 export default function LeftPanel() {
   return (
     <div className="left-panel">
-      <HeroImage />
-      <IntroText />
+      <div className="profile-lockup">
+        <HeroImage />
+        <IntroText />
+      </div>
+      <SignalList />
+      <NowSection />
+      <WritingLinks />
       <PersonaToggle />
       <RoleFitModal />
       <div className="left-panel-footer">
