@@ -4,7 +4,7 @@ import "./SignalList.styles.css";
 const signals = [
   { stat: "3+ years", label: "production LLM systems" },
   { stat: "Doctoral research", label: "AI-generated code security" },
-  { stat: "Forthcoming", label: "The Comfortable Apocalypse" },
+  { stat: "Forthcoming Novel", label: "The Comfortable Apocalypse" },
 ];
 
 export default function SignalList() {
