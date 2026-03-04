@@ -15,7 +15,7 @@ const articles = [
 export default function WritingLinks() {
   return (
     <div className="writing-links">
-      <span className="writing-heading">Writing</span>
+      <span className="writing-heading">Writings</span>
       <div className="writing-list">
         {articles.map((article) => (
           <a

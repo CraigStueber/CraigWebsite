@@ -5,7 +5,6 @@ import IntroText from "./IntroText";
 import PersonaToggle from "./PersonaToggle";
 import RoleFitModal from "../RoleFitModal/RoleFitModal";
 import SignalList from "./SignalList";
-import NowSection from "./NowSection";
 import WritingLinks from "./WritingLinks";
 import { Link } from "react-router-dom";
 
