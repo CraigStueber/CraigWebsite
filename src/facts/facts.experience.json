@@ -18,6 +18,8 @@
   "location": "Richmond, VA",
   "years": "2025 – Present",
  "responsibilities": [
+  "Leading front-end and backend modernization of Dekaflow 2.0, building a contemporary React and cloud-based system that integrates with a 25-year-old Java and SQL legacy platform",
+"Designing integration layers and data contracts between modern cloud infrastructure and legacy enterprise systems in a regulated energy environment",
   "Leading early-stage AI agent R&D initiatives exploring agentic workflows for internal business processes, including data understanding and document retrieval use cases",
   "Tech lead and people lead for a team of front-end engineers building Dekaflow 2.0, a next-generation enterprise platform supporting large-scale operational and grid-related workflows",
   "Designed and delivered a recurring AI-assisted development training program, building organizational fluency around structured prompting, responsible usage patterns, and LLM failure modes",
@@ -34,7 +36,10 @@
   "Applied AI architecture",
   "AI governance and evaluation",
   "Enterprise AI enablement",
-  "Recurring AI training programs"
+  "Recurring AI training programs",
+  "Legacy system modernization",
+"Enterprise system integration",
+"Regulated industry"
 ]
 }
 ,
@@ -63,6 +68,8 @@
   "location": "Richmond, VA",
   "years": "2021 – 2025",
   "responsibilities": [
+    "Integrated modern LLM-powered tooling and React-based interfaces with a legacy PeopleSoft system, bridging contemporary AI capabilities with established enterprise infrastructure",
+"Designed data pipelines and API layers to normalize and validate inputs from legacy data sources before supplying them to LLM systems",
   "Designed and delivered AI-powered analytics and workflow tools integrated into internal business systems, supporting real business decision-making through LLM-generated insights in day-to-day operations",
   "Built an agentic customer service tool that combined customer-submitted context with rep-authored input to research against an internal knowledge base and generate complete, ready-to-send response emails — including recipient routing, CC recommendations, and delivery destination",
   "Implemented rule-based priority classification on incoming customer service requests, automatically escalating and routing emergency-tier messages to the appropriate internal teams without requiring manual triage",
@@ -77,7 +84,9 @@
     "Hot Tomato Summer",
     "Kernel Season’s Sweepstakes",
     "Sauer Brand Websites",
-    "Sales Reporting Tool"
+    "Sales Reporting Tool",
+    "Legacy system integration",
+"PeopleSoft modernization"
   ],
  "themes": [
   "Agentic AI systems",
