@@ -17,7 +17,6 @@ export default function LeftPanel() {
         <IntroText />
       </div>
       <SignalList />
-      <NowSection />
       <WritingLinks />
       <PersonaToggle />
       <RoleFitModal />
