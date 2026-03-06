@@ -77,6 +77,8 @@
   "Ran controlled prompt experiments and A/B evaluations to analyze token sensitivity, edge-case behavior, and regression risks across evolving model versions prior to production rollout",
   "Built data ingestion, caching, and retrieval pipelines (PostgreSQL, Redis) to supply LLM systems with structured, validated inputs suitable for production use",
   "Developed internal prompting standards and documentation, guiding engineers on responsible usage patterns, known model limitations, and common failure modes",
+  "Built Power Automate flows integrating LLM-powered processing into Outlook and internal communication workflows, enabling automated classification, routing, and response generation without custom backend infrastructure",
+"Designed and deployed Power Automate workflows throughout the organization to automate repeatable business processes, reducing manual overhead and improving consistency across teams",
   "Integrated AI-driven features into React and Python-based applications, ensuring smooth end-to-end behavior from backend logic through user-facing interfaces"
 ],
   "notableProjects": [
@@ -94,7 +96,10 @@
   "Automated routing and escalation",
   "Prompt governance",
   "Applied AI systems",
-  "Production reliability"
+  "Production reliability",
+  "Power Automate",
+"Microsoft 365 workflow automation",
+"Low-code enterprise integration"
 ]
 }
 ,

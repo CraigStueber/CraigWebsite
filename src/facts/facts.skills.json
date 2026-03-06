@@ -4,6 +4,16 @@
   "owner": "Craig Stueber",
   "lastUpdated": "2026-01-21",
   "summary": "Craig Stueber is a Senior Applied AI Engineer focused on production AI architecture, behavioral evaluation, and AI governance in enterprise environments. His work spans agentic system design, prompt engineering, LLM safety, retrieval-augmented generation, and forward-deployed AI applications. Secondary expertise in full-stack engineering with React, TypeScript, and Python.",
+  "microsoftPowerPlatform": {
+  "experience": "Used extensively at Sauer Brands to automate enterprise workflows and integrate LLM capabilities into existing M365 tooling.",
+  "knowledge": [
+    "Power Automate flows for business process automation",
+    "LLM integration via Power Automate (Outlook, internal systems)",
+    "Automated classification and routing workflows",
+    "Connecting external APIs and services through Power Platform connectors",
+    "Low-code orchestration as an alternative to custom backend services"
+  ]
+},
   "aiAndSafety": {
     "promptEngineering": {
       "level": "Expert",
