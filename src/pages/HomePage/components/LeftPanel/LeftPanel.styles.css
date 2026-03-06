@@ -32,6 +32,28 @@
   align-items: flex-start;
   gap: 1rem;
 }
+.coderisk-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.82rem;
+  color: #c8c8c8;
+  text-decoration: none;
+  line-height: 1.4;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.03);
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.coderisk-link:hover {
+  color: #ffffff;
+  border-color: rgba(139, 111, 168, 0.4);
+  background: rgba(139, 111, 168, 0.07);
+}
 /* Tablet & mobile */
 @media (max-width: 1024px) {
   .left-panel {

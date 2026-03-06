@@ -1,6 +1,5 @@
 import React from "react";
 import "./LeftPanel.styles.css";
-import "../RoleFitModal/RoleFitModal.styles.css";
 import HeroImage from "./HeroImage";
 import IntroText from "./IntroText";
 import PersonaToggle from "./PersonaToggle";
@@ -24,10 +23,9 @@ export default function LeftPanel() {
         href="https://coderisk.craigstueber.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="role-fit-trigger"
-        style={{ display: "block", textDecoration: "none" }}
+        className="coderisk-link"
       >
-        CodeRisk Advisor
+        CodeRisk Advisor ↗
       </a>
       <div className="left-panel-footer">
         <Link to="/pp">Privacy Policy</Link>
