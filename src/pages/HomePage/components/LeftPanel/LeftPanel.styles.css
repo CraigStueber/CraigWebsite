@@ -8,9 +8,6 @@
   flex-direction: column;
   gap: 2.5rem;
   border-right: 1px solid rgba(255, 255, 255, 0.08);
-  height: 100vh;
-  position: sticky;
-  top: 0;
 }
 .left-panel-footer {
   margin-top: auto;
@@ -19,7 +16,6 @@
   opacity: 0.8;
   display: flex;
   gap: 8px;
-  flex-shrink: 0; /* prevents footer from being squeezed */
 }
 
 .left-panel-footer a {
