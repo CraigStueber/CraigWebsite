@@ -6,6 +6,36 @@
   "summary": "Craig Stueber has built and contributed to a wide range of production systems across AI safety tooling, enterprise platforms, mobile applications, high-traffic public sites, and experimental systems. His projects consistently emphasize predictability, safety, accessibility, and clear system behavior.",
   "projects": [
     {
+  "name": "CodeRisk Advisor",
+  "category": "AI Safety / LLM Systems",
+  "description": "Multi-agent AI security review system for Python, JavaScript, and TypeScript code. Combines OWASP Top 10 vulnerability scanning with AI-specific behavioral risk detection using a panel of specialized LLM agents that synthesize findings into conversational developer guidance.",
+  "impact": "Live production tool demonstrating applied multi-agent orchestration, adversarial review patterns, and structured LLM output in a security-critical domain.",
+  "highlights": [
+    "LangGraph agent pipeline: VulnScanner, BehavioralRisk, Skeptic, Remediation, Synthesizer",
+    "Skeptic agent actively disputes low-confidence findings to reduce false positives",
+    "AI-specific behavioral risk detection (hallucinated APIs, prompt injection, unsafe deserialization, over-trust)",
+    "Token-by-token SSE streaming with real-time agent status updates in the UI",
+    "Session continuity via LangGraph MemorySaver checkpointer and X-Session-ID header",
+    "Deployed on Google Cloud Run with containerConcurrency: 1 to isolate in-process state",
+    "LangSmith tracing integrated for observability"
+  ],
+  "liveUrl": "https://coderisk.craigstueber.com",
+  "technologies": [
+    "LangGraph",
+    "FastAPI",
+    "Python",
+    "OpenAI GPT-4.1",
+    "OpenAI GPT-4.1-mini",
+    "Anthropic Claude Sonnet 4.5",
+    "Next.js 16",
+    "React 19",
+    "TypeScript",
+    "Google Cloud Run",
+    "LangSmith",
+    "SSE"
+  ]
+},
+    {
       "name": "Chat Assistant (Personal Site)",
       "category": "AI Safety / LLM Systems",
       "description": "A safety-focused conversational assistant designed for Craig’s personal website to demonstrate structured intent handling and controlled model behavior.",
