@@ -7,8 +7,8 @@ const articles = [
     url: "https://medium.com/@craigstueber/why-most-ai-failures-arent-model-failures-they-re-integration-failures-fdec486f67ba",
   },
   {
-    title: "How to Actually Implement AI Agents in the Real World",
-    url: "https://medium.com/@craigstueber/how-to-actually-implement-ai-agents-in-the-real-world-1292d6ecc79d",
+    title: "Security Reviews Don’t Catch AI Failures. Here’s Why.",
+    url: "https://medium.com/@craigstueber/security-reviews-dont-catch-ai-failures-here-s-why-2dfb2fb39aa4",
   },
 ];
 
