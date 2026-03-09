@@ -546,7 +546,7 @@ async function runFredAgent(env: Env, messages: ChatMessage[]) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "gpt-4.1-mini",
+      model: "gpt-5.4",
       messages: openAiMessages,
       temperature: PERSONAS.fred.temperature,
     }),
